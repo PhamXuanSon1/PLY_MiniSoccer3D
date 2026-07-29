@@ -33,12 +33,21 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Particle System hiển thị hiệu ứng khi chiến thắng")]
     [SerializeField] private ParticleSystem winPar;
 
-    private int currentLevel = 1;
+    [Header("Player Status")]
+    [Tooltip("Cấp độ hiện tại của Cầu thủ (1 -> 4) (Hiển thị trực tiếp trên Inspector)")]
+    [SerializeField] private int currentLevel = 1;
     public int CurrentLevel => currentLevel;
 
     public void UpgradePlayer(int upgradePointsChanged)
     {
-        if (currentLevel + upgradePointsChanged >= 4)
+        int targetMaxLevel = GameManager.Instance != null ? GameManager.Instance.MaxLevel : 4;
+        int nextLevel = Mathf.Clamp(currentLevel + upgradePointsChanged, 1, targetMaxLevel);
+
+        if (nextLevel == currentLevel) return;
+
+        currentLevel = nextLevel;
+
+        if (currentLevel >= targetMaxLevel)
         {
             Ply_SoundManager.Instance?.PlayFx(FxType.MaxLevel);
         }
@@ -46,12 +55,6 @@ public class PlayerController : MonoBehaviour
         {
             Ply_SoundManager.Instance?.PlayFx((upgradePointsChanged > 0) ? FxType.RightChoice : FxType.WrongChoice);
         }
-
-        if (GameManager.Instance != null && currentLevel + upgradePointsChanged > GameManager.Instance.MaxLevel)
-            return;
-
-        currentLevel += upgradePointsChanged;
-        currentLevel = Mathf.Clamp(currentLevel, 1, 4);
 
         if (playerVisual != null)
         {
@@ -62,9 +65,6 @@ public class PlayerController : MonoBehaviour
     [Header("Drag & Curve Settings")]
     [Tooltip("Tốc độ làm mượt vị trí khi người chơi kéo vuốt")]
     [SerializeField] private float dragSmoothSpeed = 20f;
-
-    [Tooltip("Thời gian hít (snap) về vị trí làn")]
-    [SerializeField] private float snapTime = 0.15f;
 
     [Tooltip("Đường cong gia tốc di chuyển của nhân vật")]
     [SerializeField] private AnimationCurve moveCurve;
@@ -98,22 +98,24 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnGameEnd(bool winState)
+    public void StopMoving()
     {
-
-
-        if (winState && winPar != null) winPar.Play();
-
-        Ply_SoundManager.Instance?.PlayFx(winState ? FxType.PlayerWin : FxType.PlayerLoose);
         moveSeq?.Kill();
-        DOVirtual.DelayedCall(4, () => gameObject.SetActive(false));
-
         if (InputManager.Instance != null)
         {
             InputManager.Instance.OnSwipeDirection -= OnSwipe;
             InputManager.Instance.OnDrag -= OnDrag;
             InputManager.Instance.OnDragEnd -= OnDragEnd;
         }
+    }
+
+    private void OnGameEnd(bool winState)
+    {
+        if (winState && winPar != null) winPar.Play();
+
+        Ply_SoundManager.Instance?.PlayFx(winState ? FxType.PlayerWin : FxType.PlayerLoose);
+        StopMoving();
+        DOVirtual.DelayedCall(4, () => gameObject.SetActive(false));
     }
 
     private void OnDestroy()
@@ -157,7 +159,7 @@ public class PlayerController : MonoBehaviour
 
         moveSeq.OnComplete(() =>
         {
-            GameManager.OnGameEnded?.Invoke(true);
+            GameManager.OnCharacterReachedTheEnd?.Invoke(currentLevel);
         });
 
         gameStart = true;

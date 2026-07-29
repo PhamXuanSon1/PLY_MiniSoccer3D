@@ -97,6 +97,10 @@ public class ChoiceBoardPlacer : MonoBehaviour
             Vector3 currentPosition = new Vector3(transform.position.x, transform.position.y, targetZ);
 
             ChoiceBoardHolder choiceBoardHolder = Instantiate(choiceBoardHolderprefab, currentPosition, transform.rotation, transform);
+            if (choiceBoardHolder != null)
+            {
+                choiceBoardHolder.IsLastBoard = (i == count - 1);
+            }
 
             // Gán dữ liệu từ ScriptableObject nếu có
             if (pairDataList != null && pairDataList.Length > 0)

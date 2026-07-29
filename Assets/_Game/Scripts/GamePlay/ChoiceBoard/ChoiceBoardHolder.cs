@@ -15,6 +15,9 @@ public class ChoiceBoardHolder : MonoBehaviour
         }
     }
 
+    public bool IsLastBoard { get; set; }
+    public static System.Action<PlayerController> OnLastBoardPassed;
+
     private Collider holderCollider;
 
     private void Awake()
@@ -29,6 +32,11 @@ public class ChoiceBoardHolder : MonoBehaviour
         // Tắt Collider ngay khi vừa va chạm để tránh lặp trigger va chạm
         if (holderCollider != null) holderCollider.enabled = false;
 
+        if (IsLastBoard)
+        {
+            OnLastBoardPassed?.Invoke(player);
+        }
+
         ChoiceBoard tempChoiceBoard = GetNearestBoard(currentWorldPos);
         if (tempChoiceBoard != null)
         {
@@ -40,10 +48,12 @@ public class ChoiceBoardHolder : MonoBehaviour
 
             if (tempChoiceBoard.ChoiceType == EChoiceType.IncreaseGeneric)
             {
+                Ply_SoundManager.Instance?.PlayFx(FxType.RightChoice);
                 player.UpgradePlayer(1);
             }
             else
             {
+                Ply_SoundManager.Instance?.PlayFx(FxType.WrongChoice);
                 player.UpgradePlayer(-1);
                 if (player.CurrentLevel < 1)
                 {

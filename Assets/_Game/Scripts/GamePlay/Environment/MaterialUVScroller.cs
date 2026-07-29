@@ -24,6 +24,8 @@ public class MaterialUVScroller : MonoBehaviour
         if (targetMaterial != null)
         {
             offset += scrollSpeed * Time.deltaTime;
+            offset.x = Mathf.Repeat(offset.x, 1f);
+            offset.y = Mathf.Repeat(offset.y, 1f);
             targetMaterial.mainTextureOffset = offset;
         }
     }

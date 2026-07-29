@@ -11,7 +11,8 @@ public enum FxType
     PlayerLoose = 2,
     RightChoice = 3,
     WrongChoice = 4,
-    MaxLevel = 5
+    MaxLevel = 5,
+    FightingCloud = 6
 }
 
 [System.Serializable]
@@ -30,6 +31,7 @@ public class FxAudio
     public SoundData RightChoice;
     public SoundData WrongChoice;
     public SoundData MaxLevel;
+    public SoundData FightingCloud;
 
     public SoundData GetSoundData(FxType type)
     {
@@ -47,6 +49,8 @@ public class FxAudio
                 return WrongChoice;
             case FxType.MaxLevel:
                 return MaxLevel;
+            case FxType.FightingCloud:
+                return FightingCloud;
         }
         return null;
     }
@@ -150,6 +154,14 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
                 yield return new WaitForSeconds(duration);
                 duration = PlayFx(fx);
             }
+        }
+    }
+
+    public void StopBGM()
+    {
+        if (sound != null)
+        {
+            sound.Stop();
         }
     }
 
