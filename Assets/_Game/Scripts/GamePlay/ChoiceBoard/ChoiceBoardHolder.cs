@@ -1,0 +1,67 @@
+using UnityEngine;
+
+public class ChoiceBoardHolder : MonoBehaviour
+{
+    [Header("Board References")]
+    [Tooltip("Danh sách các ChoiceBoard thuộc Holder này (thường gồm 2 ô lựa chọn)")]
+    [SerializeField] private ChoiceBoard[] choiceBoards;
+
+    public void ApplyBoardData(int index, ChoiceData choiceData)
+    {
+        if (choiceBoards != null && index >= 0 && index < choiceBoards.Length)
+        {
+            choiceBoards[index].AssignData(choiceData);
+        }
+    }
+
+    private void PickBoard(PlayerFootball player, Vector3 currentWorldPos)
+    {
+        if (player == null || choiceBoards == null || choiceBoards.Length == 0) return;
+
+        ChoiceBoard tempChoiceBoard = GetNearestBoard(currentWorldPos);
+        if (tempChoiceBoard != null)
+        {
+            tempChoiceBoard.PlayChooseSequence();
+            UIManager.OnCharacterPick?.Invoke(tempChoiceBoard.ChoiceType);
+            if (tempChoiceBoard.ChoiceType == EChoiceType.IncreaseGeneric)
+            {
+                player.UpgradePlayer(1);
+            }
+            else
+            {
+                player.UpgradePlayer(-1);
+                GameManager.OnGameEnded?.Invoke(false);
+            }
+        }
+    }
+
+    private ChoiceBoard GetNearestBoard(Vector3 worldPos)
+    {
+        ChoiceBoard nearestBoard = null;
+        float closestSqrDistance = float.MaxValue;
+
+        for (int i = 0; i < choiceBoards.Length; i++)
+        {
+            ChoiceBoard board = choiceBoards[i];
+            if (board == null) continue;
+
+            float sqrDistance = (board.transform.position - worldPos).sqrMagnitude;
+            if (sqrDistance < closestSqrDistance)
+            {
+                closestSqrDistance = sqrDistance;
+                nearestBoard = board;
+            }
+        }
+
+        return nearestBoard;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        PlayerFootball player = other.GetComponent<PlayerFootball>();
+        if (player != null)
+        {
+            PickBoard(player, other.transform.position);
+        }
+    }
+}
