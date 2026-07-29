@@ -19,7 +19,12 @@ public class GameManager : MonoBehaviour
     [Header("Game Rules")]
     [Tooltip("Cấp độ tối đa cần đạt để tính chiến thắng khi tới đích")]
     [SerializeField] private int winLevel = 4;
+
+    [Tooltip("Tổng thời gian di chuyển từ vị trí bắt đầu tới điểm đích (giây)")]
+    [SerializeField] private float totalMoveTime = 10f;
+
     public int MaxLevel => winLevel;
+    public float TotalMoveTime => totalMoveTime;
 
     private void Awake()
     {
@@ -36,9 +41,9 @@ public class GameManager : MonoBehaviour
     {
         OnGameEnded += OnGameEnd;
         OnCharacterReachedTheEnd += OnCharacterReachedEnd;
-        if (AudioManager.Instance != null)
+        if (Ply_SoundManager.Instance != null)
         {
-            AudioManager.PlayMusic(MusicID.Gameplay, 0.6f);
+            Ply_SoundManager.Instance.UpdateBGMState();
         }
     }
 

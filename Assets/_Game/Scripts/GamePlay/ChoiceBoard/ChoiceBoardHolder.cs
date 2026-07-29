@@ -14,9 +14,19 @@ public class ChoiceBoardHolder : MonoBehaviour
         }
     }
 
-    private void PickBoard(PlayerFootball player, Vector3 currentWorldPos)
+    private Collider holderCollider;
+
+    private void Awake()
+    {
+        holderCollider = GetComponent<Collider>();
+    }
+
+    private void PickBoard(PlayerController player, Vector3 currentWorldPos)
     {
         if (player == null || choiceBoards == null || choiceBoards.Length == 0) return;
+
+        // Tắt Collider ngay khi vừa va chạm để tránh lặp trigger va chạm
+        if (holderCollider != null) holderCollider.enabled = false;
 
         ChoiceBoard tempChoiceBoard = GetNearestBoard(currentWorldPos);
         if (tempChoiceBoard != null)
@@ -30,7 +40,10 @@ public class ChoiceBoardHolder : MonoBehaviour
             else
             {
                 player.UpgradePlayer(-1);
-                GameManager.OnGameEnded?.Invoke(false);
+                if (player.CurrentLevel < 1)
+                {
+                    GameManager.OnGameEnded?.Invoke(false);
+                }
             }
         }
     }
@@ -58,7 +71,8 @@ public class ChoiceBoardHolder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerFootball player = other.GetComponent<PlayerFootball>();
+        PlayerController player = other.GetComponent<PlayerController>();
+        if (player == null) player = other.GetComponentInParent<PlayerController>();
         if (player != null)
         {
             PickBoard(player, other.transform.position);

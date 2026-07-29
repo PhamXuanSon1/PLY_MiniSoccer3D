@@ -8,8 +8,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Điểm đích mà nhân vật sẽ di chuyển tới")]
     [SerializeField] private Transform endPos;
 
-    [Tooltip("Tổng thời gian di chuyển từ vị trí bắt đầu tới điểm đích (giây)")]
-    [SerializeField] private float totalMoveTime = 10f;
+    private float totalMoveTime => GameManager.Instance != null ? GameManager.Instance.TotalMoveTime : 10f;
 
     [Tooltip("Thời gian chuyển đổi giữa các làn đường")]
     [SerializeField] private float switchTrackTime = 0.5f;
@@ -25,11 +24,40 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool startRight = true;
 
     [Header("References")]
-    [Tooltip("Tham chiếu tới script PlayerFootball điều khiển nhân vật")]
-    [SerializeField] private PlayerFootball player;
+    [Tooltip("Transform điều khiển vị trí/hình ảnh nhân vật")]
+    [SerializeField] private Transform playerTransform;
+
+    [Tooltip("Script quản lý hình ảnh/level của cầu thủ")]
+    [SerializeField] private PlayerVisual playerVisual;
 
     [Tooltip("Particle System hiển thị hiệu ứng khi chiến thắng")]
     [SerializeField] private ParticleSystem winPar;
+
+    private int currentLevel = 1;
+    public int CurrentLevel => currentLevel;
+
+    public void UpgradePlayer(int upgradePointsChanged)
+    {
+        if (currentLevel + upgradePointsChanged >= 4)
+        {
+            Ply_SoundManager.Instance?.PlayFx(FxType.MaxLevel);
+        }
+        else
+        {
+            Ply_SoundManager.Instance?.PlayFx((upgradePointsChanged > 0) ? FxType.RightChoice : FxType.WrongChoice);
+        }
+
+        if (GameManager.Instance != null && currentLevel + upgradePointsChanged > GameManager.Instance.MaxLevel)
+            return;
+
+        currentLevel += upgradePointsChanged;
+        currentLevel = Mathf.Clamp(currentLevel, 1, 4);
+
+        if (playerVisual != null)
+        {
+            playerVisual.UpdateVisualBylevel(currentLevel);
+        }
+    }
 
     [Header("Drag & Curve Settings")]
     [Tooltip("Tốc độ làm mượt vị trí khi người chơi kéo vuốt")]
@@ -50,6 +78,12 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        if (playerVisual == null && playerTransform != null)
+        {
+            playerVisual = playerTransform.GetComponent<PlayerVisual>();
+            if (playerVisual == null) playerVisual = playerTransform.GetComponentInChildren<PlayerVisual>();
+        }
+
         SwitchTrack(startRight);
         if (InputManager.Instance != null)
         {
@@ -61,22 +95,22 @@ public class PlayerController : MonoBehaviour
         GameManager.OnGameEnded += OnGameEnd;
         mainCam = GameManager.MainCamera != null ? GameManager.MainCamera : Camera.main;
 
-        if (player != null)
+        if (playerTransform != null)
         {
-            player.transform.rotation = Quaternion.Euler(0, 180f, 0);
+            playerTransform.rotation = Quaternion.Euler(0, 180f, 0);
         }
     }
 
     private void OnGameEnd(bool winState)
     {
-        if (player != null)
+        if (playerTransform != null)
         {
-            player.transform.rotation = Quaternion.Euler(0, 180f, 0);
+            playerTransform.rotation = Quaternion.Euler(0, 180f, 0);
         }
 
         if (winState && winPar != null) winPar.Play();
 
-        AudioManager.PlaySound(winState ? SoundID.PlayerWin : SoundID.PlayerLoose);
+        Ply_SoundManager.Instance?.PlayFx(winState ? FxType.PlayerWin : FxType.PlayerLoose);
         moveSeq?.Kill();
         DOVirtual.DelayedCall(4, () => gameObject.SetActive(false));
 
@@ -101,9 +135,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnGameStarted()
     {
-        if (player != null)
+        if (playerTransform != null)
         {
-            player.transform.rotation = Quaternion.Euler(0, 0, 0);
+            playerTransform.rotation = Quaternion.Euler(0, 0, 0);
         }
         StartMoving();
         GameManager.OnGameStart -= OnGameStarted;
@@ -137,16 +171,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnDrag(Vector2 screenPosition)
     {
-        if (player == null || mainCam == null) return;
+        if (playerTransform == null || mainCam == null) return;
 
-        float screenZ = mainCam.WorldToScreenPoint(player.transform.position).z;
+        float screenZ = mainCam.WorldToScreenPoint(playerTransform.position).z;
         Vector3 screenPoint = new Vector3(screenPosition.x, screenPosition.y, screenZ);
         Vector3 worldPoint = mainCam.ScreenToWorldPoint(screenPoint);
 
-        Transform parent = player.transform.parent;
+        Transform parent = playerTransform.parent;
         Vector3 localPoint = parent != null
             ? parent.InverseTransformPoint(worldPoint)
-            : player.transform.localPosition;
+            : playerTransform.localPosition;
 
         float leftX = trackLeftTransform != null ? trackLeftTransform.localPosition.x : -2f;
         float rightX = trackRightTransform != null ? trackRightTransform.localPosition.x : 2f;
@@ -158,11 +192,11 @@ public class PlayerController : MonoBehaviour
 
         currentLocalPos = new Vector3(
             targetX,
-            player.transform.localPosition.y,
-            player.transform.localPosition.z);
+            playerTransform.localPosition.y,
+            playerTransform.localPosition.z);
 
-        player.transform.localPosition = Vector3.Lerp(
-            player.transform.localPosition,
+        playerTransform.localPosition = Vector3.Lerp(
+            playerTransform.localPosition,
             currentLocalPos,
             Time.deltaTime * dragSmoothSpeed);
 
@@ -175,19 +209,21 @@ public class PlayerController : MonoBehaviour
 
     private void OnDragEnd()
     {
-        if (player != null)
+        if (playerTransform != null)
         {
-            currentLocalPos = player.transform.localPosition;
+            currentLocalPos = playerTransform.localPosition;
         }
     }
 
     private void SwitchTrack(bool rightTrack)
     {
-        if (player == null) return;
+        if (playerTransform == null) return;
         currentLocalPos = rightTrack
             ? (trackRightTransform != null ? trackRightTransform.localPosition : Vector3.right)
             : (trackLeftTransform != null ? trackLeftTransform.localPosition : Vector3.left);
-        player.MoveTo(currentLocalPos, switchTrackTime);
+        
+        playerTransform.DOKill();
+        playerTransform.DOLocalMove(currentLocalPos, switchTrackTime);
         OnRight = rightTrack;
     }
 

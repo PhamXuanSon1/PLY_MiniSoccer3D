@@ -51,7 +51,7 @@ public class GameEndUI : MonoBehaviour
         seq.AppendInterval(endDisplayDelayTime);
         seq.AppendCallback(() =>
         {
-            if (winState) AudioManager.PlayMusic(MusicID.Gameplay);
+            if (winState) Ply_SoundManager.Instance?.UpdateBGMState();
             if (winCanvasHolder != null) winCanvasHolder.SetActive(winState);
             if (loseCanvasHolder != null) loseCanvasHolder.SetActive(!winState);
             if (toStoreButton != null) toStoreButton.gameObject.SetActive(true);
