@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class ChoiceBoardHolder : MonoBehaviour
 {
@@ -32,7 +33,11 @@ public class ChoiceBoardHolder : MonoBehaviour
         if (tempChoiceBoard != null)
         {
             tempChoiceBoard.PlayChooseSequence();
+
+            Sprite chosenSprite = tempChoiceBoard.VisualRender != null ? tempChoiceBoard.VisualRender.sprite : null;
+            UIManager.OnCharacterChoose?.Invoke(tempChoiceBoard.ChoiceType, chosenSprite);
             UIManager.OnCharacterPick?.Invoke(tempChoiceBoard.ChoiceType);
+
             if (tempChoiceBoard.ChoiceType == EChoiceType.IncreaseGeneric)
             {
                 player.UpgradePlayer(1);
@@ -45,6 +50,9 @@ public class ChoiceBoardHolder : MonoBehaviour
                     GameManager.OnGameEnded?.Invoke(false);
                 }
             }
+
+            // Ẩn toàn bộ cụm ChoiceBoardHolder sau khi hiệu ứng 0.5s hoàn tất
+            DOVirtual.DelayedCall(0.6f, () => gameObject.SetActive(false));
         }
     }
 

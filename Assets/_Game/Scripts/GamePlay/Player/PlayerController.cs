@@ -95,18 +95,12 @@ public class PlayerController : MonoBehaviour
         GameManager.OnGameEnded += OnGameEnd;
         mainCam = GameManager.MainCamera != null ? GameManager.MainCamera : Camera.main;
 
-        if (playerTransform != null)
-        {
-            playerTransform.rotation = Quaternion.Euler(0, 180f, 0);
-        }
+
     }
 
     private void OnGameEnd(bool winState)
     {
-        if (playerTransform != null)
-        {
-            playerTransform.rotation = Quaternion.Euler(0, 180f, 0);
-        }
+
 
         if (winState && winPar != null) winPar.Play();
 

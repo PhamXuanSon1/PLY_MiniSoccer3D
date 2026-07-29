@@ -13,6 +13,11 @@ public class UICheckBox : MonoBehaviour
 
     private void Awake()
     {
+        ResetIcon();
+    }
+
+    public void ResetIcon()
+    {
         if (startingSprite != null)
         {
             ChangeIcon(startingSprite);
@@ -21,7 +26,7 @@ public class UICheckBox : MonoBehaviour
 
     public void ChangeIcon(Sprite sprite)
     {
-        if (iconImg != null)
+        if (iconImg != null && sprite != null)
         {
             iconImg.sprite = sprite;
         }

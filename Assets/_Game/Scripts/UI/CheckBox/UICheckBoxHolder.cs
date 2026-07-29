@@ -9,6 +9,15 @@ public class UICheckBoxHolder : MonoBehaviour
 
     private void Start()
     {
+        choiceNum = 0;
+        if (uICheckBoxes != null)
+        {
+            foreach (var checkBox in uICheckBoxes)
+            {
+                if (checkBox != null) checkBox.ResetIcon();
+            }
+        }
+
         UIManager.OnCharacterChoose += OnCharacterChoose;
         GameManager.OnGameEnded += OnGameEnded;
     }

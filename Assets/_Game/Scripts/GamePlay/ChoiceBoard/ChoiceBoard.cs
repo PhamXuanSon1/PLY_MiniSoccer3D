@@ -46,9 +46,16 @@ public class ChoiceBoard : MonoBehaviour
         choosenSeq?.Kill();
         choosenSeq = DOTween.Sequence();
 
-        choosenSeq.Append(transform.DOLocalMoveZ(5, 0.5f));
-        if (spriteRenderer != null) choosenSeq.Join(spriteRenderer.DOFade(0, 0.6f));
-        if (borderRenderer != null) choosenSeq.Join(borderRenderer.DOFade(0, 0.6f));
+        float targetZ = transform.localPosition.z + 5f;
+        choosenSeq.Append(transform.DOLocalMoveZ(targetZ, 0.5f));
+
+        if (spriteRenderer != null) choosenSeq.Join(spriteRenderer.DOFade(0f, 0.5f));
+        if (borderRenderer != null) choosenSeq.Join(borderRenderer.DOFade(0f, 0.5f));
+
+        choosenSeq.OnComplete(() =>
+        {
+            gameObject.SetActive(false);
+        });
     }
 }
 
