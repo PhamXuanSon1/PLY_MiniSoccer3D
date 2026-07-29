@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 863e8f321a459b6449dc2fba49494503
+guid: e43f549f7baa3ef408515a12a0bbaa00
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,20 +37,20 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,100 +108,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: ProgressBars_FillWhite
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 300
-        width: 1000
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d389c5a9ffdee7b43bee1ca8c4b197f8
-      internalID: 518197557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ProgressBars_FilledTextured1
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 210
-        width: 1000
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a68b4a9789298f489fb1253f59db436
-      internalID: 206915239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ProgressBars_OuterLineTextured
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 107
-        width: 1014
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e56319f3bdf65b64dbacb90ab88bc0fd
-      internalID: 2120421375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ProgressBars_OuterLinesGeneric
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 9
-        width: 1014
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca54a6f8757354348b3d6275b9f9ddf1
-      internalID: 402973680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 620d2ea706ad61b41ac5ff8f5fbcfe49
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -210,11 +122,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ProgressBars_FillWhite: 518197557
-      ProgressBars_FilledTextured1: 206915239
-      ProgressBars_OuterLineTextured: 2120421375
-      ProgressBars_OuterLinesGeneric: 402973680
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

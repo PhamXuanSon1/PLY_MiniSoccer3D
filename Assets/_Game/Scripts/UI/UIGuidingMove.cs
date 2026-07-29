@@ -20,6 +20,9 @@ public class UIGuidingMove : MonoBehaviour
     [Tooltip("Kiểu đường cong di chuyển Ease của DOTween")]
     [SerializeField] private Ease ease = Ease.Linear;
 
+    [Tooltip("Tự động dịch chuyển về vị trí bắt đầu (Start Position) sau khi di chuyển xong tới End Position")]
+    [SerializeField] private bool resetToStartOnComplete = false;
+
     [Header("Looping")]
     [Tooltip("Bật/Tắt chế độ lặp lại")]
     [SerializeField] private bool loop = true;
@@ -31,6 +34,7 @@ public class UIGuidingMove : MonoBehaviour
     [SerializeField] private LoopType loopType = LoopType.Yoyo;
 
     private Tween moveTween;
+    private Sequence moveSequence;
 
     private void Awake()
     {
@@ -47,7 +51,13 @@ public class UIGuidingMove : MonoBehaviour
 
     private void OnDisable()
     {
+        KillTween();
+    }
+
+    private void KillTween()
+    {
         moveTween?.Kill();
+        moveSequence?.Kill();
     }
 
     public void ResetSequence(Vector2 startPos, Vector2 endPos)
@@ -61,15 +71,35 @@ public class UIGuidingMove : MonoBehaviour
     {
         if (target == null) return;
 
+        KillTween();
         target.anchoredPosition = startPosition;
-        moveTween?.Kill();
 
-        moveTween = target.DOAnchorPos(endPosition, duration)
-            .SetEase(ease);
-
-        if (loop)
+        if (resetToStartOnComplete)
         {
-            moveTween.SetLoops(loopCount, loopType);
+            moveSequence = DOTween.Sequence();
+            moveSequence.Append(target.DOAnchorPos(endPosition, duration).SetEase(ease));
+            moveSequence.AppendCallback(() =>
+            {
+                if (target != null)
+                {
+                    target.anchoredPosition = startPosition;
+                }
+            });
+
+            if (loop)
+            {
+                moveSequence.SetLoops(loopCount, LoopType.Restart);
+            }
+        }
+        else
+        {
+            moveTween = target.DOAnchorPos(endPosition, duration)
+                .SetEase(ease);
+
+            if (loop)
+            {
+                moveTween.SetLoops(loopCount, loopType);
+            }
         }
     }
 }
