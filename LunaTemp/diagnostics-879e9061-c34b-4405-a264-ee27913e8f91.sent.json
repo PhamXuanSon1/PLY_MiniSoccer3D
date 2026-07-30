@@ -1,76 +1,24 @@
 {
-  "BuildID": "1ad9527f-3533-4eb1-acac-87e3bee43f0b",
-  "Command": "project:build",
+  "BuildID": "879e9061-c34b-4405-a264-ee27913e8f91",
+  "Command": "project:deploy",
   "ProjectID": "605a7f485ee7a504abb4a2ddde992494",
-  "ProjectStateHash": "368ffb0279626a36caa12b212f8d1187f0db6d2de4feffdafc04afc3eada92b5",
+  "ProjectStateHash": "86395fb1f4718483f0801e68c1d0f00631631f496f6b834ad34a6c2d1b448f75",
   "StageCompletedAt": 3,
   "EarliestFatalError": 0,
-  "StartTime": 1785319254749,
-  "EndTime": 1785319281501,
+  "StartTime": 1785320276836,
+  "EndTime": 1785320302901,
   "PlaygroundUserID": 33919,
   "OperatingSystem": "win32",
   "UnityPackageID": null,
-  "TargetPlatform": "develop",
+  "TargetPlatform": "playground",
   "UnityVersion": "6000.0.38f1",
   "LunaVersion": "7.1.0",
-  "LogCount": 10,
+  "LogCount": 9,
   "Logs": [
     {
-      "LogID": "0ae611bf-0ca3-48e9-b79a-e4d01dcbdde5",
-      "Order": 7,
-      "Timestamp": 1785319281735,
-      "Stage": 3,
-      "ErrorType": 1,
-      "ErrorCode": "LP3006",
-      "Description": "You are not using the Luna API: Playable.InstallFullGame",
-      "Details": [
-        "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
-      ],
-      "DescriptionValues": [
-        "Playable",
-        "InstallFullGame"
-      ],
-      "DetailsValues": [
-        "Playable",
-        "InstallFullGame"
-      ],
-      "LogCount": 1,
-      "LinePosition": null,
-      "FilePath": "",
-      "ClassName": "",
-      "MemberName": "",
-      "Severity": 0
-    },
-    {
-      "LogID": "4d0b8716-c1fe-4d86-baf4-2fed7be3249e",
-      "Order": 7,
-      "Timestamp": 1785319281735,
-      "Stage": 3,
-      "ErrorType": 1,
-      "ErrorCode": "LP3015",
-      "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
-      "Details": [
-        "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
-      ],
-      "DescriptionValues": [
-        "LifeCycle",
-        "GameEnded"
-      ],
-      "DetailsValues": [
-        "LifeCycle",
-        "GameEnded"
-      ],
-      "LogCount": 1,
-      "LinePosition": null,
-      "FilePath": "",
-      "ClassName": "",
-      "MemberName": "",
-      "Severity": 0
-    },
-    {
-      "LogID": "63f84c89-5a4c-4e68-821b-5c36932c3884",
-      "Order": 7,
-      "Timestamp": 1785319281736,
+      "LogID": "2070a66f-98ff-4576-af0b-15e55fd9fbe5",
+      "Order": 8,
+      "Timestamp": 1785320303180,
       "Stage": 3,
       "ErrorType": 3,
       "ErrorCode": "LP3007",
@@ -92,9 +40,9 @@
       "Severity": 0
     },
     {
-      "LogID": "d7121ba8-4f78-475f-8141-2a2b4e9ac87d",
-      "Order": 7,
-      "Timestamp": 1785319281736,
+      "LogID": "2fc32353-1d9e-4e7f-8e2a-9b06e1d23ebe",
+      "Order": 8,
+      "Timestamp": 1785320303181,
       "Stage": 3,
       "ErrorType": 3,
       "ErrorCode": "LP3011",
@@ -112,9 +60,9 @@
       "Severity": 0
     },
     {
-      "LogID": "2368fc16-3c1c-4f01-901f-f618a1418fad",
+      "LogID": "b2584330-e4a5-49aa-865a-260a1a36b727",
       "Order": 0,
-      "Timestamp": 1785319259384,
+      "Timestamp": 1785320281119,
       "Stage": 1,
       "ErrorType": 2,
       "ErrorCode": "LP1014",
@@ -132,9 +80,9 @@
       "Severity": 0
     },
     {
-      "LogID": "d0be8d64-150d-48a6-b395-53240150a1ff",
+      "LogID": "a8eee091-b262-401f-bb30-8af94528d3ea",
       "Order": 1,
-      "Timestamp": 1785319259384,
+      "Timestamp": 1785320281119,
       "Stage": 1,
       "ErrorType": 2,
       "ErrorCode": "LP1016",
@@ -158,9 +106,9 @@
       "Severity": 0
     },
     {
-      "LogID": "78f23b5e-1a7e-49d8-9642-bb4a22aa74f2",
+      "LogID": "038ecfe0-014f-418c-8cc5-693344270fcb",
       "Order": 2,
-      "Timestamp": 1785319259395,
+      "Timestamp": 1785320281131,
       "Stage": 1,
       "ErrorType": 0,
       "ErrorCode": "LP1027",
@@ -180,9 +128,31 @@
       "Severity": 0
     },
     {
-      "LogID": "137e823e-d0dd-43e8-b744-3c74b6f379c7",
+      "LogID": "93a39df9-bae2-4e8c-a830-1ece8a4e0a08",
       "Order": 3,
-      "Timestamp": 1785319259395,
+      "Timestamp": 1785320281131,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1015",
+      "Description": "This TMP version is not fully supported",
+      "Details": [
+        "The incorrect Text Mesh Pro for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "ac29d628-7fb2-4e99-b8e7-210b731c22a4",
+      "Order": 4,
+      "Timestamp": 1785320281131,
       "Stage": 1,
       "ErrorType": 0,
       "ErrorCode": "LP1032",
@@ -204,9 +174,9 @@
       "Severity": 0
     },
     {
-      "LogID": "d0750218-0c78-4e99-a67b-17aba73b4676",
-      "Order": 4,
-      "Timestamp": 1785319259395,
+      "LogID": "e2d4976d-a711-426f-abc6-403225e1e358",
+      "Order": 5,
+      "Timestamp": 1785320281131,
       "Stage": 1,
       "ErrorType": 3,
       "ErrorCode": "LP1002",
@@ -227,9 +197,9 @@
       "Severity": 0
     },
     {
-      "LogID": "218a9e75-3bfb-47d4-8115-6ca7459d0b74",
-      "Order": 5,
-      "Timestamp": 1785319259395,
+      "LogID": "799b28e8-1d1b-452a-b8fd-ef7c8cdc7e96",
+      "Order": 6,
+      "Timestamp": 1785320281131,
       "Stage": 1,
       "ErrorType": 2,
       "ErrorCode": "LP1010",

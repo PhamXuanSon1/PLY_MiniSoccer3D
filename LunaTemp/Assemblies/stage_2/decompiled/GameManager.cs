@@ -1,4 +1,5 @@
 using System;
+using Luna.Unity;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -97,7 +98,8 @@ public class GameManager : MonoBehaviour
 
 	public static void GotoStore()
 	{
-		Debug.Log("Redirecting to Store...");
+		LifeCycle.GameEnded();
+		Playable.InstallFullGame();
 	}
 
 	private void OnGameEnd(bool winState)

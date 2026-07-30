@@ -42,6 +42,8 @@ public class ChoiceBoardPlacer : MonoBehaviour
 	[SerializeField]
 	private bool spawnOnStart = true;
 
+	public int SpawnedCount => spawnGenericByNumber ? spawnCount : ((choiceBoardPairData != null && choiceBoardPairData.ChoicePairDatas != null && choiceBoardPairData.ChoicePairDatas.Length != 0) ? choiceBoardPairData.ChoicePairDatas.Length : spawnCount);
+
 	private void Start()
 	{
 		if (spawnOnStart)

@@ -32,6 +32,9 @@ public class ChoiceBoardHolder : MonoBehaviour
         // Tắt Collider ngay khi vừa va chạm để tránh lặp trigger va chạm
         if (holderCollider != null) holderCollider.enabled = false;
 
+        // Cộng tiến độ tiến trình (AddProgress +1)
+        ProgressTrackingManager.Instance?.AddProgress(1);
+
         if (IsLastBoard)
         {
             OnLastBoardPassed?.Invoke(player);

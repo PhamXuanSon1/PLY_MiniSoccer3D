@@ -22,6 +22,8 @@ public class ChoiceBoardPlacer : MonoBehaviour
     [Tooltip("Nếu true: Sinh tự động theo số lượng spawnCount. Nếu false: Sinh theo dữ liệu trong ChoiceBoardPairData")]
     [SerializeField] private bool spawnGenericByNumber = true;
 
+    public int SpawnedCount => spawnGenericByNumber ? spawnCount : (choiceBoardPairData != null && choiceBoardPairData.ChoicePairDatas != null && choiceBoardPairData.ChoicePairDatas.Length > 0 ? choiceBoardPairData.ChoicePairDatas.Length : spawnCount);
+
     [Header("Shuffle Settings")]
     [Tooltip("Tự động tráo đổi ngẫu nhiên thứ tự danh sách các cặp cổng")]
     [SerializeField] private bool shufflePairsOrder = false;

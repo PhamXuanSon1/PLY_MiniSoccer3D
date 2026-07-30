@@ -38,6 +38,7 @@ public class ChoiceBoardHolder : MonoBehaviour
 		{
 			holderCollider.enabled = false;
 		}
+		ProgressTrackingManager.Instance?.AddProgress();
 		if (IsLastBoard)
 		{
 			OnLastBoardPassed?.Invoke(player);

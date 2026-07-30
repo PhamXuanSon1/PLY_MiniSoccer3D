@@ -52,7 +52,7 @@ public class BossController : MonoBehaviour
 
 
     [Header("Timing Settings")]
-    [Tooltip("Thời gian chờ (giây) sau khi đi qua cổng cuối trước khi kích hoạt đấu Boss (ví dụ 1.5s tương ứng đi được nửa đoạn đường còn lại)")]
+    [Tooltip("Thời gian chờ (giây) sau khi đi qua cổng cuối trước khi kích hoạt đấu Boss (Điền >= 0 để đếm ngược sau cổng cuối, điền -1 để nhân vật đi tới End mới kích hoạt)")]
     [SerializeField] private float delayAfterLastBoard = 1.5f;
 
     [Tooltip("Thời gian (giây) hiển thị hiệu ứng mây đối kháng FightingCloud")]
@@ -95,7 +95,6 @@ public class BossController : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             {
-                canClickToStore = false;
                 GameManager.GotoStore();
             }
         }
@@ -111,6 +110,9 @@ public class BossController : MonoBehaviour
     private void OnLastBoardPassed(PlayerController player)
     {
         if (isSequenceStarted) return;
+        // Nếu delayAfterLastBoard < 0 (vd -1), không bật Sequence sớm ở đây mà chờ nhân vật chạy hết tới EndPos (sự kiện OnGameEnded)
+        if (delayAfterLastBoard < 0f) return;
+
         currentPlayer = player;
         bool isWin = GameManager.CheckWinCondition(player != null ? player.CurrentLevel : 1);
         StartBossSequence(isWin);
@@ -131,8 +133,11 @@ public class BossController : MonoBehaviour
         bossSeq = DOTween.Sequence();
         bossSeq.SetUpdate(true); // Đảm bảo hoạt động kể cả khi timescale bị thay đổi
 
-        // 1. Chờ delayAfterLastBoard (ví dụ 1.5s - đi nửa đoạn còn lại đến Boss)
-        bossSeq.AppendInterval(delayAfterLastBoard);
+        // 1. Chờ delayAfterLastBoard (chỉ áp dụng nếu delayAfterLastBoard > 0)
+        if (delayAfterLastBoard > 0f)
+        {
+            bossSeq.AppendInterval(delayAfterLastBoard);
+        }
 
         // 2. Tắt Boss & Character Visual, Dừng Player, Bật FightingCloud & Phát Sound từ SoundManager
         bossSeq.AppendCallback(() =>
@@ -203,6 +208,7 @@ public class BossController : MonoBehaviour
             }
 
             canClickToStore = true;
+            GameManager.GotoStore();
         });
     }
 }

@@ -130,7 +130,6 @@ public class BossController : MonoBehaviour
 		}
 		if (canClickToStore && (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)))
 		{
-			canClickToStore = false;
 			GameManager.GotoStore();
 		}
 	}
@@ -248,6 +247,7 @@ public class BossController : MonoBehaviour
 				losePanel.SetActive(true);
 			}
 			canClickToStore = true;
+			GameManager.GotoStore();
 		});
 	}
 }

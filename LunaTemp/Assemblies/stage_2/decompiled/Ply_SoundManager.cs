@@ -26,6 +26,28 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
 
 	public static Ply_SoundManager Instance => Ply_Singleton<Ply_SoundManager>.Ins;
 
+	public override void Awake()
+	{
+		base.Awake();
+		EnsureAudioListener();
+	}
+
+	private void EnsureAudioListener()
+	{
+		if (Object.FindObjectOfType<AudioListener>() == null)
+		{
+			Camera mainCam = Camera.main;
+			if (mainCam != null)
+			{
+				mainCam.gameObject.AddComponent<AudioListener>();
+			}
+			else
+			{
+				base.gameObject.AddComponent<AudioListener>();
+			}
+		}
+	}
+
 	private void Start()
 	{
 		_lastEnableSound = enableSound;

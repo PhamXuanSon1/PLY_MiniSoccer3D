@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6638047212805048447}
   borderRenderer: {fileID: 930337892635889737}
-  choiceBoardType: 0
+  choiceBoardType: 1
 --- !u!1 &3616057616893886971
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 4757160513010721278}
   - component: {fileID: 1725720873058622131}
   m_Layer: 0
-  m_Name: CyanBoard
+  m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 4928539891461913130}
   - component: {fileID: 930337892635889737}
   m_Layer: 0
-  m_Name: CyanBoard
+  m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -74,6 +74,28 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
     public float bgmVolume = 0.3f;
     private float _lastBgmVolume;
 
+    public override void Awake()
+    {
+        base.Awake();
+        EnsureAudioListener();
+    }
+
+    private void EnsureAudioListener()
+    {
+        if (FindObjectOfType<AudioListener>() == null)
+        {
+            Camera mainCam = Camera.main;
+            if (mainCam != null)
+            {
+                mainCam.gameObject.AddComponent<AudioListener>();
+            }
+            else
+            {
+                gameObject.AddComponent<AudioListener>();
+            }
+        }
+    }
+
     void Start()
     {
         _lastEnableSound = enableSound;
