@@ -35,6 +35,8 @@ public class ProgressTrackingManager : MonoBehaviour
 
 	private void Awake()
 	{
+		AppLovinAnalytics.Track(ALEvent.LOADING);
+		Debug.Log("Track: Loading");
 		if (Instance == null)
 		{
 			Instance = this;
@@ -47,11 +49,16 @@ public class ProgressTrackingManager : MonoBehaviour
 
 	private void Start()
 	{
+		AppLovinAnalytics.Track(ALEvent.LOADED);
+		AppLovinAnalytics.Track(ALEvent.DISPLAYED);
+		Debug.Log("Track: Displayed");
 		int dynamicMaxScore = GetDynamicMaxScore();
 		if (dynamicMaxScore > 0)
 		{
 			maxScore = dynamicMaxScore;
 		}
+		AppLovinAnalytics.Track(ALEvent.CHALLENGE_STARTED);
+		Debug.Log("Track: Challenge Started");
 		GameManager.OnGameEnded = (Action<bool>)Delegate.Combine(GameManager.OnGameEnded, new Action<bool>(OnGameEnded));
 	}
 
@@ -75,8 +82,6 @@ public class ProgressTrackingManager : MonoBehaviour
 		}
 		if (!isStarted && currentScore > 0)
 		{
-			AppLovinAnalytics.Track(ALEvent.CHALLENGE_STARTED);
-			Debug.Log("Track: Challenge Started");
 			isStarted = true;
 		}
 		if (maxScore > 0)
@@ -114,6 +119,7 @@ public class ProgressTrackingManager : MonoBehaviour
 		if (winState)
 		{
 			AppLovinAnalytics.Track(ALEvent.CHALLENGE_SOLVED);
+			Debug.Log("Track: Challenge Solved");
 		}
 		else
 		{

@@ -129,7 +129,6 @@ public class BossController : MonoBehaviour
 		}
 		if (canClickToStore && (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)))
 		{
-			canClickToStore = false;
 			GameManager.GotoStore();
 		}
 	}

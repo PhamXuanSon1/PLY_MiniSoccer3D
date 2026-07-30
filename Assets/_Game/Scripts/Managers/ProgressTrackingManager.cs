@@ -43,7 +43,6 @@ public class ProgressTrackingManager : MonoBehaviour
     private void Start()
     {
         AppLovinAnalytics.Track(ALEvent.LOADED);
-        Debug.Log("Track: Loaded");
 
         AppLovinAnalytics.Track(ALEvent.DISPLAYED);
         Debug.Log("Track: Displayed");

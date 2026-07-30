@@ -87,6 +87,9 @@ public class GameManager : MonoBehaviour
 
     public static void GotoStore()
     {
+        AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
+        Debug.Log("Track: CTA Clicked");
+
         LifeCycle.GameEnded();
         Playable.InstallFullGame();
 
