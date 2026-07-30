@@ -10,6 +10,13 @@ public class ChoiceBoard : MonoBehaviour
     [Tooltip("Renderer hiển thị khung viền của bảng lựa chọn")]
     [SerializeField] private SpriteRenderer borderRenderer;
 
+    [Header("Border Sprites (Default)")]
+    [Tooltip("Sprite khung viền khi loại lựa chọn là Increase Generic")]
+    [SerializeField] private Sprite increaseBorderSprite;
+
+    [Tooltip("Sprite khung viền khi loại lựa chọn là Decrease Generic")]
+    [SerializeField] private Sprite decreaseBorderSprite;
+
     [Header("Choice Settings")]
     [Tooltip("Loại lựa chọn của bảng (Tăng/Giảm chỉ số...)")]
     [SerializeField] private EChoiceType choiceBoardType = EChoiceType.IncreaseGeneric;
@@ -22,6 +29,26 @@ public class ChoiceBoard : MonoBehaviour
     private void Awake()
     {
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
+        UpdateBorderVisual();
+    }
+
+    private void OnValidate()
+    {
+        UpdateBorderVisual();
+    }
+
+    public void UpdateBorderVisual()
+    {
+        if (borderRenderer == null) return;
+
+        if (choiceBoardType == EChoiceType.IncreaseGeneric)
+        {
+            if (increaseBorderSprite != null) borderRenderer.sprite = increaseBorderSprite;
+        }
+        else if (choiceBoardType == EChoiceType.DecreaseGeneric)
+        {
+            if (decreaseBorderSprite != null) borderRenderer.sprite = decreaseBorderSprite;
+        }
     }
 
     public void AssignVisualData(Sprite newSprite)
@@ -32,6 +59,7 @@ public class ChoiceBoard : MonoBehaviour
     public void SetChoiceBoardType(EChoiceType choiceType)
     {
         choiceBoardType = choiceType;
+        UpdateBorderVisual();
     }
 
     public void AssignData(ChoiceData choiceData)
@@ -39,6 +67,15 @@ public class ChoiceBoard : MonoBehaviour
         if (choiceData == null) return;
         if (spriteRenderer != null) spriteRenderer.sprite = choiceData.VisualSprite;
         choiceBoardType = choiceData.ChoiceType;
+
+        if (choiceData.BorderSprite != null)
+        {
+            if (borderRenderer != null) borderRenderer.sprite = choiceData.BorderSprite;
+        }
+        else
+        {
+            UpdateBorderVisual();
+        }
     }
 
     public void PlayChooseSequence()
@@ -65,6 +102,9 @@ public class ChoiceData
     [Header("Choice Data")]
     [Tooltip("Hình ảnh đại diện cho lựa chọn này")]
     public Sprite VisualSprite;
+
+    [Tooltip("Hình ảnh khung viền tùy chọn (Nếu để trống sẽ dùng khung mặc định theo Increase/Decrease)")]
+    public Sprite BorderSprite;
 
     [Tooltip("Loại lựa chọn tương ứng")]
     public EChoiceType ChoiceType;

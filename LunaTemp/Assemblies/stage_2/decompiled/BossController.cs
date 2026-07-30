@@ -66,7 +66,7 @@ public class BossController : MonoBehaviour
 	private FxType losePanelFx = FxType.PlayerLoose;
 
 	[Header("Timing Settings")]
-	[Tooltip("Thời gian chờ (giây) sau khi đi qua cổng cuối trước khi kích hoạt đấu Boss (ví dụ 1.5s tương ứng đi được nửa đoạn đường còn lại)")]
+	[Tooltip("Thời gian chờ (giây) sau khi đi qua cổng cuối trước khi kích hoạt đấu Boss (Điền >= 0 để đếm ngược sau cổng cuối, điền -1 để nhân vật đi tới End mới kích hoạt)")]
 	[SerializeField]
 	private float delayAfterLastBoard = 1.5f;
 
@@ -78,6 +78,11 @@ public class BossController : MonoBehaviour
 	[SerializeField]
 	private float showResultDuration = 2f;
 
+	[Header("Player Reference")]
+	[Tooltip("Tham chiếu tới PlayerController trong Scene")]
+	[SerializeField]
+	private PlayerController currentPlayer;
+
 	[Header("Runtime Status")]
 	[Tooltip("Cấp độ hiện tại của Cầu thủ (Tự động cập nhật để tiện theo dõi)")]
 	[SerializeField]
@@ -88,8 +93,6 @@ public class BossController : MonoBehaviour
 	private bool isSequenceStarted;
 
 	private bool canClickToStore;
-
-	private PlayerController currentPlayer;
 
 	private void Start()
 	{
@@ -120,16 +123,13 @@ public class BossController : MonoBehaviour
 
 	private void Update()
 	{
-		if (currentPlayer == null)
-		{
-			currentPlayer = UnityEngine.Object.FindObjectOfType<PlayerController>();
-		}
 		if (currentPlayer != null)
 		{
 			currentPlayerLevel = currentPlayer.CurrentLevel;
 		}
 		if (canClickToStore && (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)))
 		{
+			canClickToStore = false;
 			GameManager.GotoStore();
 		}
 	}
@@ -143,10 +143,13 @@ public class BossController : MonoBehaviour
 
 	private void OnLastBoardPassed(PlayerController player)
 	{
-		if (!isSequenceStarted)
+		if (!isSequenceStarted && !(delayAfterLastBoard < 0f))
 		{
-			currentPlayer = player;
-			bool isWin = GameManager.CheckWinCondition((!(player != null)) ? 1 : player.CurrentLevel);
+			if (player != null)
+			{
+				currentPlayer = player;
+			}
+			bool isWin = GameManager.CheckWinCondition((!(currentPlayer != null)) ? 1 : currentPlayer.CurrentLevel);
 			StartBossSequence(isWin);
 		}
 	}
@@ -169,13 +172,12 @@ public class BossController : MonoBehaviour
 		bossSeq?.Kill();
 		bossSeq = DOTween.Sequence();
 		bossSeq.SetUpdate(true);
-		bossSeq.AppendInterval(delayAfterLastBoard);
+		if (delayAfterLastBoard > 0f)
+		{
+			bossSeq.AppendInterval(delayAfterLastBoard);
+		}
 		bossSeq.AppendCallback(delegate
 		{
-			if (currentPlayer == null)
-			{
-				currentPlayer = UnityEngine.Object.FindObjectOfType<PlayerController>();
-			}
 			if (currentPlayer != null)
 			{
 				currentPlayer.StopMoving();
@@ -246,8 +248,10 @@ public class BossController : MonoBehaviour
 			{
 				losePanel.SetActive(true);
 			}
-			canClickToStore = true;
-			GameManager.GotoStore();
+			DOVirtual.DelayedCall(0.2f, delegate
+			{
+				canClickToStore = true;
+			});
 		});
 	}
 }

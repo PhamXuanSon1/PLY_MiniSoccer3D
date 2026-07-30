@@ -61,6 +61,10 @@ public class BossController : MonoBehaviour
     [Tooltip("Thời gian (giây) hiển thị Result Object trước khi bật màn hình Win/Loss UI")]
     [SerializeField] private float showResultDuration = 2f;
 
+    [Header("Player Reference")]
+    [Tooltip("Tham chiếu tới PlayerController trong Scene")]
+    [SerializeField] private PlayerController currentPlayer;
+
     [Header("Runtime Status")]
     [Tooltip("Cấp độ hiện tại của Cầu thủ (Tự động cập nhật để tiện theo dõi)")]
     [SerializeField] private int currentPlayerLevel = 1;
@@ -68,7 +72,6 @@ public class BossController : MonoBehaviour
     private Sequence bossSeq;
     private bool isSequenceStarted;
     private bool canClickToStore;
-    private PlayerController currentPlayer;
 
     private void Start()
     {
@@ -85,7 +88,6 @@ public class BossController : MonoBehaviour
 
     private void Update()
     {
-        if (currentPlayer == null) currentPlayer = FindObjectOfType<PlayerController>();
         if (currentPlayer != null)
         {
             currentPlayerLevel = currentPlayer.CurrentLevel;
@@ -95,6 +97,7 @@ public class BossController : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             {
+                canClickToStore = false;
                 GameManager.GotoStore();
             }
         }
@@ -113,8 +116,8 @@ public class BossController : MonoBehaviour
         // Nếu delayAfterLastBoard < 0 (vd -1), không bật Sequence sớm ở đây mà chờ nhân vật chạy hết tới EndPos (sự kiện OnGameEnded)
         if (delayAfterLastBoard < 0f) return;
 
-        currentPlayer = player;
-        bool isWin = GameManager.CheckWinCondition(player != null ? player.CurrentLevel : 1);
+        if (player != null) currentPlayer = player;
+        bool isWin = GameManager.CheckWinCondition(currentPlayer != null ? currentPlayer.CurrentLevel : 1);
         StartBossSequence(isWin);
     }
 
@@ -142,7 +145,6 @@ public class BossController : MonoBehaviour
         // 2. Tắt Boss & Character Visual, Dừng Player, Bật FightingCloud & Phát Sound từ SoundManager
         bossSeq.AppendCallback(() =>
         {
-            if (currentPlayer == null) currentPlayer = FindObjectOfType<PlayerController>();
             if (currentPlayer != null)
             {
                 currentPlayer.StopMoving();
@@ -207,8 +209,8 @@ public class BossController : MonoBehaviour
                 if (losePanel != null) losePanel.SetActive(true);
             }
 
-            canClickToStore = true;
-            GameManager.GotoStore();
+            // Cho phép người chơi nhấp chuột/màn hình để tới Store
+            DOVirtual.DelayedCall(0.2f, () => canClickToStore = true);
         });
     }
 }

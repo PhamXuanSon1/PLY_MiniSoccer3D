@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     [Tooltip("Cấp độ hiện tại của Cầu thủ trong màn chơi (Tự động cập nhật để theo dõi)")]
     [SerializeField] private int currentPlayerLevel = 1;
 
+    public PlayerController Player;
+
     public int MaxLevel => maxLevel;
     public int WinLevel => winLevel;
     public float TotalMoveTime => totalMoveTime;
@@ -38,10 +40,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        PlayerController player = FindObjectOfType<PlayerController>();
-        if (player != null)
+        if (Player != null)
         {
-            currentPlayerLevel = player.CurrentLevel;
+            currentPlayerLevel = Player.CurrentLevel;
         }
     }
 

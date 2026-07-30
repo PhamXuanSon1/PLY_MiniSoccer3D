@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
     {
         if (winState && winPar != null) winPar.Play();
 
-        Ply_SoundManager.Instance?.PlayFx(winState ? FxType.PlayerWin : FxType.PlayerLoose);
+        // Ply_SoundManager.Instance?.PlayFx(winState ? FxType.PlayerWin : FxType.PlayerLoose);
         StopMoving();
         DOVirtual.DelayedCall(4, () => gameObject.SetActive(false));
     }

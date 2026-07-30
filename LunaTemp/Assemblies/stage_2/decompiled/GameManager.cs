@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
 	[SerializeField]
 	private int currentPlayerLevel = 1;
 
+	public PlayerController Player;
+
 	public static GameManager Instance { get; private set; }
 
 	public static bool isGameEnded { get; private set; }
@@ -48,10 +50,9 @@ public class GameManager : MonoBehaviour
 
 	private void Update()
 	{
-		PlayerController player = UnityEngine.Object.FindObjectOfType<PlayerController>();
-		if (player != null)
+		if (Player != null)
 		{
-			currentPlayerLevel = player.CurrentLevel;
+			currentPlayerLevel = Player.CurrentLevel;
 		}
 	}
 

@@ -7,6 +7,11 @@ public class ProgressTrackingManager : MonoBehaviour
 	[Tooltip("Tổng số điểm/cổng tối đa (Tự động lấy dựa trên số lượng cổng sinh ra trong ChoiceBoardPlacer)")]
 	public int maxScore = 5;
 
+	[Header("References")]
+	[Tooltip("Tham chiếu tới ChoiceBoardPlacer trong Scene")]
+	[SerializeField]
+	private ChoiceBoardPlacer choiceBoardPlacer;
+
 	[Header("Debug (Chỉ xem khi đang chơi)")]
 	[Tooltip("Số điểm hiện tại đang đạt được")]
 	[SerializeField]
@@ -70,7 +75,7 @@ public class ProgressTrackingManager : MonoBehaviour
 		}
 		if (!isStarted && currentScore > 0)
 		{
-			AppLovinAnalytics.TrackChallengeStarted();
+			AppLovinAnalytics.Track(ALEvent.CHALLENGE_STARTED);
 			Debug.Log("Track: Challenge Started");
 			isStarted = true;
 		}
@@ -79,25 +84,25 @@ public class ProgressTrackingManager : MonoBehaviour
 			int progressPercent = (currentPercent = currentScore * 100 / maxScore);
 			if (progressPercent >= 25 && !pass25)
 			{
-				AppLovinAnalytics.TrackChallengePass25();
+				AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_25);
 				Debug.Log("Track: Challenge Pass 25%");
 				pass25 = true;
 			}
 			if (progressPercent >= 50 && !pass50)
 			{
-				AppLovinAnalytics.TrackChallengePass50();
+				AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_50);
 				Debug.Log("Track: Challenge Pass 50%");
 				pass50 = true;
 			}
 			if (progressPercent >= 75 && !pass75)
 			{
-				AppLovinAnalytics.TrackChallengePass75();
+				AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_75);
 				Debug.Log("Track: Challenge Pass 75%");
 				pass75 = true;
 			}
 			if (progressPercent >= 100 && !pass100)
 			{
-				AppLovinAnalytics.TrackChallengeSolved();
+				AppLovinAnalytics.Track(ALEvent.CHALLENGE_SOLVED);
 				Debug.Log("Track: Challenge Pass 100% (Solved)");
 				pass100 = true;
 			}
@@ -108,20 +113,19 @@ public class ProgressTrackingManager : MonoBehaviour
 	{
 		if (winState)
 		{
-			AppLovinAnalytics.TrackChallengeSolved();
+			AppLovinAnalytics.Track(ALEvent.CHALLENGE_SOLVED);
 		}
 		else
 		{
-			AppLovinAnalytics.TrackChallengeFailed();
+			AppLovinAnalytics.Track(ALEvent.CHALLENGE_FAILED);
 		}
 	}
 
 	private int GetDynamicMaxScore()
 	{
-		ChoiceBoardPlacer placer = UnityEngine.Object.FindObjectOfType<ChoiceBoardPlacer>();
-		if (placer != null)
+		if (choiceBoardPlacer != null)
 		{
-			int count = placer.SpawnedCount;
+			int count = choiceBoardPlacer.SpawnedCount;
 			if (count > 0)
 			{
 				return count;

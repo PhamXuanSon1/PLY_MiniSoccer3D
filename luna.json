@@ -195,8 +195,8 @@
             },
             {
                 "name": "mecanim-wasm",
-                "excluded": true,
-                "forceIncluded": false
+                "excluded": false,
+                "forceIncluded": true
             }
         ],
         "disableRuntimeAnalysisForCode": true,
@@ -1494,18 +1494,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEditor.Animations.AnimatorControllerLayer",
-                "excluded": true
-            },
-            {
-                "name": "UnityEditor.Animations.AnimatorState",
-                "excluded": true
-            },
-            {
-                "name": "UnityEditor.Animations.AnimatorStateMachine",
-                "excluded": true
-            },
-            {
                 "name": "UnityEditor.Animations.AnimatorTransitionBase",
                 "excluded": true
             },
@@ -1526,27 +1514,7 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Animator.MotionSet",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.Animator.ParameterState",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.AnimatorClipInfo",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.AnimatorControllerParameter",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.Animators.StateMachine",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.AnimatorStateInfo",
                 "excluded": true
             },
             {
@@ -2042,10 +2010,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.RuntimeAnimatorController",
-                "excluded": true
-            },
-            {
                 "name": "UnityEditor.Animations.AnimatorStateTransition",
                 "excluded": true
             },
@@ -2054,15 +2018,7 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Motion",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.Audio.AudioMixer",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.AnimatorStateInfo.NoStateInfo",
                 "excluded": true
             },
             {
@@ -2222,10 +2178,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEditor.Animations.AnimatorController",
-                "excluded": true
-            },
-            {
                 "name": "UnityEditor.Animations.BlendTree",
                 "excluded": true
             },
@@ -2235,10 +2187,6 @@
             },
             {
                 "name": "UnityEngine.Analytics.Analytics",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.AnimationClip",
                 "excluded": true
             },
             {
@@ -2671,7 +2619,7 @@
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerLayer",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerParameter",
@@ -2679,11 +2627,11 @@
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorState",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransitionBase",
@@ -2695,7 +2643,7 @@
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.UnsupportedAnimatorFeatures",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animations.BlendTreeType",
@@ -3371,7 +3319,7 @@
             },
             {
                 "name": "UnityEditor.Animations.AnimatorLayerBlendingMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEditor.Animations.AnimatorUpdateMode",
@@ -3539,7 +3487,7 @@
             },
             {
                 "name": "UnityEngine.AnimatorUpdateMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.AnisotropicFiltering",
@@ -5951,7 +5899,7 @@
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorController",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorOverrideController",
@@ -7282,14 +7230,6 @@
                 "excluded": true
             },
             {
-                "name": "AppLovinAnalytics",
-                "excluded": true
-            },
-            {
-                "name": "AppLovinAnalyticsExample",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.DOTweenCYInstruction.WaitForCompletion",
                 "excluded": true
             },
@@ -7335,10 +7275,6 @@
             },
             {
                 "name": "GameEndUI",
-                "excluded": true
-            },
-            {
-                "name": "LunaAppLovinAnalyticsTestHelper",
                 "excluded": true
             },
             {
@@ -8668,6 +8604,10 @@
             {
                 "name": "FxType",
                 "excluded": false
+            },
+            {
+                "name": "ALEvent",
+                "excluded": false
             }
         ],
         "unusedMethods": [
@@ -9195,11 +9135,11 @@
                     },
                     {
                         "name": "trunc",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "div",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mod",
@@ -23305,7 +23245,7 @@
                     },
                     {
                         "name": "enabled#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "pixelsPerUnitMultiplier#get",
@@ -29166,6 +29106,14 @@
                     {
                         "name": "PlayChooseSequence",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnValidate",
+                        "excluded": true
+                    },
+                    {
+                        "name": "UpdateBorderVisual",
+                        "excluded": false
                     }
                 ]
             },
@@ -29221,7 +29169,7 @@
                     },
                     {
                         "name": "SpawnedCount#get",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -29674,6 +29622,18 @@
                     {
                         "name": "SetVisualEnable",
                         "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "InitScale",
+                        "excluded": false
                     }
                 ]
             },
@@ -32359,7 +32319,7 @@
                     },
                     {
                         "name": "NoticeNameHash",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isHuman#get",
@@ -32371,11 +32331,11 @@
                     },
                     {
                         "name": "avatar#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "avatar#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "speed#get",
@@ -32387,11 +32347,11 @@
                     },
                     {
                         "name": "animatorController#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "animatorController#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "angularVelocity#get",
@@ -32439,7 +32399,7 @@
                     },
                     {
                         "name": "layerCount#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isInitialized#get",
@@ -32447,7 +32407,7 @@
                     },
                     {
                         "name": "runtimeAnimatorController#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "runtimeAnimatorController#set",
@@ -32599,7 +32559,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTrigger$1",
@@ -32691,15 +32651,15 @@
                     },
                     {
                         "name": "AddTime",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ApplyLayerMixing",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetWeightFor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
@@ -32707,7 +32667,7 @@
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
@@ -32719,15 +32679,15 @@
                     },
                     {
                         "name": "TriggerEvents",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateAnimatorController",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnStateChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnMaskChanged",
@@ -32807,7 +32767,7 @@
                     },
                     {
                         "name": "SyncLayers",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CalculateSyncDuration",
@@ -32815,7 +32775,7 @@
                     },
                     {
                         "name": "SampleMecanim",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CreateWASMSampler",
@@ -34695,15 +34655,15 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Awake",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Start",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDestroy",
@@ -34711,19 +34671,431 @@
                     },
                     {
                         "name": "AddProgress",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateGameProgress",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnGameEnded",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetDynamicMaxScore",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Motion",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SetParameters",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ResetSamplers",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AnimationClip",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "empty#get",
                         "excluded": true
+                    },
+                    {
+                        "name": "frameRate#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "frameRate#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasGenericRootTransform#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasGenericRootTransform#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasMotionCurves#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasMotionCurves#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasMotionFloatCurves#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasMotionFloatCurves#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasRootCurves#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "hasRootCurves#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "humanMotion#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "humanMotion#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "legacy#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "legacy#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddEvent",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetCurve",
+                        "excluded": true
+                    },
+                    {
+                        "name": "AddMemberNotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EnsureQuaternionContinuity",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ClearCurves",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SampleAnimation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PullOrphanEvents",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Sample",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetLastTimingAmongEvents",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEditor.Animations.AnimatorControllerLayer",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "isAdditive#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "iKPass#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "iKPass#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetState",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEditor.Animations.AnimatorState",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEditor.Animations.AnimatorStateMachine",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Resolve",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Animator.MotionSet",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Animator.ParameterState",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AnimatorControllerParameter",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Animators.StateMachine",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetupStateMachine",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SwitchToState",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddTime",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TriggerAnimationEvents",
+                        "excluded": true
+                    },
+                    {
+                        "name": "UpdateStateParameters",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckForTransitionsToPlay",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddTimeToStates",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EvaluateAnyTransition",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EvaluateStateTransition",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CalculateEffectiveState",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CheckForTransitionsToSchedule",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AnimatorStateInfo",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "State#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "shortNameHash#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SpeedValue#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetState",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddTime",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateFromParameters",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ValidateParameters",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsName",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStateEnter",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStateUpdate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnStateExit",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.RuntimeAnimatorController",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetState",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetState$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetMotion",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetBehaviour",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetBehaviours",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SendNotification",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AnimatorStateInfo.NoStateInfo",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "shortNameHash#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsName",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEditor.Animations.AnimatorController",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetState",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetState$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetMotion",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetBehaviour",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetBehaviours",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "AppLovinAnalytics",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Track",
+                        "excluded": false
                     }
                 ]
             }

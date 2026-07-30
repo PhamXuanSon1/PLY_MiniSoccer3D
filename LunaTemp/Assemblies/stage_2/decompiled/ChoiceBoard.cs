@@ -12,6 +12,15 @@ public class ChoiceBoard : MonoBehaviour
 	[SerializeField]
 	private SpriteRenderer borderRenderer;
 
+	[Header("Border Sprites (Default)")]
+	[Tooltip("Sprite khung viền khi loại lựa chọn là Increase Generic")]
+	[SerializeField]
+	private Sprite increaseBorderSprite;
+
+	[Tooltip("Sprite khung viền khi loại lựa chọn là Decrease Generic")]
+	[SerializeField]
+	private Sprite decreaseBorderSprite;
+
 	[Header("Choice Settings")]
 	[Tooltip("Loại lựa chọn của bảng (Tăng/Giảm chỉ số...)")]
 	[SerializeField]
@@ -29,6 +38,31 @@ public class ChoiceBoard : MonoBehaviour
 		{
 			spriteRenderer = GetComponent<SpriteRenderer>();
 		}
+		UpdateBorderVisual();
+	}
+
+	private void OnValidate()
+	{
+		UpdateBorderVisual();
+	}
+
+	public void UpdateBorderVisual()
+	{
+		if (borderRenderer == null)
+		{
+			return;
+		}
+		if (choiceBoardType == EChoiceType.IncreaseGeneric)
+		{
+			if (increaseBorderSprite != null)
+			{
+				borderRenderer.sprite = increaseBorderSprite;
+			}
+		}
+		else if (choiceBoardType == EChoiceType.DecreaseGeneric && decreaseBorderSprite != null)
+		{
+			borderRenderer.sprite = decreaseBorderSprite;
+		}
 	}
 
 	public void AssignVisualData(Sprite newSprite)
@@ -42,17 +76,30 @@ public class ChoiceBoard : MonoBehaviour
 	public void SetChoiceBoardType(EChoiceType choiceType)
 	{
 		choiceBoardType = choiceType;
+		UpdateBorderVisual();
 	}
 
 	public void AssignData(ChoiceData choiceData)
 	{
-		if (choiceData != null)
+		if (choiceData == null)
 		{
-			if (spriteRenderer != null)
+			return;
+		}
+		if (spriteRenderer != null)
+		{
+			spriteRenderer.sprite = choiceData.VisualSprite;
+		}
+		choiceBoardType = choiceData.ChoiceType;
+		if (choiceData.BorderSprite != null)
+		{
+			if (borderRenderer != null)
 			{
-				spriteRenderer.sprite = choiceData.VisualSprite;
+				borderRenderer.sprite = choiceData.BorderSprite;
 			}
-			choiceBoardType = choiceData.ChoiceType;
+		}
+		else
+		{
+			UpdateBorderVisual();
 		}
 	}
 

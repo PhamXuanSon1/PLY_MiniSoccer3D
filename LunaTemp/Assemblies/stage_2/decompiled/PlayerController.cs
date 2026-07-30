@@ -128,7 +128,6 @@ public class PlayerController : MonoBehaviour
 		{
 			winPar.Play();
 		}
-		Ply_SoundManager.Instance?.PlayFx(winState ? FxType.PlayerWin : FxType.PlayerLoose);
 		StopMoving();
 		DOVirtual.DelayedCall(4f, delegate
 		{

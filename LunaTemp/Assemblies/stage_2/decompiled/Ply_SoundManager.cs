@@ -34,9 +34,10 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
 
 	private void EnsureAudioListener()
 	{
-		if (Object.FindObjectOfType<AudioListener>() == null)
+		Camera mainCam = Camera.main;
+		AudioListener listener = ((mainCam != null) ? mainCam.GetComponent<AudioListener>() : GetComponent<AudioListener>());
+		if (listener == null)
 		{
-			Camera mainCam = Camera.main;
 			if (mainCam != null)
 			{
 				mainCam.gameObject.AddComponent<AudioListener>();

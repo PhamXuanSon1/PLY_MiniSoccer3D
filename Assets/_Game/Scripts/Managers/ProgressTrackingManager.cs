@@ -8,6 +8,10 @@ public class ProgressTrackingManager : MonoBehaviour
     [Tooltip("Tổng số điểm/cổng tối đa (Tự động lấy dựa trên số lượng cổng sinh ra trong ChoiceBoardPlacer)")]
     public int maxScore = 5;
 
+    [Header("References")]
+    [Tooltip("Tham chiếu tới ChoiceBoardPlacer trong Scene")]
+    [SerializeField] private ChoiceBoardPlacer choiceBoardPlacer;
+
     [Header("Debug (Chỉ xem khi đang chơi)")]
     [Tooltip("Số điểm hiện tại đang đạt được")]
     [SerializeField] private int currentScore = 0;
@@ -23,6 +27,8 @@ public class ProgressTrackingManager : MonoBehaviour
 
     private void Awake()
     {
+        AppLovinAnalytics.Track(ALEvent.LOADING);
+        Debug.Log("Track: Loading");
         if (Instance == null)
         {
             Instance = this;
@@ -36,12 +42,21 @@ public class ProgressTrackingManager : MonoBehaviour
 
     private void Start()
     {
+        AppLovinAnalytics.Track(ALEvent.LOADED);
+        Debug.Log("Track: Loaded");
+
+        AppLovinAnalytics.Track(ALEvent.DISPLAYED);
+        Debug.Log("Track: Displayed");
+
+
         int dynamicMaxScore = GetDynamicMaxScore();
         if (dynamicMaxScore > 0)
         {
             maxScore = dynamicMaxScore;
         }
 
+        AppLovinAnalytics.Track(ALEvent.CHALLENGE_STARTED);
+        Debug.Log("Track: Challenge Started");
         GameManager.OnGameEnded += OnGameEnded;
     }
 
@@ -75,8 +90,7 @@ public class ProgressTrackingManager : MonoBehaviour
         // Bắn event Started ngay lần đầu tiên user hoàn thành 1 item
         if (!isStarted && currentScore > 0)
         {
-            AppLovinAnalytics.TrackChallengeStarted();
-            Debug.Log("Track: Challenge Started");
+
             isStarted = true;
         }
 
@@ -87,28 +101,28 @@ public class ProgressTrackingManager : MonoBehaviour
 
         if (progressPercent >= 25 && !pass25)
         {
-            AppLovinAnalytics.TrackChallengePass25();
+            AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_25);
             Debug.Log("Track: Challenge Pass 25%");
             pass25 = true;
         }
 
         if (progressPercent >= 50 && !pass50)
         {
-            AppLovinAnalytics.TrackChallengePass50();
+            AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_50);
             Debug.Log("Track: Challenge Pass 50%");
             pass50 = true;
         }
 
         if (progressPercent >= 75 && !pass75)
         {
-            AppLovinAnalytics.TrackChallengePass75();
+            AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_75);
             Debug.Log("Track: Challenge Pass 75%");
             pass75 = true;
         }
 
         if (progressPercent >= 100 && !pass100)
         {
-            AppLovinAnalytics.TrackChallengeSolved();
+            AppLovinAnalytics.Track(ALEvent.CHALLENGE_SOLVED);
             Debug.Log("Track: Challenge Pass 100% (Solved)");
             pass100 = true;
         }
@@ -118,20 +132,20 @@ public class ProgressTrackingManager : MonoBehaviour
     {
         if (winState)
         {
-            AppLovinAnalytics.TrackChallengeSolved();
+            AppLovinAnalytics.Track(ALEvent.CHALLENGE_SOLVED);
+            Debug.Log("Track: Challenge Solved");
         }
         else
         {
-            AppLovinAnalytics.TrackChallengeFailed();
+            AppLovinAnalytics.Track(ALEvent.CHALLENGE_FAILED);
         }
     }
 
     private int GetDynamicMaxScore()
     {
-        ChoiceBoardPlacer placer = FindObjectOfType<ChoiceBoardPlacer>();
-        if (placer != null)
+        if (choiceBoardPlacer != null)
         {
-            int count = placer.SpawnedCount;
+            int count = choiceBoardPlacer.SpawnedCount;
             if (count > 0) return count;
         }
 
