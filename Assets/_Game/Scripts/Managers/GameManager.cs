@@ -90,8 +90,8 @@ public class GameManager : MonoBehaviour
         AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
         Debug.Log("Track: CTA Clicked");
 
-        LifeCycle.GameEnded();
-        Playable.InstallFullGame();
+        // LifeCycle.GameEnded();
+        // Playable.InstallFullGame();
 
     }
 

@@ -1,0 +1,273 @@
+{
+  "BuildID": "a5604e63-3be5-406f-91ef-e54f2bd2882b",
+  "Command": "project:upload",
+  "ProjectID": "605a7f485ee7a504abb4a2ddde992494",
+  "ProjectStateHash": "d53f572c2721b9dfbb8c9f9e6374c09d0c8de604fc4d7e711943fc0f8478d766",
+  "StageCompletedAt": 3,
+  "EarliestFatalError": 0,
+  "StartTime": 1786695764493,
+  "EndTime": 1786695859687,
+  "PlaygroundUserID": 33919,
+  "OperatingSystem": "win32",
+  "UnityPackageID": null,
+  "TargetPlatform": "playground",
+  "UnityVersion": "6000.0.38f1",
+  "LunaVersion": "7.0.0",
+  "LogCount": 11,
+  "Logs": [
+    {
+      "LogID": "7ed54696-e739-4648-85fb-fdb03b8dba9b",
+      "Order": 8,
+      "Timestamp": 1786695860015,
+      "Stage": 3,
+      "ErrorType": 1,
+      "ErrorCode": "LP3006",
+      "Description": "You are not using the Luna API: Playable.InstallFullGame",
+      "Details": [
+        "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+      ],
+      "DescriptionValues": [
+        "Playable",
+        "InstallFullGame"
+      ],
+      "DetailsValues": [
+        "Playable",
+        "InstallFullGame"
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "c70dfc4d-b192-45d5-8473-19f1831fbafc",
+      "Order": 8,
+      "Timestamp": 1786695860017,
+      "Stage": 3,
+      "ErrorType": 1,
+      "ErrorCode": "LP3015",
+      "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
+      "Details": [
+        "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
+      ],
+      "DescriptionValues": [
+        "LifeCycle",
+        "GameEnded"
+      ],
+      "DetailsValues": [
+        "LifeCycle",
+        "GameEnded"
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "ae844a50-dd89-4e24-b01d-d4bc38382e41",
+      "Order": 8,
+      "Timestamp": 1786695860017,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3007",
+      "Description": "You are not using any custom events",
+      "Details": [
+        "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+      ],
+      "DescriptionValues": [
+        ""
+      ],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "291e8040-4f38-4309-805c-795095124e38",
+      "Order": 8,
+      "Timestamp": 1786695860018,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3011",
+      "Description": "You are not using any LunaPlaygroundFields attributes.",
+      "Details": [
+        "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+      ],
+      "DescriptionValues": null,
+      "DetailsValues": null,
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "dab0e901-7827-46b0-9ff9-525d04a9ae16",
+      "Order": 0,
+      "Timestamp": 1786695791537,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1014",
+      "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+      "Details": [
+        "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "42fbaaca-32c3-47c8-bb02-9e17809e6894",
+      "Order": 1,
+      "Timestamp": 1786695791537,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1016",
+      "Description": "Extensive usage of ParticleSystem Component",
+      "Details": [
+        "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 24."
+      ],
+      "DescriptionValues": [
+        "ParticleSystem"
+      ],
+      "DetailsValues": [
+        "ParticleSystem",
+        "10",
+        "24"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "c06a6da5-6344-460a-bf17-4a37dc276f34",
+      "Order": 2,
+      "Timestamp": 1786695791565,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1027",
+      "Description": "This DOTween version is not supported",
+      "Details": [
+        "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "e3403c6f-7ffa-49e6-84cf-9cb6f5df19d7",
+      "Order": 3,
+      "Timestamp": 1786695791566,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1015",
+      "Description": "This TMP version is not fully supported",
+      "Details": [
+        "The incorrect Text Mesh Pro for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "31e43a4a-d68f-4c82-97dc-d0d773e7bc58",
+      "Order": 4,
+      "Timestamp": 1786695791566,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1032",
+      "Description": "Package(s) is not supported in Luna",
+      "Details": [
+        "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+      ],
+      "DescriptionValues": [
+        "com.unity.timeline (1.8.7)"
+      ],
+      "DetailsValues": [
+        "com.unity.timeline"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "F:/UnityProject/PLY_MiniSoccer3D/Packages\\manifest.json",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "17850c49-c4a7-4403-8f59-106828646807",
+      "Order": 5,
+      "Timestamp": 1786695791568,
+      "Stage": 1,
+      "ErrorType": 3,
+      "ErrorCode": "LP1002",
+      "Description": "Repeat wrap mode used on a texture with non power-of-two dimensions, this might not be rendered correctly.",
+      "Details": [
+        "Repeat wrap mode used on 'FootBallBG' texture at 'Assets/_Game/Sprite/FootBallBG.png' with non power-of-two dimensions, this might not be rendered correctly."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        "FootBallBG",
+        "Assets/_Game/Sprite/FootBallBG.png"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "Assets/_Game/Sprite/FootBallBG.png",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "245437fa-98e5-4139-a8c0-1b4bcc74d337",
+      "Order": 6,
+      "Timestamp": 1786695791568,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1010",
+      "Description": "Looks like a collider was scaled, this might affect performance.",
+      "Details": [
+        "ChoiceBoardHolder",
+        "Character "
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 2,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    }
+  ]
+}

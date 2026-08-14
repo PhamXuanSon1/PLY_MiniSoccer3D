@@ -2662,8 +2662,6 @@ if ( TRACE ) { TRACE( "GameManager#GotoStore", this ); }
 
                     AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
                     UnityEngine.Debug.Log$1("Track: CTA Clicked");
-                    Luna.Unity.LifeCycle.GameEnded();
-                    Luna.Unity.Playable.InstallFullGame();
                 },
                 /*GameManager.GotoStore:static end.*/
 
