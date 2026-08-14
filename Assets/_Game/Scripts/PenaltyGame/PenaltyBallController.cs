@@ -134,70 +134,133 @@ namespace RonaldoPenalty
             }
 
             transform.position = target;
-
-            // Nảy nhẹ lần cuối nếu là bóng sệt khi vào lưới
-            if (isLowShot)
-            {
-                yield return StartCoroutine(FinalNetBounce(target));
-            }
-
             isFlying = false;
             OnGoal?.Invoke();
+
+            // Bóng rơi xuống mặt sân tự nhiên bên trong khung thành
+            yield return StartCoroutine(DropInsideNet(target));
         }
 
-        private IEnumerator FinalNetBounce(Vector3 landPos)
+        private IEnumerator DropInsideNet(Vector3 netEntryPos)
         {
-            float bounceTime = 0.18f;
-            float elapsed = 0f;
-            Vector3 bounceTarget = landPos + Vector3.forward * 0.5f;
+            Vector3 pos = netEntryPos;
+            float targetZ = pos.z + 0.65f; // Trôi nhẹ sâu vào trong lưới
+            float velocityY = -0.5f; // Bắt đầu rơi
+            float velocityZ = 2.0f;
+            float gravity = 14f;
+            float groundY = 0.15f;
 
-            while (elapsed < bounceTime)
+            // Nếu bóng bay vào tầm cao -> rơi xuống đất
+            while (pos.y > groundY || velocityY > 0)
             {
-                elapsed += Time.deltaTime;
-                float t = elapsed / bounceTime;
-                Vector3 pos = Vector3.Lerp(landPos, bounceTarget, t);
-                pos.y = landPos.y + (0.18f * 4f * t * (1f - t));
+                velocityY -= gravity * Time.deltaTime;
+                pos.y += velocityY * Time.deltaTime;
+
+                if (pos.z < targetZ)
+                {
+                    pos.z += velocityZ * Time.deltaTime;
+                    velocityZ = Mathf.MoveTowards(velocityZ, 0f, 4f * Time.deltaTime);
+                }
+
+                transform.Rotate(Vector3.right, 250f * Time.deltaTime, Space.World);
+
+                if (pos.y <= groundY)
+                {
+                    pos.y = groundY;
+                    transform.position = pos;
+
+                    // Nảy nhẹ trên mặt cỏ trong lưới
+                    if (Mathf.Abs(velocityY) > 2.2f)
+                    {
+                        velocityY = -velocityY * 0.28f;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
                 transform.position = pos;
                 yield return null;
             }
+
+            pos.y = groundY;
+            transform.position = pos;
         }
 
         private void OnTriggerEnter(Collider other)
         {
+            HandleBlockCollision(other.gameObject);
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            HandleBlockCollision(collision.gameObject);
+        }
+
+        private void HandleBlockCollision(GameObject targetObj)
+        {
             if (!isFlying) return;
 
-            if (other.CompareTag("Goalkeeper") || other.CompareTag("Defender"))
+            bool isBlocker = targetObj.CompareTag("Goalkeeper") ||
+                             targetObj.CompareTag("Defender") ||
+                             targetObj.GetComponentInParent<PenaltyGoalkeeperAI>() != null ||
+                             targetObj.GetComponentInParent<PenaltyDefenderAI>() != null ||
+                             targetObj.name.ToLower().Contains("goalkeeper") ||
+                             targetObj.name.ToLower().Contains("defender") ||
+                             targetObj.name.ToLower().Contains("gk") ||
+                             targetObj.name.ToLower().Contains("hv");
+
+            if (isBlocker)
             {
                 StopAllCoroutines();
                 isFlying = false;
 
-                // Tính hướng bóng bật ngược lại
-                Vector3 reflectDir = (transform.position - other.transform.position).normalized;
-                reflectDir.y = 0.38f; // Bổng ngược lên
-                reflectDir.z = -Mathf.Abs(reflectDir.z); // Luôn dội ngược về sau
+                // Tính hướng lệch ngang dựa trên điểm va chạm
+                Vector3 hitDir = (transform.position - targetObj.transform.position).normalized;
 
-                StartCoroutine(BounceBack(reflectDir));
+                StartCoroutine(BounceBack(hitDir));
                 OnBlocked?.Invoke();
             }
         }
 
-        private IEnumerator BounceBack(Vector3 direction)
+        private IEnumerator BounceBack(Vector3 hitNormal)
         {
-            float duration = 0.85f;
-            float speed = 7.5f;
+            // Vận tốc văng dội ngược lại tức thì về phía camera
+            Vector3 velocity = new Vector3(
+                Mathf.Clamp(hitNormal.x * 4.0f, -4f, 4f),
+                4.8f,   // Độ bổng nảy lên
+                -11.5f  // Văng ngược mạnh về phía trước (-Z)
+            );
+
+            float duration = 1.2f;
             float elapsed = 0f;
+            float gravity = 16f;
 
             while (elapsed < duration)
             {
                 elapsed += Time.deltaTime;
-                float t = elapsed / duration;
-
-                float decel = 1f - t;
-                transform.position += direction * speed * decel * Time.deltaTime;
 
                 // Trọng lực kéo bóng rơi xuống
-                direction.y -= 9.8f * Time.deltaTime;
-                transform.Rotate(Vector3.right, -650f * Time.deltaTime, Space.World);
+                velocity.y -= gravity * Time.deltaTime;
+                transform.position += velocity * Time.deltaTime;
+
+                // Xoay bóng ngược cực nhanh
+                transform.Rotate(Vector3.right, -800f * Time.deltaTime, Space.World);
+
+                // Chạm mặt cỏ thì nảy nhẹ và lăn
+                if (transform.position.y <= 0.15f)
+                {
+                    Vector3 pos = transform.position;
+                    pos.y = 0.15f;
+                    transform.position = pos;
+
+                    if (velocity.y < 0)
+                    {
+                        velocity.y = -velocity.y * 0.35f; // Nảy nhẹ trên mặt cỏ
+                        velocity.z *= 0.65f; // Giảm tốc lăn
+                    }
+                }
 
                 yield return null;
             }

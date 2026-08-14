@@ -482,8 +482,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.364729, y: 16.314009, z: 1}
+  m_Center: {x: -0.29069996, y: 0.16658497, z: 0}
 --- !u!114 &235702168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,8 +1175,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.364729, y: 16.314009, z: 1}
+  m_Center: {x: -0.29069996, y: 0.16658497, z: 0}
 --- !u!114 &867963701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,29 +1480,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1099188720
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807442212031503587}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1099188721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3185,9 +3162,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2866819537930471583}
-  - component: {fileID: 1099188720}
   - component: {fileID: 1099188719}
   - component: {fileID: 1099188721}
+  - component: {fileID: 5807442212031503588}
   m_Layer: 0
   m_Name: Goalkeeper
   m_TagString: Goalkeeper
@@ -3195,6 +3172,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &5807442212031503588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807442212031503587}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.598755, y: 14.391568, z: 3.2240944}
+  m_Center: {x: 0.5177505, y: 6.695784, z: 1.17}
 --- !u!1 &8522143940009358063
 GameObject:
   m_ObjectHideFlags: 0
