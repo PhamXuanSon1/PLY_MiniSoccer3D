@@ -8,6 +8,7 @@ TagManager:
   - Defender
   - Ball
   - GoalLine
+  - Goal
   layers:
   - Default
   - TransparentFX

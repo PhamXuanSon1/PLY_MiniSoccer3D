@@ -21,7 +21,7 @@ namespace RonaldoPenalty
 
         private void Awake()
         {
-            if (animator == null) animator = GetComponentInChildren<Animator>();
+            if (animator == null) animator = GetComponent<Animator>();
         }
 
         private void Start()

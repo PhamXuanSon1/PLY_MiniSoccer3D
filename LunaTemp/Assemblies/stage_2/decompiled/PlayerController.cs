@@ -94,10 +94,6 @@ public class PlayerController : MonoBehaviour
 		if (playerVisual == null && playerTransform != null)
 		{
 			playerVisual = playerTransform.GetComponent<PlayerVisual>();
-			if (playerVisual == null)
-			{
-				playerVisual = playerTransform.GetComponentInChildren<PlayerVisual>();
-			}
 		}
 		SwitchTrack(startRight);
 		if (InputManager.Instance != null)

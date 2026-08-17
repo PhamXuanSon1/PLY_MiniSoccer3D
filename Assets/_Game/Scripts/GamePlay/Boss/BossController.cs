@@ -37,7 +37,13 @@ public class BossController : MonoBehaviour
     [Tooltip("UI Panel hiển thị màn hình Thất Bại (Lose Panel)")]
     [SerializeField] private GameObject losePanel;
 
-    [Tooltip("Danh sách các GameObject phụ cần tự động tắt khi UI Result xuất hiện (ví dụ resultObject, extraWinObject...)")]
+    [Tooltip("Danh sách GameObject chỉ ẩn khi WIN")]
+    [SerializeField] private GameObject[] objectsToHideOnWin;
+
+    [Tooltip("Danh sách GameObject chỉ ẩn khi LOSE")]
+    [SerializeField] private GameObject[] objectsToHideOnLose;
+
+    [Tooltip("Danh sách các GameObject phụ cần tự động tắt cho CẢ HAI khi UI Result xuất hiện (ví dụ resultObject, extraWinObject...)")]
     [SerializeField] private GameObject[] extraObjectsToHide;
 
     [Header("Audio Settings (Ply_SoundManager)")]
@@ -201,10 +207,24 @@ public class BossController : MonoBehaviour
 
             if (isWin)
             {
+                if (objectsToHideOnWin != null)
+                {
+                    foreach (var obj in objectsToHideOnWin)
+                    {
+                        if (obj != null) obj.SetActive(false);
+                    }
+                }
                 if (winPanel != null) winPanel.SetActive(true);
             }
             else
             {
+                if (objectsToHideOnLose != null)
+                {
+                    foreach (var obj in objectsToHideOnLose)
+                    {
+                        if (obj != null) obj.SetActive(false);
+                    }
+                }
                 if (losePanel != null) losePanel.SetActive(true);
             }
 

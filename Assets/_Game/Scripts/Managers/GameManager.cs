@@ -85,14 +85,30 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    private static float lastGotoStoreTime = -10f;
     public static void GotoStore()
     {
+        if (Time.unscaledTime - lastGotoStoreTime < 0.6f) return;
+        lastGotoStoreTime = Time.unscaledTime;
+
         AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
         Debug.Log("Track: CTA Clicked");
 
         LifeCycle.GameEnded();
         Playable.InstallFullGame();
+    }
 
+    /// <summary>
+    /// Hàm public instance để gán trực tiếp vào Button On Click () trong Inspector
+    /// </summary>
+    public void OnClick_GotoStore()
+    {
+        GotoStore();
+    }
+
+    public void GoToStore()
+    {
+        GotoStore();
     }
 
     private void OnGameEnd(bool winState)

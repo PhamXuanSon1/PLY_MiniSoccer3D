@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
 
 	public PlayerController Player;
 
+	private static float lastGotoStoreTime = -10f;
+
 	public static GameManager Instance { get; private set; }
 
 	public static bool isGameEnded { get; private set; }
@@ -99,10 +101,24 @@ public class GameManager : MonoBehaviour
 
 	public static void GotoStore()
 	{
-		AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
-		Debug.Log("Track: CTA Clicked");
-		LifeCycle.GameEnded();
-		Playable.InstallFullGame();
+		if (!(Time.unscaledTime - lastGotoStoreTime < 0.6f))
+		{
+			lastGotoStoreTime = Time.unscaledTime;
+			AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
+			Debug.Log("Track: CTA Clicked");
+			LifeCycle.GameEnded();
+			Playable.InstallFullGame();
+		}
+	}
+
+	public void OnClick_GotoStore()
+	{
+		GotoStore();
+	}
+
+	public void GoToStore()
+	{
+		GotoStore();
 	}
 
 	private void OnGameEnd(bool winState)

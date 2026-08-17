@@ -13,14 +13,18 @@ namespace RonaldoPenalty
         [SerializeField] private bool startActive = false;
 
         private float t = 0.5f;
-        private int direction = -1;
+        private int direction = 1;
         private bool isMoving = false;
         private Vector3 initialPosition;
 
         private void Awake()
         {
             initialPosition = transform.position;
-            if (!startActive)
+            if (startActive)
+            {
+                Activate();
+            }
+            else
             {
                 isMoving = false;
             }
@@ -30,6 +34,7 @@ namespace RonaldoPenalty
         {
             leftLimit = left;
             rightLimit = right;
+            CalculateCurrentT();
         }
 
         public void SetSpeed(float newSpeed) => speed = newSpeed;
@@ -38,18 +43,50 @@ namespace RonaldoPenalty
         {
             gameObject.SetActive(true);
             isMoving = true;
-            t = 0.5f;
-            direction = -1;
-            if (leftLimit != null && rightLimit != null)
-            {
-                transform.position = Vector3.Lerp(leftLimit.position, rightLimit.position, 0.5f);
-            }
+            direction = 1;
+            CalculateCurrentT();
         }
 
         public void Deactivate()
         {
             isMoving = false;
             gameObject.SetActive(false);
+            if (initialPosition != Vector3.zero)
+            {
+                transform.position = initialPosition;
+            }
+        }
+
+        public void ResetPosition()
+        {
+            if (initialPosition != Vector3.zero)
+            {
+                transform.position = initialPosition;
+            }
+            CalculateCurrentT();
+            direction = 1;
+        }
+
+        private void CalculateCurrentT()
+        {
+            if (leftLimit != null && rightLimit != null)
+            {
+                Vector3 segment = rightLimit.position - leftLimit.position;
+                float sqrMag = segment.sqrMagnitude;
+                if (sqrMag > 0.0001f)
+                {
+                    Vector3 offset = transform.position - leftLimit.position;
+                    t = Mathf.Clamp01(Vector3.Dot(offset, segment) / sqrMag);
+                }
+                else
+                {
+                    t = 0.5f;
+                }
+            }
+            else
+            {
+                t = 0.5f;
+            }
         }
 
         // Hỗ trợ cấu hình round cũ

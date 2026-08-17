@@ -24,7 +24,17 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
 
 	private float _lastBgmVolume;
 
-	public static Ply_SoundManager Instance => Ply_Singleton<Ply_SoundManager>.Ins;
+	public static Ply_SoundManager Instance
+	{
+		get
+		{
+			if (Ply_Singleton<Ply_SoundManager>.Ins == null)
+			{
+				Ply_Singleton<Ply_SoundManager>.Ins = Object.FindObjectOfType<Ply_SoundManager>();
+			}
+			return Ply_Singleton<Ply_SoundManager>.Ins;
+		}
+	}
 
 	public override void Awake()
 	{

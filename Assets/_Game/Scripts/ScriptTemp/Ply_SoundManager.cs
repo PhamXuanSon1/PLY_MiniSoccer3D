@@ -128,7 +128,14 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
         }
     }
     // Giữ Instance để tương thích ngược với các script cũ
-    public static Ply_SoundManager Instance => Ins;
+    public static Ply_SoundManager Instance
+    {
+        get
+        {
+            if (Ins == null) Ins = FindObjectOfType<Ply_SoundManager>();
+            return Ins;
+        }
+    }
     public float PlayFx(FxType fxType)
     {
         if (!enableSound) return 0f;

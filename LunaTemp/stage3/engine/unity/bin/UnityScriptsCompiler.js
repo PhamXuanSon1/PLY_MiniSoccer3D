@@ -1,4 +1,4 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AppLovinAnalytics#Track","BossController#init","BossController#Start","BossController#Update","BossController#OnDestroy","BossController#OnLastBoardPassed","BossController#OnGameEnded","BossController#StartBossSequence","ChoiceBoard#ChoiceType#get","ChoiceBoard#VisualRender#get","ChoiceBoard#init","ChoiceBoard#Awake","ChoiceBoard#OnValidate","ChoiceBoard#UpdateBorderVisual","ChoiceBoard#AssignVisualData","ChoiceBoard#SetChoiceBoardType","ChoiceBoard#AssignData","ChoiceBoard#PlayChooseSequence","ChoiceBoardHolder#ApplyBoardData","ChoiceBoardHolder#Awake","ChoiceBoardHolder#PickBoard","ChoiceBoardHolder#GetNearestBoard","ChoiceBoardHolder#OnTriggerEnter","ChoiceBoardPlacer#SpawnedCount#get","ChoiceBoardPlacer#init","ChoiceBoardPlacer#Start","ChoiceBoardPlacer#ClearExisting","ChoiceBoardPlacer#Spawn","ChoiceBoardPlacer#ShuffleArray","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","FxAudio#GetSoundData","GameEndUI#init","GameEndUI#Start","GameEndUI#OnDestroy","GameEndUI#OnGameEnded","GameEndUI#ToStoreButtonClicked","GameManager#IsGamePause#get","GameManager#CheckWinCondition","GameManager#PauseGame","GameManager#UnPauseGame","GameManager#GotoStore","GameManager#MaxLevel#get","GameManager#WinLevel#get","GameManager#TotalMoveTime#get","GameManager#CurrentPlayerLevel#get","GameManager#init","GameManager#Update","GameManager#Awake","GameManager#Start","GameManager#OnGameEnd","GameManager#OnCharacterReachedEnd","ImageScroller#init","ImageScroller#Awake","ImageScroller#Update","InputManager#init","InputManager#Awake","InputManager#Update","InputManager#HandleInput","InputManager#HandleMouseInput","InputManager#HandleTouchInput","InputManager#StartSwipe","InputManager#EndSwipe","InputManager#GetSwipeDirection","MaterialUVScroller#init","MaterialUVScroller#Awake","MaterialUVScroller#Update","PlayerController#totalMoveTime#get","PlayerController#CurrentLevel#get","PlayerController#init","PlayerController#UpgradePlayer","PlayerController#Start","PlayerController#StopMoving","PlayerController#OnGameEnd","PlayerController#OnDestroy","PlayerController#OnGameStarted","PlayerController#StartMoving","PlayerController#OnDrag","PlayerController#OnDragEnd","PlayerController#SwitchTrack","PlayerController#OnSwipe","PlayerVisual#init","PlayerVisual#Awake","PlayerVisual#InitScale","PlayerVisual#GetScaleMultiplierForLevel","PlayerVisual#Start","PlayerVisual#OnDestroy","PlayerVisual#OnGameStart","PlayerVisual#AssingPlayerVisual","PlayerVisual#UpdateVisualBylevel","PlayerVisual#StartBouncing","PlayerVisual#ClearPlayerVisual","PlayerVisual#SetVisualEnable","Ply_Singleton$1#init","Ply_Singleton$1#Awake","Ply_Pool.PoolAmount#getDefaultValue","Ply_Pool.PoolAmount#ctor","Ply_Pool.PoolAmount#getHashCode","Ply_Pool.PoolAmount#equals","Ply_Pool.PoolAmount#$clone","ProgressTrackingManager#init","ProgressTrackingManager#Awake","ProgressTrackingManager#Start","ProgressTrackingManager#OnDestroy","ProgressTrackingManager#AddProgress","ProgressTrackingManager#UpdateGameProgress","ProgressTrackingManager#OnGameEnded","ProgressTrackingManager#GetDynamicMaxScore","SoundData#init","UICheckBox#Awake","UICheckBox#ResetIcon","UICheckBox#ChangeIcon","UICheckBoxHolder#Start","UICheckBoxHolder#OnDestroy","UICheckBoxHolder#OnGameEnded","UICheckBoxHolder#OnCharacterChoose","UIGuidingMove#init","UIGuidingMove#Awake","UIGuidingMove#OnEnable","UIGuidingMove#OnDisable","UIGuidingMove#KillTween","UIGuidingMove#ResetSequence","UIGuidingMove#PlaySequence","UIManager#Awake","UIProgressBar#Start","UIProgressBar#OnDestroy","UIProgressBar#OnCharacterStartMove","UIProgressBar#OnGameEnded","UIPulse#init","UIPulse#Awake","UIPulse#OnEnable","UIPulse#OnDisable","UITutorial#Start","UITutorial#OnDestroy","UITutorial#OnGameEnded","UITutorial#OnClicked","UITutorial#OnGameStarted","Yielders#EndOfFrame#get","Yielders#FixedUpdate#get","Yielders#init","Yielders#Get","Ply_Pool#inherits","Ply_Pool#init","Ply_Pool#Awake","Ply_Pool#OnInit","Ply_Pool#Spawn$1","Ply_Pool#Spawn","Ply_Pool#Despawn","Ply_Pool#GetPrefab","Ply_SoundManager#inherits","Ply_SoundManager#Instance#get","Ply_SoundManager#init","Ply_SoundManager#Awake","Ply_SoundManager#EnsureAudioListener","Ply_SoundManager#Start","Ply_SoundManager#Update","Ply_SoundManager#UpdateBGMState","Ply_SoundManager#PlayFx","Ply_SoundManager#PlaySequentialSounds","Ply_SoundManager#PlaySequentialSoundsRoutine","Ply_SoundManager#StopBGM","Ply_SoundManager#Mute","Ply_SoundManager#PlayClip","Ply_SoundManager#PlayLoopFx","Ply_SoundManager#StopLoopFx"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["AppLovinAnalytics#Track","BossController#init","BossController#Start","BossController#Update","BossController#OnDestroy","BossController#OnLastBoardPassed","BossController#OnGameEnded","BossController#StartBossSequence","ChoiceBoard#ChoiceType#get","ChoiceBoard#VisualRender#get","ChoiceBoard#init","ChoiceBoard#Awake","ChoiceBoard#OnValidate","ChoiceBoard#UpdateBorderVisual","ChoiceBoard#AssignVisualData","ChoiceBoard#SetChoiceBoardType","ChoiceBoard#AssignData","ChoiceBoard#PlayChooseSequence","ChoiceBoardHolder#ApplyBoardData","ChoiceBoardHolder#Awake","ChoiceBoardHolder#PickBoard","ChoiceBoardHolder#GetNearestBoard","ChoiceBoardHolder#OnTriggerEnter","ChoiceBoardPlacer#SpawnedCount#get","ChoiceBoardPlacer#init","ChoiceBoardPlacer#Start","ChoiceBoardPlacer#ClearExisting","ChoiceBoardPlacer#Spawn","ChoiceBoardPlacer#ShuffleArray","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","FxAudio#GetSoundData","GameEndUI#init","GameEndUI#Start","GameEndUI#OnDestroy","GameEndUI#OnGameEnded","GameEndUI#ToStoreButtonClicked","GameManager#IsGamePause#get","GameManager#init","GameManager#CheckWinCondition","GameManager#PauseGame","GameManager#UnPauseGame","GameManager#GotoStore","GameManager#MaxLevel#get","GameManager#WinLevel#get","GameManager#TotalMoveTime#get","GameManager#CurrentPlayerLevel#get","GameManager#init","GameManager#Update","GameManager#Awake","GameManager#Start","GameManager#OnClick_GotoStore","GameManager#GoToStore","GameManager#OnGameEnd","GameManager#OnCharacterReachedEnd","ImageScroller#init","ImageScroller#Awake","ImageScroller#Update","InputManager#init","InputManager#Awake","InputManager#Update","InputManager#HandleInput","InputManager#HandleMouseInput","InputManager#HandleTouchInput","InputManager#StartSwipe","InputManager#EndSwipe","InputManager#GetSwipeDirection","MaterialUVScroller#init","MaterialUVScroller#Awake","MaterialUVScroller#Update","PlayerController#totalMoveTime#get","PlayerController#CurrentLevel#get","PlayerController#init","PlayerController#UpgradePlayer","PlayerController#Start","PlayerController#StopMoving","PlayerController#OnGameEnd","PlayerController#OnDestroy","PlayerController#OnGameStarted","PlayerController#StartMoving","PlayerController#OnDrag","PlayerController#OnDragEnd","PlayerController#SwitchTrack","PlayerController#OnSwipe","PlayerVisual#init","PlayerVisual#Awake","PlayerVisual#InitScale","PlayerVisual#GetScaleMultiplierForLevel","PlayerVisual#Start","PlayerVisual#OnDestroy","PlayerVisual#OnGameStart","PlayerVisual#AssingPlayerVisual","PlayerVisual#UpdateVisualBylevel","PlayerVisual#StartBouncing","PlayerVisual#ClearPlayerVisual","PlayerVisual#SetVisualEnable","Ply_Singleton$1#init","Ply_Singleton$1#Awake","Ply_Pool.PoolAmount#getDefaultValue","Ply_Pool.PoolAmount#ctor","Ply_Pool.PoolAmount#getHashCode","Ply_Pool.PoolAmount#equals","Ply_Pool.PoolAmount#$clone","ProgressTrackingManager#init","ProgressTrackingManager#Awake","ProgressTrackingManager#Start","ProgressTrackingManager#OnDestroy","ProgressTrackingManager#AddProgress","ProgressTrackingManager#UpdateGameProgress","ProgressTrackingManager#OnGameEnded","ProgressTrackingManager#GetDynamicMaxScore","RonaldoPenalty.PenaltyBallController#init","RonaldoPenalty.PenaltyBallController#Awake","RonaldoPenalty.PenaltyBallController#SetVShapeMarkers","RonaldoPenalty.PenaltyBallController#SetGoalCenter","RonaldoPenalty.PenaltyBallController#ResetBall","RonaldoPenalty.PenaltyBallController#Shoot","RonaldoPenalty.PenaltyBallController#CalculateVShapeTargetByX","RonaldoPenalty.PenaltyBallController#FlyTrajectory","RonaldoPenalty.PenaltyBallController#FlyIntoGoalUntilHit","RonaldoPenalty.PenaltyBallController#FlyOutOfBounds","RonaldoPenalty.PenaltyBallController#OnTriggerEnter","RonaldoPenalty.PenaltyBallController#OnCollisionEnter","RonaldoPenalty.PenaltyBallController#HandleCollision","RonaldoPenalty.PenaltyBallController#LogVelocityFramesForDebug","RonaldoPenalty.PenaltyBallController#ApplyGoalPhysics","RonaldoPenalty.PenaltyBallController#OnDrawGizmosSelected","RonaldoPenalty.PenaltyDefenderAI#init","RonaldoPenalty.PenaltyDefenderAI#Awake","RonaldoPenalty.PenaltyDefenderAI#SetBounds","RonaldoPenalty.PenaltyDefenderAI#SetSpeed","RonaldoPenalty.PenaltyDefenderAI#Activate","RonaldoPenalty.PenaltyDefenderAI#Deactivate","RonaldoPenalty.PenaltyDefenderAI#ResetPosition","RonaldoPenalty.PenaltyDefenderAI#CalculateCurrentT","RonaldoPenalty.PenaltyDefenderAI#SetupRound","RonaldoPenalty.PenaltyDefenderAI#Update","RonaldoPenalty.PenaltyDefenderAI#OnDrawGizmosSelected","RonaldoPenalty.PenaltyGameManager#init","RonaldoPenalty.PenaltyGameManager#SetupDependencies","RonaldoPenalty.PenaltyGameManager#Awake","RonaldoPenalty.PenaltyGameManager#Start","RonaldoPenalty.PenaltyGameManager#ResolveUIManager","RonaldoPenalty.PenaltyGameManager#InitGameFlow","RonaldoPenalty.PenaltyGameManager#Update","RonaldoPenalty.PenaltyGameManager#StartAiming","RonaldoPenalty.PenaltyGameManager#StartRound","RonaldoPenalty.PenaltyGameManager#ExecuteShot","RonaldoPenalty.PenaltyGameManager#ShootBallAfterDelay","RonaldoPenalty.PenaltyGameManager#TrackRoundProgress","RonaldoPenalty.PenaltyGameManager#HandleGoal","RonaldoPenalty.PenaltyGameManager#HandleMiss","RonaldoPenalty.PenaltyGameManager#NextRoundRoutine","RonaldoPenalty.PenaltyGameManager#EndGameEvaluationRoutine","RonaldoPenalty.PenaltyGameManager#ResetToGameplayInitialState","RonaldoPenalty.PenaltyGameManager#RestartGame","RonaldoPenalty.PenaltyGameManager#GotoStore","RonaldoPenalty.PenaltyGameManager#GoToStore","RonaldoPenalty.PenaltyGoalkeeperAI#init","RonaldoPenalty.PenaltyGoalkeeperAI#Awake","RonaldoPenalty.PenaltyGoalkeeperAI#SetBounds","RonaldoPenalty.PenaltyGoalkeeperAI#SetupRound","RonaldoPenalty.PenaltyGoalkeeperAI#StopPatrol","RonaldoPenalty.PenaltyGoalkeeperAI#Update","RonaldoPenalty.PenaltyGoalkeeperAI#OnDrawGizmosSelected","RonaldoPenalty.PenaltyPlayerAnimator#init","RonaldoPenalty.PenaltyPlayerAnimator#Awake","RonaldoPenalty.PenaltyPlayerAnimator#Start","RonaldoPenalty.PenaltyPlayerAnimator#PlayIdle","RonaldoPenalty.PenaltyPlayerAnimator#PlayKick","RonaldoPenalty.PenaltyPlayerAnimator#ReturnToIdleRoutine","RonaldoPenalty.PenaltyPlayerAnimator#PlayCelebrate","RonaldoPenalty.PenaltyPlayerAnimator#PlayDisappointed","RonaldoPenalty.PenaltyTargetMover#init","RonaldoPenalty.PenaltyTargetMover#Awake","RonaldoPenalty.PenaltyTargetMover#SetBallTransform","RonaldoPenalty.PenaltyTargetMover#SetupAimLineSprite","RonaldoPenalty.PenaltyTargetMover#CreateDashedSprite","RonaldoPenalty.PenaltyTargetMover#ApplySortingOrder","RonaldoPenalty.PenaltyTargetMover#SetBounds","RonaldoPenalty.PenaltyTargetMover#SetSpeed","RonaldoPenalty.PenaltyTargetMover#StartMoving","RonaldoPenalty.PenaltyTargetMover#StopMoving","RonaldoPenalty.PenaltyTargetMover#Hide","RonaldoPenalty.PenaltyTargetMover#Update","RonaldoPenalty.PenaltyTargetMover#GetCurrentPosition","RonaldoPenalty.PenaltyTargetMover#GetNormalizedT","RonaldoPenalty.PenaltyTargetMover#OnDrawGizmosSelected","RonaldoPenalty.PenaltyUIManager#IconEmpty#get","RonaldoPenalty.PenaltyUIManager#IconCheck#get","RonaldoPenalty.PenaltyUIManager#IconCross#get","RonaldoPenalty.PenaltyUIManager#HasValidSprites#get","RonaldoPenalty.PenaltyUIManager#init","RonaldoPenalty.PenaltyUIManager#Awake","RonaldoPenalty.PenaltyUIManager#Start","RonaldoPenalty.PenaltyUIManager#AutoFindReferences","RonaldoPenalty.PenaltyUIManager#CacheInitialColors","RonaldoPenalty.PenaltyUIManager#SetupReferences","RonaldoPenalty.PenaltyUIManager#ResetUI","RonaldoPenalty.PenaltyUIManager#SetPromptVisible","RonaldoPenalty.PenaltyUIManager#UpdateRoundResult","RonaldoPenalty.PenaltyUIManager#ShowWinEndcard","RonaldoPenalty.PenaltyUIManager#ShowLoseScreen","RonaldoPenalty.PenaltyUIManager#SetObjectsActive","RonaldoPenalty.PenaltyUIManager#LoseRoutine","RonaldoPenalty.PenaltyUIManager#GotoStore","RonaldoPenalty.PenaltyUIManager#GoToStore","RonaldoPenalty.PenaltyUIManager#OnClick_GotoStore","SoundData#init","UICheckBox#Awake","UICheckBox#ResetIcon","UICheckBox#ChangeIcon","UICheckBoxHolder#Start","UICheckBoxHolder#OnDestroy","UICheckBoxHolder#OnGameEnded","UICheckBoxHolder#OnCharacterChoose","UIGuidingMove#init","UIGuidingMove#Awake","UIGuidingMove#OnEnable","UIGuidingMove#OnDisable","UIGuidingMove#KillTween","UIGuidingMove#ResetSequence","UIGuidingMove#PlaySequence","UIManager#Awake","UIProgressBar#Start","UIProgressBar#OnDestroy","UIProgressBar#OnCharacterStartMove","UIProgressBar#OnGameEnded","UIPulse#init","UIPulse#Awake","UIPulse#OnEnable","UIPulse#OnDisable","UITutorial#Start","UITutorial#OnDestroy","UITutorial#OnGameEnded","UITutorial#OnClicked","UITutorial#OnGameStarted","Yielders#EndOfFrame#get","Yielders#FixedUpdate#get","Yielders#init","Yielders#Get","Ply_Pool#inherits","Ply_Pool#init","Ply_Pool#Awake","Ply_Pool#OnInit","Ply_Pool#Spawn$1","Ply_Pool#Spawn","Ply_Pool#Despawn","Ply_Pool#GetPrefab","Ply_SoundManager#inherits","Ply_SoundManager#Instance#get","Ply_SoundManager#init","Ply_SoundManager#Awake","Ply_SoundManager#EnsureAudioListener","Ply_SoundManager#Start","Ply_SoundManager#Update","Ply_SoundManager#UpdateBGMState","Ply_SoundManager#PlayFx","Ply_SoundManager#PlaySequentialSounds","Ply_SoundManager#PlaySequentialSoundsRoutine","Ply_SoundManager#StopBGM","Ply_SoundManager#Mute","Ply_SoundManager#PlayClip","Ply_SoundManager#PlayLoopFx","Ply_SoundManager#StopLoopFx"]' ) ); }
 /**
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -59,6 +59,8 @@ if ( TRACE ) { TRACE( "AppLovinAnalytics#Track", this ); }
             extraWinObject: null,
             winPanel: null,
             losePanel: null,
+            objectsToHideOnWin: null,
+            objectsToHideOnLose: null,
             extraObjectsToHide: null,
             fightingCloudFx: 0,
             winPanelFx: 0,
@@ -211,7 +213,7 @@ if ( TRACE ) { TRACE( "BossController#StartBossSequence", this ); }
                 }));
                 DG.Tweening.TweenSettingsExtensions.AppendInterval(this.bossSeq, this.showResultDuration);
                 DG.Tweening.TweenSettingsExtensions.AppendCallback(this.bossSeq, Bridge.fn.bind(this, function () {
-                    var $t, $t1;
+                    var $t, $t1, $t2, $t3;
                     UnityEngine.MonoBehaviour.op_Inequality(($t = Ply_SoundManager.Instance), null) ? $t.StopBGM() : null;
                     if (this.extraObjectsToHide != null) {
                         var array = this.extraObjectsToHide;
@@ -230,11 +232,45 @@ if ( TRACE ) { TRACE( "BossController#StartBossSequence", this ); }
                         }
                     }
                     if (isWin) {
+                        if (this.objectsToHideOnWin != null) {
+                            var array2 = this.objectsToHideOnWin;
+                            $t2 = Bridge.getEnumerator(array2);
+                            try {
+                                while ($t2.moveNext()) {
+                                    var gameObject2 = $t2.Current;
+                                    if (UnityEngine.GameObject.op_Inequality(gameObject2, null)) {
+                                        gameObject2.SetActive(false);
+                                    }
+                                }
+                            } finally {
+                                if (Bridge.is($t2, System.IDisposable)) {
+                                    $t2.System$IDisposable$Dispose();
+                                }
+                            }
+                        }
                         if (UnityEngine.GameObject.op_Inequality(this.winPanel, null)) {
                             this.winPanel.SetActive(true);
                         }
-                    } else if (UnityEngine.GameObject.op_Inequality(this.losePanel, null)) {
-                        this.losePanel.SetActive(true);
+                    } else {
+                        if (this.objectsToHideOnLose != null) {
+                            var array3 = this.objectsToHideOnLose;
+                            $t3 = Bridge.getEnumerator(array3);
+                            try {
+                                while ($t3.moveNext()) {
+                                    var gameObject3 = $t3.Current;
+                                    if (UnityEngine.GameObject.op_Inequality(gameObject3, null)) {
+                                        gameObject3.SetActive(false);
+                                    }
+                                }
+                            } finally {
+                                if (Bridge.is($t3, System.IDisposable)) {
+                                    $t3.System$IDisposable$Dispose();
+                                }
+                            }
+                        }
+                        if (UnityEngine.GameObject.op_Inequality(this.losePanel, null)) {
+                            this.losePanel.SetActive(true);
+                        }
                     }
                     DG.Tweening.DOVirtual.DelayedCall(0.2, Bridge.fn.bind(this, function () {
                         this.canClickToStore = true;
@@ -2615,6 +2651,7 @@ if ( TRACE ) { TRACE( "GameEndUI#ToStoreButtonClicked", this ); }
                 OnCharacterReachedTheEnd: null,
                 OnGameEnded: null,
                 isGamePaused: false,
+                lastGotoStoreTime: 0,
                 Instance: null,
                 isGameEnded: false,
                 MainCamera: null
@@ -2626,6 +2663,13 @@ if ( TRACE ) { TRACE( "GameManager#IsGamePause#get", this ); }
 
                         return GameManager.isGamePaused;
                     }
+                }
+            },
+            ctors: {
+                init: function () {
+if ( TRACE ) { TRACE( "GameManager#init", this ); }
+
+                    this.lastGotoStoreTime = -10.0;
                 }
             },
             methods: {
@@ -2660,10 +2704,13 @@ if ( TRACE ) { TRACE( "GameManager#UnPauseGame", this ); }
                 GotoStore: function () {
 if ( TRACE ) { TRACE( "GameManager#GotoStore", this ); }
 
-                    AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
-                    UnityEngine.Debug.Log$1("Track: CTA Clicked");
-                    Luna.Unity.LifeCycle.GameEnded();
-                    Luna.Unity.Playable.InstallFullGame();
+                    if (!(UnityEngine.Time.unscaledTime - GameManager.lastGotoStoreTime < 0.6)) {
+                        GameManager.lastGotoStoreTime = UnityEngine.Time.unscaledTime;
+                        AppLovinAnalytics.Track(ALEvent.CTA_CLICKED);
+                        UnityEngine.Debug.Log$1("Track: CTA Clicked");
+                        Luna.Unity.LifeCycle.GameEnded();
+                        Luna.Unity.Playable.InstallFullGame();
+                    }
                 },
                 /*GameManager.GotoStore:static end.*/
 
@@ -2752,6 +2799,22 @@ if ( TRACE ) { TRACE( "GameManager#Start", this ); }
                 }
             },
             /*GameManager.Start end.*/
+
+            /*GameManager.OnClick_GotoStore start.*/
+            OnClick_GotoStore: function () {
+if ( TRACE ) { TRACE( "GameManager#OnClick_GotoStore", this ); }
+
+                GameManager.GotoStore();
+            },
+            /*GameManager.OnClick_GotoStore end.*/
+
+            /*GameManager.GoToStore start.*/
+            GoToStore: function () {
+if ( TRACE ) { TRACE( "GameManager#GoToStore", this ); }
+
+                GameManager.GotoStore();
+            },
+            /*GameManager.GoToStore end.*/
 
             /*GameManager.OnGameEnd start.*/
             OnGameEnd: function (winState) {
@@ -3097,9 +3160,6 @@ if ( TRACE ) { TRACE( "PlayerController#Start", this ); }
 
                 if (UnityEngine.MonoBehaviour.op_Equality(this.playerVisual, null) && UnityEngine.Component.op_Inequality(this.playerTransform, null)) {
                     this.playerVisual = this.playerTransform.GetComponent(PlayerVisual);
-                    if (UnityEngine.MonoBehaviour.op_Equality(this.playerVisual, null)) {
-                        this.playerVisual = this.playerTransform.GetComponentInChildren(PlayerVisual);
-                    }
                 }
                 this.SwitchTrack(this.startRight);
                 if (UnityEngine.MonoBehaviour.op_Inequality(InputManager.Instance, null)) {
@@ -3733,6 +3793,2340 @@ if ( TRACE ) { TRACE( "ProgressTrackingManager#GetDynamicMaxScore", this ); }
         }
     });
     /*ProgressTrackingManager end.*/
+
+    /*RonaldoPenalty.PenaltyBallController start.*/
+    Bridge.define("RonaldoPenalty.PenaltyBallController", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            leftTop: null,
+            bottomCenter: null,
+            rightTop: null,
+            leftTopY: 0,
+            bottomCenterY: 0,
+            rightTopY: 0,
+            halfWidth: 0,
+            goalZ: 0,
+            flightTime: 0,
+            trailRenderer: null,
+            goalTag: null,
+            initialPosition: null,
+            initialRotation: null,
+            isFlying: false,
+            hasResolved: false,
+            isGoalScored: false,
+            currentIsInsideGoal: false,
+            currentShotTarget: null,
+            blockBounceSpeed: 0,
+            blockBounceUpward: 0,
+            goalFallSpeed: 0,
+            goalFallDownward: 0,
+            goalDropDamping: 0,
+            rb: null,
+            currentShotDirection: null
+        },
+        events: {
+            OnGoal: null,
+            OnBlocked: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#init", this ); }
+
+                this.initialPosition = new UnityEngine.Vector3();
+                this.initialRotation = new UnityEngine.Quaternion();
+                this.currentShotTarget = new UnityEngine.Vector3();
+                this.currentShotDirection = new UnityEngine.Vector3();
+                this.leftTopY = 2.25;
+                this.bottomCenterY = 0.18;
+                this.rightTopY = 2.25;
+                this.halfWidth = 3.2;
+                this.goalZ = 10.0;
+                this.flightTime = 0.65;
+                this.goalTag = "Goal";
+                this.isFlying = false;
+                this.hasResolved = false;
+                this.isGoalScored = false;
+                this.currentIsInsideGoal = true;
+                this.blockBounceSpeed = 65.0;
+                this.blockBounceUpward = 0.45;
+                this.goalFallSpeed = 8.0;
+                this.goalFallDownward = -1.2;
+                this.goalDropDamping = 0.25;
+            }
+        },
+        methods: {
+            /*RonaldoPenalty.PenaltyBallController.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#Awake", this ); }
+
+                this.initialPosition = this.transform.position.$clone();
+                this.initialRotation = this.transform.rotation.$clone();
+                this.rb = this.GetComponent(UnityEngine.Rigidbody);
+                if (UnityEngine.Component.op_Equality(this.bottomCenter, null) && this.initialPosition.y > 0.0) {
+                    this.bottomCenterY = this.initialPosition.y;
+                }
+                if (UnityEngine.Component.op_Inequality(this.bottomCenter, null)) {
+                    this.goalZ = this.bottomCenter.position.z;
+                }
+                var lWorld = ((UnityEngine.Component.op_Inequality(this.leftTop, null)) ? this.leftTop.position.$clone() : new pc.Vec3( 0.0 - this.halfWidth, this.leftTopY, this.goalZ ));
+                var cWorld = ((UnityEngine.Component.op_Inequality(this.bottomCenter, null)) ? this.bottomCenter.position.$clone() : new pc.Vec3( 0.0, this.bottomCenterY, this.goalZ ));
+                var rWorld = ((UnityEngine.Component.op_Inequality(this.rightTop, null)) ? this.rightTop.position.$clone() : new pc.Vec3( this.halfWidth, this.rightTopY, this.goalZ ));
+                UnityEngine.Debug.Log$1(System.String.format("<color=cyan>[BALL DEBUG][Awake]</color> LeftTop(world)={0} | BottomCenter(world)={1} | RightTop(world)={2} | goalZ(field)={3}", lWorld.$clone(), cWorld.$clone(), rWorld.$clone(), Bridge.box(this.goalZ, System.Single, System.Single.format, System.Single.getHashCode)));
+            },
+            /*RonaldoPenalty.PenaltyBallController.Awake end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.SetVShapeMarkers start.*/
+            SetVShapeMarkers: function (left, center, right) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#SetVShapeMarkers", this ); }
+
+                this.leftTop = left;
+                this.bottomCenter = center;
+                this.rightTop = right;
+            },
+            /*RonaldoPenalty.PenaltyBallController.SetVShapeMarkers end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.SetGoalCenter start.*/
+            SetGoalCenter: function (center, width) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#SetGoalCenter", this ); }
+
+                if (width === void 0) { width = 3.2; }
+                this.halfWidth = width;
+                if (UnityEngine.Component.op_Inequality(center, null)) {
+                    this.bottomCenter = center;
+                    this.goalZ = center.position.z;
+                }
+            },
+            /*RonaldoPenalty.PenaltyBallController.SetGoalCenter end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.ResetBall start.*/
+            ResetBall: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#ResetBall", this ); }
+
+                this.StopAllCoroutines();
+                this.isFlying = false;
+                this.hasResolved = false;
+                this.isGoalScored = false;
+                this.currentIsInsideGoal = true;
+                this.transform.position = this.initialPosition.$clone();
+                this.transform.rotation = this.initialRotation.$clone();
+                if (UnityEngine.Component.op_Inequality(this.rb, null)) {
+                    this.rb.linearVelocity = pc.Vec3.ZERO.clone();
+                    this.rb.angularVelocity = pc.Vec3.ZERO.clone();
+                    this.rb.linearDamping = 0.0;
+                }
+                if (UnityEngine.Component.op_Inequality(this.trailRenderer, null)) {
+                    this.trailRenderer.Clear();
+                    this.trailRenderer.enabled = false;
+                }
+                var vector = this.initialPosition.$clone();
+                UnityEngine.Debug.Log$1("<color=cyan>[BALL]</color> Reset Ball v\u1ec1 v\u1ecb tr\u00ed xu\u1ea5t ph\u00e1t: " + (Bridge.toString(vector) || ""));
+            },
+            /*RonaldoPenalty.PenaltyBallController.ResetBall end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.Shoot start.*/
+            Shoot: function (crosshairPos) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#Shoot", this ); }
+
+                if (!this.isFlying) {
+                    this.isFlying = true;
+                    this.hasResolved = false;
+                    this.isGoalScored = false;
+                    if (UnityEngine.Component.op_Inequality(this.trailRenderer, null)) {
+                        this.trailRenderer.Clear();
+                        this.trailRenderer.enabled = true;
+                    }
+                    var normalizedOffset = { };
+                    var vShapeTarget = ((this.currentShotTarget = this.CalculateVShapeTargetByX(crosshairPos.x, normalizedOffset, Bridge.ref(this, "currentIsInsideGoal"))));
+                    this.currentShotDirection = (vShapeTarget.$clone().sub( this.transform.position )).clone().normalize().$clone();
+                    var arcApex = pc.math.lerp(0.06, 1.15, normalizedOffset.v * normalizedOffset.v);
+                    UnityEngine.Debug.Log$1(System.String.format("<color=yellow>[BALL SHOOT]</color> CrosshairX={0:F2} | V-Shape Target={1} | isInsideGoal={2} | arcApex={3:F2}", Bridge.box(crosshairPos.x, System.Single, System.Single.format, System.Single.getHashCode), vShapeTarget.$clone(), Bridge.box(this.currentIsInsideGoal, System.Boolean, System.Boolean.toString), Bridge.box(arcApex, System.Single, System.Single.format, System.Single.getHashCode)));
+                    this.StartCoroutine$1(this.FlyTrajectory(vShapeTarget.$clone(), arcApex, normalizedOffset.v, this.currentIsInsideGoal));
+                }
+            },
+            /*RonaldoPenalty.PenaltyBallController.Shoot end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.CalculateVShapeTargetByX start.*/
+            CalculateVShapeTargetByX: function (crosshairX, normalizedOffset, isInsideGoal) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#CalculateVShapeTargetByX", this ); }
+
+                var lPos = ((UnityEngine.Component.op_Inequality(this.leftTop, null)) ? this.leftTop.position.$clone() : new pc.Vec3( 0.0 - this.halfWidth, this.leftTopY, this.goalZ ));
+                var cPos = ((UnityEngine.Component.op_Inequality(this.bottomCenter, null)) ? this.bottomCenter.position.$clone() : new pc.Vec3( 0.0, this.bottomCenterY, this.goalZ ));
+                var rPos = ((UnityEngine.Component.op_Inequality(this.rightTop, null)) ? this.rightTop.position.$clone() : new pc.Vec3( this.halfWidth, this.rightTopY, this.goalZ ));
+                var minX = UnityEngine.Mathf.Min(lPos.x, rPos.x);
+                var maxX = UnityEngine.Mathf.Max(lPos.x, rPos.x);
+                var midX = cPos.x;
+                var lY = ((UnityEngine.Component.op_Inequality(this.leftTop, null)) ? this.leftTop.position.y : this.leftTopY);
+                var cY = ((UnityEngine.Component.op_Inequality(this.bottomCenter, null)) ? this.bottomCenter.position.y : this.bottomCenterY);
+                var rY = ((UnityEngine.Component.op_Inequality(this.rightTop, null)) ? this.rightTop.position.y : this.rightTopY);
+                var gZ = ((UnityEngine.Component.op_Inequality(this.bottomCenter, null)) ? this.bottomCenter.position.z : this.goalZ);
+                var goalTarget = new UnityEngine.Vector3();
+                if (crosshairX < minX) {
+                    isInsideGoal.v = false;
+                    normalizedOffset.v = 1.0;
+                    var outDist2 = minX - crosshairX;
+                    goalTarget = new pc.Vec3( crosshairX, UnityEngine.Mathf.Max(lY, 1.8) + outDist2 * 0.35, gZ + 3.5 );
+                    UnityEngine.Debug.Log$1(System.String.format("<color=red>[V-SHAPE]</color> CrosshairX={0:F2} < C\u1ed9t tr\u00e1i({1:F2}) -> S\u00daT RA NGO\u00c0I TR\u00c1I! Target={2}", Bridge.box(crosshairX, System.Single, System.Single.format, System.Single.getHashCode), Bridge.box(minX, System.Single, System.Single.format, System.Single.getHashCode), goalTarget.$clone()));
+                } else if (crosshairX > maxX) {
+                    isInsideGoal.v = false;
+                    normalizedOffset.v = 1.0;
+                    var outDist = crosshairX - maxX;
+                    goalTarget = new pc.Vec3( crosshairX, UnityEngine.Mathf.Max(rY, 1.8) + outDist * 0.35, gZ + 3.5 );
+                    UnityEngine.Debug.Log$1(System.String.format("<color=red>[V-SHAPE]</color> CrosshairX={0:F2} > C\u1ed9t ph\u1ea3i({1:F2}) -> S\u00daT RA NGO\u00c0I PH\u1ea2I! Target={2}", Bridge.box(crosshairX, System.Single, System.Single.format, System.Single.getHashCode), Bridge.box(maxX, System.Single, System.Single.format, System.Single.getHashCode), goalTarget.$clone()));
+                } else {
+                    isInsideGoal.v = true;
+                    if (crosshairX <= midX) {
+                        var range2 = midX - minX;
+                        var t2 = ((range2 > 0.001) ? Math.max(0, Math.min(1, (crosshairX - minX) / range2)) : 0.5);
+                        var targetY2 = pc.math.lerp(lY, cY, t2);
+                        goalTarget = new pc.Vec3( crosshairX, targetY2, gZ );
+                        normalizedOffset.v = 1.0 - t2;
+                        UnityEngine.Debug.Log$1(System.String.format("<color=green>[V-SHAPE]</color> CrosshairX={0:F2} -> N\u1eecA TR\u00c1I G\u00d4N (t={1:F2}, Y={2:F2}), Target={3}", Bridge.box(crosshairX, System.Single, System.Single.format, System.Single.getHashCode), Bridge.box(t2, System.Single, System.Single.format, System.Single.getHashCode), Bridge.box(targetY2, System.Single, System.Single.format, System.Single.getHashCode), goalTarget.$clone()));
+                    } else {
+                        var range = maxX - midX;
+                        var t = ((range > 0.001) ? Math.max(0, Math.min(1, (crosshairX - midX) / range)) : 0.5);
+                        var targetY = pc.math.lerp(cY, rY, t);
+                        goalTarget = new pc.Vec3( crosshairX, targetY, gZ );
+                        normalizedOffset.v = t;
+                        UnityEngine.Debug.Log$1(System.String.format("<color=green>[V-SHAPE]</color> CrosshairX={0:F2} -> N\u1eecA PH\u1ea2I G\u00d4N (t={1:F2}, Y={2:F2}), Target={3}", Bridge.box(crosshairX, System.Single, System.Single.format, System.Single.getHashCode), Bridge.box(t, System.Single, System.Single.format, System.Single.getHashCode), Bridge.box(targetY, System.Single, System.Single.format, System.Single.getHashCode), goalTarget.$clone()));
+                    }
+                }
+                return goalTarget.$clone();
+            },
+            /*RonaldoPenalty.PenaltyBallController.CalculateVShapeTargetByX end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.FlyTrajectory start.*/
+            FlyTrajectory: function (target, arcApex, normalizedOffset, isInsideGoal) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#FlyTrajectory", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    start,
+                    elapsed,
+                    spinSpeed,
+                    t,
+                    currentPos,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    start = this.transform.position.$clone();
+                                        elapsed = 0.0;
+                                        spinSpeed = ((isInsideGoal && normalizedOffset < 0.45) ? 850.0 : 650.0);
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( elapsed < this.flightTime && !this.hasResolved ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 2: {
+                                    elapsed += UnityEngine.Time.deltaTime;
+                                        t = Math.max(0, Math.min(1, elapsed / this.flightTime));
+                                        currentPos = new pc.Vec3().lerp( start, target, t );
+                                        currentPos.y = pc.math.lerp(start.y, target.y, t) + arcApex * 4.0 * t * (1.0 - t);
+                                        this.transform.position = currentPos.$clone();
+                                        this.transform.Rotate$1(pc.Vec3.RIGHT.clone(), spinSpeed * UnityEngine.Time.deltaTime, UnityEngine.Space.World);
+                                        $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 4: {
+                                    if (!this.hasResolved) {
+                                            $step = 5;
+                                            continue;
+                                        } 
+                                        $step = 10;
+                                        continue;
+                                }
+                                case 5: {
+                                    if (isInsideGoal) {
+                                            $step = 6;
+                                            continue;
+                                        } 
+                                        $step = 8;
+                                        continue;
+                                }
+                                case 6: {
+                                    UnityEngine.Debug.Log$1("<color=yellow>[BALL]</color> \u0110\u00e3 bay h\u1ebft qu\u1ef9 \u0111\u1ea1o t\u1edbi target nh\u01b0ng CH\u01afA va ch\u1ea1m Goal/Net -> ti\u1ebfp t\u1ee5c bay ch\u1edd va ch\u1ea1m th\u1eadt...");
+                                        $enumerator.current = this.StartCoroutine$1(this.FlyIntoGoalUntilHit(target.$clone(), start.$clone(), spinSpeed));
+                                        $step = 7;
+                                        return true;
+                                }
+                                case 7: {
+                                    return false;
+                                }
+                                case 8: {
+                                    this.hasResolved = true;
+                                        this.isFlying = false;
+                                        UnityEngine.Debug.Log$1("<color=red>[BALL MISS]</color> B\u00f3ng bay ra ngo\u00e0i s\u00e2n! Ti\u1ebfp t\u1ee5c bay 3s...");
+                                        $enumerator.current = this.StartCoroutine$1(this.FlyOutOfBounds(target.$clone(), start.$clone(), spinSpeed));
+                                        $step = 9;
+                                        return true;
+                                }
+                                case 9: {
+                                    UnityEngine.Debug.Log$1("<color=red>[BALL MISS]</color> H\u1ebft 3s -> T\u00ednh MISS v\u00e0 chuy\u1ec3n hi\u1ec7p!");
+                                        !Bridge.staticEquals(this.OnBlocked, null) ? this.OnBlocked() : null;
+                                    $step = 10;
+                                    continue;
+                                }
+                                case 10: {
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyBallController.FlyTrajectory end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.FlyIntoGoalUntilHit start.*/
+            FlyIntoGoalUntilHit: function (target, start, spinSpeed) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#FlyIntoGoalUntilHit", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    flyDir,
+                    speed,
+                    elapsed,
+                    maxWaitTime,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    flyDir = (target.$clone().sub( start )).clone().normalize().$clone();
+                                        speed = pc.Vec3.distance( start, target ) / UnityEngine.Mathf.Max(this.flightTime, 0.01);
+                                        elapsed = 0.0;
+                                        maxWaitTime = 1.5;
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( elapsed < maxWaitTime && !this.hasResolved ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 2: {
+                                    elapsed += UnityEngine.Time.deltaTime;
+                                        this.transform.position = this.transform.position.$clone().add( flyDir.$clone().clone().scale( speed ).clone().scale( UnityEngine.Time.deltaTime ) );
+                                        this.transform.Rotate$1(pc.Vec3.RIGHT.clone(), spinSpeed * UnityEngine.Time.deltaTime, UnityEngine.Space.World);
+                                        $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 4: {
+                                    if (!this.hasResolved) {
+                                            this.hasResolved = true;
+                                            this.isFlying = false;
+                                            UnityEngine.Debug.LogWarning$1(System.String.format("<color=red>[BALL] KH\u00d4NG t\u00ecm th\u1ea5y va ch\u1ea1m v\u1edbi collider Goal/Net sau {0:F1}s ch\u1edd th\u00eam!</color> Ki\u1ec3m tra l\u1ea1i Collider l\u01b0\u1edbi/khung th\u00e0nh c\u00f3 che \u0111\u00fang v\u00f9ng ch\u1eef V kh\u00f4ng. T\u1ea1m t\u00ednh MISS \u0111\u1ec3 kh\u00f4ng b\u1ecba goal gi\u1ea3.", [Bridge.box(maxWaitTime, System.Single, System.Single.format, System.Single.getHashCode)]));
+                                            !Bridge.staticEquals(this.OnBlocked, null) ? this.OnBlocked() : null;
+                                        }
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyBallController.FlyIntoGoalUntilHit end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.FlyOutOfBounds start.*/
+            FlyOutOfBounds: function (target, start, spinSpeed) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#FlyOutOfBounds", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    flyDir,
+                    speed,
+                    elapsed,
+                    continueTime,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    flyDir = (target.$clone().sub( start )).clone().normalize().$clone();
+                                        speed = pc.Vec3.distance( start, target ) / this.flightTime;
+                                        elapsed = 0.0;
+                                        continueTime = 3.0;
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( elapsed < continueTime ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 2: {
+                                    elapsed += UnityEngine.Time.deltaTime;
+                                        this.transform.position = this.transform.position.$clone().add( flyDir.$clone().clone().scale( speed ).clone().scale( UnityEngine.Time.deltaTime ) );
+                                        this.transform.Rotate$1(pc.Vec3.RIGHT.clone(), spinSpeed * UnityEngine.Time.deltaTime, UnityEngine.Space.World);
+                                        $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 4: {
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyBallController.FlyOutOfBounds end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.OnTriggerEnter start.*/
+            OnTriggerEnter: function (other) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#OnTriggerEnter", this ); }
+
+                this.HandleCollision(other.gameObject, "OnTriggerEnter");
+            },
+            /*RonaldoPenalty.PenaltyBallController.OnTriggerEnter end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.OnCollisionEnter start.*/
+            OnCollisionEnter: function (collision) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#OnCollisionEnter", this ); }
+
+                this.HandleCollision(collision.gameObject, "OnCollisionEnter");
+            },
+            /*RonaldoPenalty.PenaltyBallController.OnCollisionEnter end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.HandleCollision start.*/
+            HandleCollision: function (hitObj, collisionType) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#HandleCollision", this ); }
+
+                var objName = hitObj.name.toLowerCase();
+                if (System.String.contains(objName,"ronaldo") || System.String.contains(objName,"player") || System.String.contains(objName,"crosshair") || System.String.contains(objName,"marker") || System.String.contains(objName,"s\u00e2n") || System.String.contains(objName,"pitch") || System.String.contains(objName,"grass")) {
+                    return;
+                }
+                UnityEngine.Debug.Log$1(System.String.format("<color=orange>[BALL COLLISION - {0}]</color> Ch\u1ea1m v\u00e0o: <b>{1}</b> (Tag: {2}) t\u1ea1i Pos={3} | Ball Pos={4}", collisionType, hitObj.name, hitObj.tag, hitObj.transform.position.$clone(), this.transform.position.$clone()));
+                if (this.isGoalScored) {
+                    UnityEngine.Debug.Log$1("<color=grey>[BALL IGNORE]</color> \u0110\u00e3 ghi b\u00e0n r\u1ed3i, b\u1ecf qua va ch\u1ea1m v\u1edbi " + (hitObj.name || ""));
+                } else {
+                    if (!this.isFlying || this.hasResolved) {
+                        return;
+                    }
+                    if (!System.String.contains(objName,"goalkeeper") && !hitObj.CompareTag("Goalkeeper") && (hitObj.CompareTag(this.goalTag) || System.String.contains(objName,"goal") || System.String.contains(objName,"net"))) {
+                        var beforeNetSnap = this.transform.position.$clone();
+                        UnityEngine.Debug.Log$1(System.String.format("<color=green>[BALL GOAL]</color> Ch\u1ea1m v\u00e0o {0} -> GOAL! (currentIsInsideGoal={1})", hitObj.name, Bridge.box(this.currentIsInsideGoal, System.Boolean, System.Boolean.toString)));
+                        this.isGoalScored = true;
+                        this.hasResolved = true;
+                        this.isFlying = false;
+                        this.StopAllCoroutines();
+                        if (this.currentIsInsideGoal) {
+                            this.transform.position = this.currentShotTarget.$clone();
+                        }
+                        UnityEngine.Debug.Log$1(System.String.format("<color=cyan>[BALL DEBUG][SNAP-NetHit]</color> BeforeSnap={0} -> AfterSnap={1} (currentShotTarget={2})", beforeNetSnap.$clone(), this.transform.position.$clone(), this.currentShotTarget.$clone()));
+                        !Bridge.staticEquals(this.OnGoal, null) ? this.OnGoal() : null;
+                        this.ApplyGoalPhysics();
+                    } else if (!this.currentIsInsideGoal) {
+                        UnityEngine.Debug.Log$1("<color=grey>[BALL OUT OF BOUNDS]</color> C\u00fa s\u00fat ra ngo\u00e0i, b\u1ecf qua va ch\u1ea1m v\u1edbi " + (hitObj.name || ""));
+                    } else {
+                        if (!hitObj.CompareTag("Goalkeeper") && !hitObj.CompareTag("Defender") && !(UnityEngine.MonoBehaviour.op_Inequality(hitObj.GetComponentInParent(RonaldoPenalty.PenaltyGoalkeeperAI), null)) && !(UnityEngine.MonoBehaviour.op_Inequality(hitObj.GetComponentInParent(RonaldoPenalty.PenaltyDefenderAI), null)) && !System.String.contains(objName,"goalkeeper") && !System.String.contains(objName,"defender") && !System.String.contains(objName,"gk")) {
+                            return;
+                        }
+                        if (this.transform.position.z >= this.goalZ - 0.4) {
+                            var beforeSnap = this.transform.position.$clone();
+                            UnityEngine.Debug.Log$1(System.String.format("<color=green>[BALL GOAL]</color> B\u00f3ng \u0111\u00e3 qua v\u1ea1ch v\u00f4i (Z={0:F2}) tr\u01b0\u1edbc khi ch\u1ea1m Blocker {1} -> GOAL!", Bridge.box(this.transform.position.z, System.Single, System.Single.format, System.Single.getHashCode), hitObj.name));
+                            this.isGoalScored = true;
+                            this.hasResolved = true;
+                            this.isFlying = false;
+                            this.StopAllCoroutines();
+                            this.transform.position = this.currentShotTarget.$clone();
+                            UnityEngine.Debug.Log$1(System.String.format("<color=cyan>[BALL DEBUG][SNAP-BlockerButGoal]</color> BeforeSnap={0} -> AfterSnap={1} (currentShotTarget={2}) | DeltaY={3:F4}", beforeSnap.$clone(), this.transform.position.$clone(), this.currentShotTarget.$clone(), Bridge.box(this.transform.position.y - beforeSnap.y, System.Single, System.Single.format, System.Single.getHashCode)));
+                            !Bridge.staticEquals(this.OnGoal, null) ? this.OnGoal() : null;
+                            this.ApplyGoalPhysics();
+                            return;
+                        }
+                        UnityEngine.Debug.Log$1("<color=red>[BALL BLOCKED]</color> B\u1ecb ch\u1eb7n b\u1edfi " + (hitObj.name || "") + "! B\u1eafn Rigidbody n\u1ea3y ng\u01b0\u1ee3c l\u1ea1i!");
+                        this.hasResolved = true;
+                        this.isFlying = false;
+                        this.StopAllCoroutines();
+                        var reflectDir = (this.transform.position.$clone().sub( hitObj.transform.position )).clone().normalize().$clone();
+                        reflectDir.y = this.blockBounceUpward;
+                        reflectDir.z = 0.0 - Math.abs(reflectDir.z);
+                        reflectDir.normalize();
+                        if (UnityEngine.Component.op_Inequality(this.rb, null)) {
+                            this.rb.linearVelocity = pc.Vec3.ZERO.clone();
+                            this.rb.angularVelocity = pc.Vec3.ZERO.clone();
+                            this.rb.linearVelocity = reflectDir.$clone().clone().scale( this.blockBounceSpeed );
+                            UnityEngine.Debug.Log$1(System.String.format("<color=cyan>[BALL DEBUG][PHYSICS BOUNCE]</color> reflectDir={0} | velocity={1} | isKinematic={2} | mass={3}", reflectDir.$clone(), this.rb.linearVelocity.$clone(), Bridge.box(this.rb.isKinematic, System.Boolean, System.Boolean.toString), Bridge.box(this.rb.mass, System.Single, System.Single.format, System.Single.getHashCode)));
+                            this.StartCoroutine$1(this.LogVelocityFramesForDebug());
+                        } else {
+                            UnityEngine.Debug.LogError$2("<color=red>[BALL DEBUG] rb (Rigidbody) \u0111ang NULL -> kh\u00f4ng set \u0111\u01b0\u1ee3c velocity n\u1ea3y!</color> Ki\u1ec3m tra l\u1ea1i Ball GameObject c\u00f3 \u0111\u00fang component Rigidbody kh\u00f4ng.");
+                        }
+                        !Bridge.staticEquals(this.OnBlocked, null) ? this.OnBlocked() : null;
+                    }
+                }
+            },
+            /*RonaldoPenalty.PenaltyBallController.HandleCollision end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.LogVelocityFramesForDebug start.*/
+            LogVelocityFramesForDebug: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#LogVelocityFramesForDebug", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    i,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    i = 0;
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 1: {
+                                    if ( i < 10 ) {
+                                            $step = 2;
+                                            continue;
+                                        }
+                                    $step = 5;
+                                    continue;
+                                }
+                                case 2: {
+                                    $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    if (UnityEngine.Component.op_Equality(this.rb, null)) {
+                                            $step = 5;
+                                            continue;
+                                        }
+                                        UnityEngine.Debug.Log$1(System.String.format("<color=magenta>[BALL DEBUG][BOUNCE FRAME {0}]</color> velocity={1} | pos={2} | isKinematic={3}", Bridge.box(i, System.Int32), this.rb.linearVelocity.$clone(), this.transform.position.$clone(), Bridge.box(this.rb.isKinematic, System.Boolean, System.Boolean.toString)));
+                                    $step = 4;
+                                    continue;
+                                }
+                                case 4: {
+                                    i = (i + 1) | 0;
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 5: {
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyBallController.LogVelocityFramesForDebug end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.ApplyGoalPhysics start.*/
+            ApplyGoalPhysics: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#ApplyGoalPhysics", this ); }
+
+                if (!(UnityEngine.Component.op_Equality(this.rb, null))) {
+                    this.rb.linearVelocity = pc.Vec3.ZERO.clone();
+                    this.rb.angularVelocity = pc.Vec3.ZERO.clone();
+                    var dir = this.currentShotDirection.$clone();
+                    dir.y = this.goalFallDownward;
+                    dir.normalize();
+                    this.rb.linearVelocity = dir.$clone().clone().scale( this.goalFallSpeed );
+                    this.rb.linearDamping = this.goalDropDamping;
+                    UnityEngine.Debug.Log$1(System.String.format("<color=cyan>[BALL DEBUG][GOAL PHYSICS]</color> direction={0} | velocity={1} | damping={2}", this.currentShotDirection.$clone(), this.rb.linearVelocity.$clone(), Bridge.box(this.rb.linearDamping, System.Single, System.Single.format, System.Single.getHashCode)));
+                }
+            },
+            /*RonaldoPenalty.PenaltyBallController.ApplyGoalPhysics end.*/
+
+            /*RonaldoPenalty.PenaltyBallController.OnDrawGizmosSelected start.*/
+            OnDrawGizmosSelected: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyBallController#OnDrawGizmosSelected", this ); }
+
+                var lPos = ((UnityEngine.Component.op_Inequality(this.leftTop, null)) ? this.leftTop.position.$clone() : new pc.Vec3( 0.0 - this.halfWidth, this.leftTopY, this.goalZ ));
+                var cPos = ((UnityEngine.Component.op_Inequality(this.bottomCenter, null)) ? this.bottomCenter.position.$clone() : new pc.Vec3( 0.0, this.bottomCenterY, this.goalZ ));
+                var rPos = ((UnityEngine.Component.op_Inequality(this.rightTop, null)) ? this.rightTop.position.$clone() : new pc.Vec3( this.halfWidth, this.rightTopY, this.goalZ ));
+                pc.generateStubProxy( 'UnityEngine.Gizmos', true ).color = new pc.Color( 0.2, 0.95, 0.35, 0.95 );
+                pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawLine', null );
+                pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawLine', null );
+                pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+            },
+            /*RonaldoPenalty.PenaltyBallController.OnDrawGizmosSelected end.*/
+
+
+        }
+    });
+    /*RonaldoPenalty.PenaltyBallController end.*/
+
+    /*RonaldoPenalty.PenaltyDefenderAI start.*/
+    Bridge.define("RonaldoPenalty.PenaltyDefenderAI", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            leftLimit: null,
+            rightLimit: null,
+            speed: 0,
+            startActive: false,
+            t: 0,
+            direction: 0,
+            isMoving: false,
+            initialPosition: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#init", this ); }
+
+                this.initialPosition = new UnityEngine.Vector3();
+                this.speed = 2.2;
+                this.startActive = false;
+                this.t = 0.5;
+                this.direction = 1;
+                this.isMoving = false;
+            }
+        },
+        methods: {
+            /*RonaldoPenalty.PenaltyDefenderAI.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#Awake", this ); }
+
+                this.initialPosition = this.transform.position.$clone();
+                if (this.startActive) {
+                    this.Activate();
+                } else {
+                    this.isMoving = false;
+                }
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.Awake end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.SetBounds start.*/
+            SetBounds: function (left, right) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#SetBounds", this ); }
+
+                this.leftLimit = left;
+                this.rightLimit = right;
+                this.CalculateCurrentT();
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.SetBounds end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.SetSpeed start.*/
+            SetSpeed: function (newSpeed) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#SetSpeed", this ); }
+
+                this.speed = newSpeed;
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.SetSpeed end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.Activate start.*/
+            Activate: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#Activate", this ); }
+
+                Bridge.ensureBaseProperty(this, "gameObject").$UnityEngine$Component$gameObject.SetActive(true);
+                this.isMoving = true;
+                this.direction = 1;
+                this.CalculateCurrentT();
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.Activate end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.Deactivate start.*/
+            Deactivate: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#Deactivate", this ); }
+
+                this.isMoving = false;
+                Bridge.ensureBaseProperty(this, "gameObject").$UnityEngine$Component$gameObject.SetActive(false);
+                if (!pc.Vec3.equals( this.initialPosition, pc.Vec3.ZERO.clone() )) {
+                    this.transform.position = this.initialPosition.$clone();
+                }
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.Deactivate end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.ResetPosition start.*/
+            ResetPosition: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#ResetPosition", this ); }
+
+                if (!pc.Vec3.equals( this.initialPosition, pc.Vec3.ZERO.clone() )) {
+                    this.transform.position = this.initialPosition.$clone();
+                }
+                this.CalculateCurrentT();
+                this.direction = 1;
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.ResetPosition end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.CalculateCurrentT start.*/
+            CalculateCurrentT: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#CalculateCurrentT", this ); }
+
+                if (UnityEngine.Component.op_Inequality(this.leftLimit, null) && UnityEngine.Component.op_Inequality(this.rightLimit, null)) {
+                    var segment = this.rightLimit.position.$clone().sub( this.leftLimit.position );
+                    var sqrMag = segment.lengthSq();
+                    if (sqrMag > 0.0001) {
+                        var offset = this.transform.position.$clone().sub( this.leftLimit.position );
+                        this.t = Math.max(0, Math.min(1, offset.dot( segment ) / sqrMag));
+                    } else {
+                        this.t = 0.5;
+                    }
+                } else {
+                    this.t = 0.5;
+                }
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.CalculateCurrentT end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.SetupRound start.*/
+            SetupRound: function (round) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#SetupRound", this ); }
+
+                if (round <= 1) {
+                    this.Deactivate();
+                } else {
+                    this.Activate();
+                }
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.SetupRound end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#Update", this ); }
+
+                if (this.isMoving && !(UnityEngine.Component.op_Equality(this.leftLimit, null)) && !(UnityEngine.Component.op_Equality(this.rightLimit, null))) {
+                    this.t += this.direction * this.speed * UnityEngine.Time.deltaTime;
+                    if (this.t >= 1.0) {
+                        this.t = 1.0;
+                        this.direction = -1;
+                    }
+                    if (this.t <= 0.0) {
+                        this.t = 0.0;
+                        this.direction = 1;
+                    }
+                    var smoothT = pc.math.smoothstep(0.0, 1.0, this.t);
+                    this.transform.position = new pc.Vec3().lerp( this.leftLimit.position, this.rightLimit.position, smoothT );
+                }
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.Update end.*/
+
+            /*RonaldoPenalty.PenaltyDefenderAI.OnDrawGizmosSelected start.*/
+            OnDrawGizmosSelected: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyDefenderAI#OnDrawGizmosSelected", this ); }
+
+                if (UnityEngine.Component.op_Inequality(this.leftLimit, null) && UnityEngine.Component.op_Inequality(this.rightLimit, null)) {
+                    pc.generateStubProxy( 'UnityEngine.Gizmos', true ).color = new pc.Color( 0, 1, 1, 1 );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawLine', null );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                }
+            },
+            /*RonaldoPenalty.PenaltyDefenderAI.OnDrawGizmosSelected end.*/
+
+
+        }
+    });
+    /*RonaldoPenalty.PenaltyDefenderAI end.*/
+
+    /*RonaldoPenalty.PenaltyGameManager start.*/
+    Bridge.define("RonaldoPenalty.PenaltyGameManager", {
+        inherits: [UnityEngine.MonoBehaviour],
+        statics: {
+            fields: {
+                Instance: null
+            }
+        },
+        fields: {
+            ball: null,
+            targetMover: null,
+            goalkeeper: null,
+            ronaldoAnimator: null,
+            uiManager: null,
+            defenderRound2: null,
+            defenderRound3: null,
+            targetSpeeds: null,
+            delayBetweenRounds: 0,
+            kickImpactDelay: 0,
+            promptEveryRound: false,
+            currentState: 0,
+            currentRound: 0,
+            totalGoals: 0,
+            isTapToStoreActive: false,
+            isChallengeStarted: false,
+            pass25Tracked: false,
+            pass50Tracked: false,
+            pass75Tracked: false
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#init", this ); }
+
+                this.targetSpeeds = System.Array.init([2.0, 2.8, 3.6], System.Single);
+                this.delayBetweenRounds = 1.2;
+                this.kickImpactDelay = 0.35;
+                this.promptEveryRound = false;
+                this.currentRound = 1;
+                this.totalGoals = 0;
+                this.isTapToStoreActive = false;
+                this.isChallengeStarted = false;
+                this.pass25Tracked = false;
+                this.pass50Tracked = false;
+                this.pass75Tracked = false;
+            }
+        },
+        methods: {
+            /*RonaldoPenalty.PenaltyGameManager.SetupDependencies start.*/
+            SetupDependencies: function (b, t, gk, def2, def3, anim, ui) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#SetupDependencies", this ); }
+
+                this.ball = b;
+                this.targetMover = t;
+                this.goalkeeper = gk;
+                this.defenderRound2 = def2;
+                this.defenderRound3 = def3;
+                this.ronaldoAnimator = anim;
+                this.uiManager = ui;
+            },
+            /*RonaldoPenalty.PenaltyGameManager.SetupDependencies end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#Awake", this ); }
+
+                AppLovinAnalytics.Track(ALEvent.LOADING);
+                if (UnityEngine.MonoBehaviour.op_Inequality(RonaldoPenalty.PenaltyGameManager.Instance, null) && UnityEngine.MonoBehaviour.op_Inequality(RonaldoPenalty.PenaltyGameManager.Instance, this)) {
+                    UnityEngine.Object.Destroy(Bridge.ensureBaseProperty(this, "gameObject").$UnityEngine$Component$gameObject);
+                    return;
+                }
+                RonaldoPenalty.PenaltyGameManager.Instance = this;
+                this.ResolveUIManager();
+            },
+            /*RonaldoPenalty.PenaltyGameManager.Awake end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#Start", this ); }
+
+                AppLovinAnalytics.Track(ALEvent.LOADED);
+                AppLovinAnalytics.Track(ALEvent.DISPLAYED);
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.ball, null)) {
+                    this.ball.addOnGoal(Bridge.fn.cacheBind(this, this.HandleGoal));
+                    this.ball.addOnBlocked(Bridge.fn.cacheBind(this, this.HandleMiss));
+                }
+                this.ResolveUIManager();
+                this.InitGameFlow();
+            },
+            /*RonaldoPenalty.PenaltyGameManager.Start end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.ResolveUIManager start.*/
+            ResolveUIManager: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#ResolveUIManager", this ); }
+
+                var $t;
+                if (!(UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) && this.uiManager.HasValidSprites) {
+                    return;
+                }
+                var myMgr = this.GetComponent(RonaldoPenalty.PenaltyUIManager);
+                if (UnityEngine.MonoBehaviour.op_Inequality(myMgr, null) && myMgr.HasValidSprites) {
+                    this.uiManager = myMgr;
+                    return;
+                }
+                var allUIs = UnityEngine.Object.FindObjectsOfType(RonaldoPenalty.PenaltyUIManager);
+                var array = allUIs;
+                $t = Bridge.getEnumerator(array);
+                try {
+                    while ($t.moveNext()) {
+                        var u = $t.Current;
+                        if (UnityEngine.MonoBehaviour.op_Inequality(u, null) && u.HasValidSprites) {
+                            this.uiManager = u;
+                            return;
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+                if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                    this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                }
+            },
+            /*RonaldoPenalty.PenaltyGameManager.ResolveUIManager end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.InitGameFlow start.*/
+            InitGameFlow: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#InitGameFlow", this ); }
+
+                this.currentRound = 1;
+                this.totalGoals = 0;
+                this.isTapToStoreActive = false;
+                if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                    this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                    this.uiManager.ResetUI();
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.ball, null)) {
+                    this.ball.ResetBall();
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound2, null)) {
+                    this.defenderRound2.Deactivate();
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound3, null)) {
+                    this.defenderRound3.Deactivate();
+                }
+                this.StartRound(this.currentRound);
+            },
+            /*RonaldoPenalty.PenaltyGameManager.InitGameFlow end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#Update", this ); }
+
+                if (this.isTapToStoreActive) {
+                    if (UnityEngine.Input.GetMouseButtonDown(0) || (UnityEngine.Input.touchCount > 0 && UnityEngine.Input.GetTouch(0).phase === UnityEngine.TouchPhase.Began)) {
+                        UnityEngine.Debug.Log$1("<color=green>[PenaltyGameManager]</color> Tap to store detected!");
+                        GameManager.GotoStore();
+                    }
+                } else if (UnityEngine.Input.GetMouseButtonDown(0) || (UnityEngine.Input.touchCount > 0 && UnityEngine.Input.GetTouch(0).phase === UnityEngine.TouchPhase.Began)) {
+                    if (this.currentState === RonaldoPenalty.PenaltyGameState.WaitingForStart) {
+                        this.StartAiming();
+                    } else if (this.currentState === RonaldoPenalty.PenaltyGameState.Aiming) {
+                        this.ExecuteShot();
+                    }
+                }
+            },
+            /*RonaldoPenalty.PenaltyGameManager.Update end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.StartAiming start.*/
+            StartAiming: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#StartAiming", this ); }
+
+                if (!this.isChallengeStarted) {
+                    this.isChallengeStarted = true;
+                    AppLovinAnalytics.Track(ALEvent.CHALLENGE_STARTED);
+                    UnityEngine.Debug.Log$1("<color=yellow>[AppLovin Track]</color> CHALLENGE_STARTED");
+                }
+                this.currentState = RonaldoPenalty.PenaltyGameState.Aiming;
+                if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                    this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                    this.uiManager.SetPromptVisible(false);
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.targetMover, null)) {
+                    var speedIdx = Math.max(0, Math.min(((this.currentRound - 1) | 0), ((this.targetSpeeds.length - 1) | 0)));
+                    this.targetMover.SetSpeed(this.targetSpeeds[speedIdx]);
+                    this.targetMover.StartMoving();
+                }
+                UnityEngine.Debug.Log$1(System.String.format("<color=yellow>[PenaltyGameManager]</color> Click 1: B\u1eaft \u0111\u1ea7u ch\u1ea1y TargetCrosshair (Round {0}) -> Ch\u1edd Click 2 \u0111\u1ec3 s\u00fat!", [Bridge.box(this.currentRound, System.Int32)]));
+            },
+            /*RonaldoPenalty.PenaltyGameManager.StartAiming end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.StartRound start.*/
+            StartRound: function (round) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#StartRound", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.goalkeeper, null)) {
+                    this.goalkeeper.SetupRound(round);
+                }
+                if (round === 1) {
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound2, null)) {
+                        this.defenderRound2.Deactivate();
+                    }
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound3, null)) {
+                        this.defenderRound3.Deactivate();
+                    }
+                } else if (round === 2) {
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound2, null)) {
+                        this.defenderRound2.Activate();
+                    }
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound3, null)) {
+                        this.defenderRound3.Deactivate();
+                    }
+                } else if (round >= 3) {
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound2, null)) {
+                        this.defenderRound2.Activate();
+                    }
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound3, null)) {
+                        this.defenderRound3.Activate();
+                    }
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.ronaldoAnimator, null)) {
+                    this.ronaldoAnimator.PlayIdle();
+                }
+                if (round === 1 || this.promptEveryRound) {
+                    this.currentState = RonaldoPenalty.PenaltyGameState.WaitingForStart;
+                    if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                        this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                    }
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                        this.uiManager.SetPromptVisible(true);
+                    }
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.targetMover, null)) {
+                        this.targetMover.StopMoving();
+                        this.targetMover.Hide();
+                    }
+                    return;
+                }
+                this.currentState = RonaldoPenalty.PenaltyGameState.Aiming;
+                if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                    this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                    this.uiManager.SetPromptVisible(false);
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.targetMover, null)) {
+                    var speedIdx = Math.max(0, Math.min(((round - 1) | 0), ((this.targetSpeeds.length - 1) | 0)));
+                    this.targetMover.SetSpeed(this.targetSpeeds[speedIdx]);
+                    this.targetMover.StartMoving();
+                }
+            },
+            /*RonaldoPenalty.PenaltyGameManager.StartRound end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.ExecuteShot start.*/
+            ExecuteShot: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#ExecuteShot", this ); }
+
+                if (!this.isChallengeStarted) {
+                    this.isChallengeStarted = true;
+                    AppLovinAnalytics.Track(ALEvent.CHALLENGE_STARTED);
+                    UnityEngine.Debug.Log$1("<color=yellow>[AppLovin Track]</color> CHALLENGE_STARTED");
+                }
+                this.currentState = RonaldoPenalty.PenaltyGameState.Shooting;
+                if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                    this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                    this.uiManager.SetPromptVisible(false);
+                }
+                var crosshairPos = ((UnityEngine.MonoBehaviour.op_Inequality(this.targetMover, null)) ? this.targetMover.GetCurrentPosition() : pc.Vec3.ZERO.clone());
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.targetMover, null)) {
+                    this.targetMover.StopMoving();
+                    this.targetMover.Hide();
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.ronaldoAnimator, null)) {
+                    this.ronaldoAnimator.PlayKick();
+                }
+                this.StartCoroutine$1(this.ShootBallAfterDelay(crosshairPos.$clone(), this.kickImpactDelay));
+            },
+            /*RonaldoPenalty.PenaltyGameManager.ExecuteShot end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.ShootBallAfterDelay start.*/
+            ShootBallAfterDelay: function (crosshairPos, delay) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#ShootBallAfterDelay", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    if (delay > 0.0) {
+                                            $step = 1;
+                                            continue;
+                                        } 
+                                        $step = 3;
+                                        continue;
+                                }
+                                case 1: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(delay);
+                                        $step = 2;
+                                        return true;
+                                }
+                                case 2: {
+                                    $step = 3;
+                                    continue;
+                                }
+                                case 3: {
+                                    if (UnityEngine.MonoBehaviour.op_Inequality(this.ball, null)) {
+                                            this.ball.Shoot(crosshairPos.$clone());
+                                        }
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyGameManager.ShootBallAfterDelay end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.TrackRoundProgress start.*/
+            TrackRoundProgress: function (roundJustFinished) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#TrackRoundProgress", this ); }
+
+                if (roundJustFinished === 1 && !this.pass25Tracked) {
+                    this.pass25Tracked = true;
+                    AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_25);
+                    UnityEngine.Debug.Log$1("<color=yellow>[AppLovin Track]</color> CHALLENGE_PASS_25 (\u0110\u00e3 ho\u00e0n th\u00e0nh l\u01b0\u1ee3t s\u00fat 1/3)");
+                } else if (roundJustFinished === 2 && !this.pass50Tracked) {
+                    this.pass50Tracked = true;
+                    AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_50);
+                    UnityEngine.Debug.Log$1("<color=yellow>[AppLovin Track]</color> CHALLENGE_PASS_50 (\u0110\u00e3 ho\u00e0n th\u00e0nh l\u01b0\u1ee3t s\u00fat 2/3)");
+                } else if (roundJustFinished >= 3 && !this.pass75Tracked) {
+                    this.pass75Tracked = true;
+                    AppLovinAnalytics.Track(ALEvent.CHALLENGE_PASS_75);
+                    UnityEngine.Debug.Log$1("<color=yellow>[AppLovin Track]</color> CHALLENGE_PASS_75 (\u0110\u00e3 ho\u00e0n th\u00e0nh l\u01b0\u1ee3t s\u00fat 3/3)");
+                }
+            },
+            /*RonaldoPenalty.PenaltyGameManager.TrackRoundProgress end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.HandleGoal start.*/
+            HandleGoal: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#HandleGoal", this ); }
+
+                if (this.currentState === RonaldoPenalty.PenaltyGameState.Shooting) {
+                    this.currentState = RonaldoPenalty.PenaltyGameState.Result;
+                    this.totalGoals = (this.totalGoals + 1) | 0;
+                    if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                        this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                    }
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                        this.uiManager.UpdateRoundResult(((this.currentRound - 1) | 0), true);
+                    }
+                    this.TrackRoundProgress(this.currentRound);
+                    if (this.currentRound >= 3) {
+                        this.StartCoroutine$1(this.EndGameEvaluationRoutine());
+                        return;
+                    }
+                    this.currentRound = (this.currentRound + 1) | 0;
+                    this.StartCoroutine$1(this.NextRoundRoutine());
+                }
+            },
+            /*RonaldoPenalty.PenaltyGameManager.HandleGoal end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.HandleMiss start.*/
+            HandleMiss: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#HandleMiss", this ); }
+
+                if (this.currentState === RonaldoPenalty.PenaltyGameState.Shooting) {
+                    this.currentState = RonaldoPenalty.PenaltyGameState.Result;
+                    if (UnityEngine.MonoBehaviour.op_Equality(this.uiManager, null)) {
+                        this.uiManager = RonaldoPenalty.PenaltyUIManager.Instance || UnityEngine.Object.FindObjectOfType(RonaldoPenalty.PenaltyUIManager);
+                    }
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                        this.uiManager.UpdateRoundResult(((this.currentRound - 1) | 0), false);
+                    }
+                    this.TrackRoundProgress(this.currentRound);
+                    if (this.currentRound >= 3) {
+                        this.StartCoroutine$1(this.EndGameEvaluationRoutine());
+                        return;
+                    }
+                    this.currentRound = (this.currentRound + 1) | 0;
+                    this.StartCoroutine$1(this.NextRoundRoutine());
+                }
+            },
+            /*RonaldoPenalty.PenaltyGameManager.HandleMiss end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.NextRoundRoutine start.*/
+            NextRoundRoutine: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#NextRoundRoutine", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(this.delayBetweenRounds);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    if (UnityEngine.MonoBehaviour.op_Inequality(this.ball, null)) {
+                                            this.ball.ResetBall();
+                                        }
+                                        this.StartRound(this.currentRound);
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyGameManager.NextRoundRoutine end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.EndGameEvaluationRoutine start.*/
+            EndGameEvaluationRoutine: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#EndGameEvaluationRoutine", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $t,
+                    $t1,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(this.delayBetweenRounds);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    if (this.totalGoals >= 3) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 3;
+                                        continue;
+                                }
+                                case 2: {
+                                    this.currentState = RonaldoPenalty.PenaltyGameState.Result;
+                                        this.isTapToStoreActive = true;
+                                        if (UnityEngine.MonoBehaviour.op_Inequality(this.ronaldoAnimator, null)) {
+                                            this.ronaldoAnimator.PlayIdle();
+                                        }
+                                        AppLovinAnalytics.Track(ALEvent.CHALLENGE_SOLVED);
+                                        AppLovinAnalytics.Track(ALEvent.ENDCARD_SHOWN);
+                                        UnityEngine.Debug.Log$1("<color=green>[AppLovin Track]</color> CHALLENGE_SOLVED & ENDCARD_SHOWN (Win)");
+                                        if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                                            this.uiManager.ShowWinEndcard(function () {
+                                                GameManager.GotoStore();
+                                            });
+                                        } else {
+                                            UnityEngine.MonoBehaviour.op_Inequality(($t = Ply_SoundManager.Instance), null) ? $t.PlayFx(FxType.PlayerWin) : null;
+                                        }
+                                        !Bridge.staticEquals(GameManager.OnGameEnded, null) ? GameManager.OnGameEnded(true) : null;
+                                        return false;
+                                    $step = 3;
+                                    continue;
+                                }
+                                case 3: {
+                                    this.currentState = RonaldoPenalty.PenaltyGameState.Lose;
+                                        AppLovinAnalytics.Track(ALEvent.CHALLENGE_FAILED);
+                                        AppLovinAnalytics.Track(ALEvent.ENDCARD_SHOWN);
+                                        UnityEngine.Debug.Log$1("<color=red>[AppLovin Track]</color> CHALLENGE_FAILED & ENDCARD_SHOWN (Lose)");
+                                        if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                                            $step = 4;
+                                            continue;
+                                        } else  {
+                                            $step = 5;
+                                            continue;
+                                        }
+                                }
+                                case 4: {
+                                    this.uiManager.ShowLoseScreen(2.0, Bridge.fn.bind(this, function () {
+                                            this.ResetToGameplayInitialState();
+                                            this.isTapToStoreActive = true;
+                                        }));
+                                    $step = 7;
+                                    continue;
+                                }
+                                case 5: {
+                                    UnityEngine.MonoBehaviour.op_Inequality(($t1 = Ply_SoundManager.Instance), null) ? $t1.PlayFx(FxType.PlayerLoose) : null;
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(2.0);
+                                        $step = 6;
+                                        return true;
+                                }
+                                case 6: {
+                                    this.ResetToGameplayInitialState();
+                                        this.isTapToStoreActive = true;
+                                    $step = 7;
+                                    continue;
+                                }
+                                case 7: {
+                                    !Bridge.staticEquals(GameManager.OnGameEnded, null) ? GameManager.OnGameEnded(false) : null;
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyGameManager.EndGameEvaluationRoutine end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.ResetToGameplayInitialState start.*/
+            ResetToGameplayInitialState: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#ResetToGameplayInitialState", this ); }
+
+                AppLovinAnalytics.Track(ALEvent.CHALLENGE_RETRY);
+                UnityEngine.Debug.Log$1("<color=yellow>[AppLovin Track]</color> CHALLENGE_RETRY");
+                this.currentRound = 1;
+                this.totalGoals = 0;
+                this.pass25Tracked = false;
+                this.pass50Tracked = false;
+                this.pass75Tracked = false;
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.uiManager, null)) {
+                    this.uiManager.ResetUI();
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.ball, null)) {
+                    this.ball.ResetBall();
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound2, null)) {
+                    this.defenderRound2.Deactivate();
+                }
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.defenderRound3, null)) {
+                    this.defenderRound3.Deactivate();
+                }
+                this.StartRound(1);
+            },
+            /*RonaldoPenalty.PenaltyGameManager.ResetToGameplayInitialState end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.RestartGame start.*/
+            RestartGame: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#RestartGame", this ); }
+
+                this.InitGameFlow();
+            },
+            /*RonaldoPenalty.PenaltyGameManager.RestartGame end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.GotoStore start.*/
+            GotoStore: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#GotoStore", this ); }
+
+                GameManager.GotoStore();
+            },
+            /*RonaldoPenalty.PenaltyGameManager.GotoStore end.*/
+
+            /*RonaldoPenalty.PenaltyGameManager.GoToStore start.*/
+            GoToStore: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGameManager#GoToStore", this ); }
+
+                GameManager.GotoStore();
+            },
+            /*RonaldoPenalty.PenaltyGameManager.GoToStore end.*/
+
+
+        }
+    });
+    /*RonaldoPenalty.PenaltyGameManager end.*/
+
+    /*RonaldoPenalty.PenaltyGameState start.*/
+    Bridge.define("RonaldoPenalty.PenaltyGameState", {
+        $kind: 6,
+        statics: {
+            fields: {
+                WaitingForStart: 0,
+                Aiming: 1,
+                Shooting: 2,
+                Result: 3,
+                Lose: 4
+            }
+        }
+    });
+    /*RonaldoPenalty.PenaltyGameState end.*/
+
+    /*RonaldoPenalty.PenaltyGoalkeeperAI start.*/
+    Bridge.define("RonaldoPenalty.PenaltyGoalkeeperAI", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            leftPost: null,
+            rightPost: null,
+            baseSpeed: 0,
+            changeSpeedByRound: false,
+            currentSpeed: 0,
+            t: 0,
+            direction: 0,
+            isPatrolling: false,
+            startPos: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGoalkeeperAI#init", this ); }
+
+                this.startPos = new UnityEngine.Vector3();
+                this.baseSpeed = 1.8;
+                this.changeSpeedByRound = false;
+                this.t = 0.5;
+                this.direction = 1;
+                this.isPatrolling = true;
+            }
+        },
+        methods: {
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGoalkeeperAI#Awake", this ); }
+
+                this.startPos = this.transform.position.$clone();
+                this.currentSpeed = this.baseSpeed;
+            },
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.Awake end.*/
+
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.SetBounds start.*/
+            SetBounds: function (left, right) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGoalkeeperAI#SetBounds", this ); }
+
+                this.leftPost = left;
+                this.rightPost = right;
+            },
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.SetBounds end.*/
+
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.SetupRound start.*/
+            SetupRound: function (round) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGoalkeeperAI#SetupRound", this ); }
+
+                if (this.changeSpeedByRound) {
+                    this.currentSpeed = this.baseSpeed + (((round - 1) | 0)) * 0.5;
+                } else {
+                    this.currentSpeed = this.baseSpeed;
+                }
+                this.transform.position = this.startPos.$clone();
+                this.t = 0.5;
+                this.isPatrolling = true;
+            },
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.SetupRound end.*/
+
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.StopPatrol start.*/
+            StopPatrol: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGoalkeeperAI#StopPatrol", this ); }
+
+                this.isPatrolling = false;
+            },
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.StopPatrol end.*/
+
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGoalkeeperAI#Update", this ); }
+
+                if (this.isPatrolling && !(UnityEngine.Component.op_Equality(this.leftPost, null)) && !(UnityEngine.Component.op_Equality(this.rightPost, null))) {
+                    this.t += this.direction * this.currentSpeed * UnityEngine.Time.deltaTime;
+                    if (this.t >= 1.0) {
+                        this.t = 1.0;
+                        this.direction = -1;
+                    }
+                    if (this.t <= 0.0) {
+                        this.t = 0.0;
+                        this.direction = 1;
+                    }
+                    var smoothT = pc.math.smoothstep(0.0, 1.0, this.t);
+                    this.transform.position = new pc.Vec3().lerp( this.leftPost.position, this.rightPost.position, smoothT );
+                }
+            },
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.Update end.*/
+
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.OnDrawGizmosSelected start.*/
+            OnDrawGizmosSelected: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyGoalkeeperAI#OnDrawGizmosSelected", this ); }
+
+                if (UnityEngine.Component.op_Inequality(this.leftPost, null) && UnityEngine.Component.op_Inequality(this.rightPost, null)) {
+                    pc.generateStubProxy( 'UnityEngine.Gizmos', true ).color = new pc.Color( 1, 1, 0, 1 );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawLine', null );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                }
+            },
+            /*RonaldoPenalty.PenaltyGoalkeeperAI.OnDrawGizmosSelected end.*/
+
+
+        }
+    });
+    /*RonaldoPenalty.PenaltyGoalkeeperAI end.*/
+
+    /*RonaldoPenalty.PenaltyPlayerAnimator start.*/
+    Bridge.define("RonaldoPenalty.PenaltyPlayerAnimator", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            animator: null,
+            kickDuration: 0,
+            hashIdle: 0,
+            hashKick: 0,
+            hashCelebrate: 0,
+            hashDisappointed: 0,
+            returnToIdleCoroutine: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#init", this ); }
+
+                this.kickDuration = 1.0;
+                this.hashIdle = UnityEngine.Animator.StringToHash("Idle");
+                this.hashKick = UnityEngine.Animator.StringToHash("Kick");
+                this.hashCelebrate = UnityEngine.Animator.StringToHash("Celebrate");
+                this.hashDisappointed = UnityEngine.Animator.StringToHash("Disappointed");
+            }
+        },
+        methods: {
+            /*RonaldoPenalty.PenaltyPlayerAnimator.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#Awake", this ); }
+
+                if (UnityEngine.Component.op_Equality(this.animator, null)) {
+                    this.animator = this.GetComponent(UnityEngine.Animator);
+                }
+            },
+            /*RonaldoPenalty.PenaltyPlayerAnimator.Awake end.*/
+
+            /*RonaldoPenalty.PenaltyPlayerAnimator.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#Start", this ); }
+
+                this.PlayIdle();
+            },
+            /*RonaldoPenalty.PenaltyPlayerAnimator.Start end.*/
+
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayIdle start.*/
+            PlayIdle: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#PlayIdle", this ); }
+
+                if (this.returnToIdleCoroutine != null) {
+                    this.StopCoroutine$2(this.returnToIdleCoroutine);
+                    this.returnToIdleCoroutine = null;
+                }
+                if (UnityEngine.Component.op_Inequality(this.animator, null) && this.animator.runtimeAnimatorController != null) {
+                    this.animator.ResetTrigger(this.hashKick);
+                    this.animator.SetTrigger(this.hashIdle);
+                }
+            },
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayIdle end.*/
+
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayKick start.*/
+            PlayKick: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#PlayKick", this ); }
+
+                if (this.returnToIdleCoroutine != null) {
+                    this.StopCoroutine$2(this.returnToIdleCoroutine);
+                }
+                if (UnityEngine.Component.op_Inequality(this.animator, null) && this.animator.runtimeAnimatorController != null) {
+                    this.animator.ResetTrigger(this.hashIdle);
+                    this.animator.SetTrigger(this.hashKick);
+                    this.returnToIdleCoroutine = this.StartCoroutine$1(this.ReturnToIdleRoutine());
+                }
+            },
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayKick end.*/
+
+            /*RonaldoPenalty.PenaltyPlayerAnimator.ReturnToIdleRoutine start.*/
+            ReturnToIdleRoutine: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#ReturnToIdleRoutine", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    waitTime,
+                    stateInfo,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = null;
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    waitTime = this.kickDuration;
+                                        if (UnityEngine.Component.op_Inequality(this.animator, null)) {
+                                            stateInfo = this.animator.GetCurrentAnimatorStateInfo(0);
+                                            if (stateInfo.length > 0.2) {
+                                                waitTime = stateInfo.length;
+                                            }
+                                        }
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(waitTime);
+                                        $step = 2;
+                                        return true;
+                                }
+                                case 2: {
+                                    this.PlayIdle();
+                                        this.returnToIdleCoroutine = null;
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyPlayerAnimator.ReturnToIdleRoutine end.*/
+
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayCelebrate start.*/
+            PlayCelebrate: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#PlayCelebrate", this ); }
+
+                if (UnityEngine.Component.op_Inequality(this.animator, null) && this.animator.runtimeAnimatorController != null) {
+                    this.animator.SetTrigger(this.hashCelebrate);
+                }
+            },
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayCelebrate end.*/
+
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayDisappointed start.*/
+            PlayDisappointed: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyPlayerAnimator#PlayDisappointed", this ); }
+
+                if (UnityEngine.Component.op_Inequality(this.animator, null) && this.animator.runtimeAnimatorController != null) {
+                    this.animator.SetTrigger(this.hashDisappointed);
+                }
+            },
+            /*RonaldoPenalty.PenaltyPlayerAnimator.PlayDisappointed end.*/
+
+
+        }
+    });
+    /*RonaldoPenalty.PenaltyPlayerAnimator end.*/
+
+    /*RonaldoPenalty.PenaltyTargetMover start.*/
+    Bridge.define("RonaldoPenalty.PenaltyTargetMover", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            leftPoint: null,
+            rightPoint: null,
+            speed: 0,
+            isMoving: false,
+            t: 0,
+            direction: 0,
+            aimLineRenderer: null,
+            ballTransform: null,
+            lineWidth: 0,
+            dashDensity: 0,
+            dashRatio: 0,
+            dashColor: null,
+            lineGroundY: 0,
+            pulseEffect: false,
+            pulseSpeed: 0,
+            pulseScaleAmount: 0,
+            sortingOrder: 0,
+            sortingLayerName: null,
+            baseScale: null,
+            dashedTexture: null,
+            dashedSprite: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#init", this ); }
+
+                this.dashColor = new UnityEngine.Color();
+                this.baseScale = new UnityEngine.Vector3();
+                this.speed = 2.0;
+                this.isMoving = false;
+                this.t = 0.5;
+                this.direction = 1;
+                this.lineWidth = 0.18;
+                this.dashDensity = 0.5;
+                this.dashRatio = 0.35;
+                this.dashColor = new pc.Color( 1.0, 0.88, 0.05, 1.0 );
+                this.lineGroundY = 0.04;
+                this.pulseEffect = true;
+                this.pulseSpeed = 6.0;
+                this.pulseScaleAmount = 0.12;
+                this.sortingOrder = 50;
+                this.sortingLayerName = "Default";
+            }
+        },
+        methods: {
+            /*RonaldoPenalty.PenaltyTargetMover.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#Awake", this ); }
+
+                this.baseScale = this.transform.localScale.$clone();
+                if (pc.Vec3.equals( this.baseScale, pc.Vec3.ZERO.clone() )) {
+                    this.baseScale = new pc.Vec3( 1, 1, 1 );
+                }
+                if (UnityEngine.Component.op_Equality(this.ballTransform, null)) {
+                    var ballObj = UnityEngine.GameObject.FindWithTag("Ball");
+                    if (UnityEngine.GameObject.op_Inequality(ballObj, null)) {
+                        this.ballTransform = ballObj.transform;
+                    }
+                }
+                this.SetupAimLineSprite();
+                this.ApplySortingOrder();
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.Awake end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.SetBallTransform start.*/
+            SetBallTransform: function (ball) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#SetBallTransform", this ); }
+
+                this.ballTransform = ball;
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.SetBallTransform end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.SetupAimLineSprite start.*/
+            SetupAimLineSprite: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#SetupAimLineSprite", this ); }
+
+                if (UnityEngine.Component.op_Equality(this.aimLineRenderer, null)) {
+                    var lineObj = new UnityEngine.GameObject.$ctor2("AimLineSprite");
+                    lineObj.transform.SetParent(this.transform.parent, false);
+                    this.aimLineRenderer = lineObj.AddComponent(UnityEngine.SpriteRenderer);
+                }
+                if (this.dashedSprite == null) {
+                    this.dashedSprite = this.CreateDashedSprite();
+                }
+                this.aimLineRenderer.sprite = this.dashedSprite;
+                this.aimLineRenderer.drawMode = UnityEngine.SpriteDrawMode.Tiled;
+                this.aimLineRenderer.size = new pc.Vec2( 0.01, this.lineWidth );
+                this.aimLineRenderer.color = new pc.Color( 1, 1, 1, 1 );
+                this.aimLineRenderer.sortingLayerName = this.sortingLayerName;
+                this.aimLineRenderer.sortingOrder = this.sortingOrder;
+                this.aimLineRenderer.enabled = false;
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.SetupAimLineSprite end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.CreateDashedSprite start.*/
+            CreateDashedSprite: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#CreateDashedSprite", this ); }
+
+                var texWidth = 64;
+                var texHeight = 16;
+                if (this.dashedTexture == null) {
+                    this.dashedTexture = new UnityEngine.Texture2D.$ctor11(texWidth, texHeight, UnityEngine.TextureFormat.RGBA32, false);
+                    this.dashedTexture.wrapMode = UnityEngine.TextureWrapMode.Clamp;
+                    this.dashedTexture.filterMode = UnityEngine.FilterMode.Point;
+                    var emptyColor = new pc.Color( 0.0, 0.0, 0.0, 0.0 );
+                    var pixels = System.Array.init(Bridge.Int.mul(texWidth, texHeight), function (){
+                        return new UnityEngine.Color();
+                    }, UnityEngine.Color);
+                    for (var y = 0; y < texHeight; y = (y + 1) | 0) {
+                        for (var x = 0; x < texWidth; x = (x + 1) | 0) {
+                            var isDash = x < texWidth * this.dashRatio;
+                            pixels[((Bridge.Int.mul(y, texWidth) + x) | 0)] = (isDash ? this.dashColor.$clone() : emptyColor.$clone());
+                        }
+                    }
+                    this.dashedTexture.SetPixels$1(pixels);
+                    this.dashedTexture.Apply();
+                }
+                var pixelsPerUnit = texWidth * UnityEngine.Mathf.Max(this.dashDensity, 0.001);
+                return UnityEngine.Sprite.Create$3(this.dashedTexture, new UnityEngine.Rect.$ctor1(0.0, 0.0, texWidth, texHeight), new pc.Vec2( 0.0, 0.5 ), pixelsPerUnit, 0, UnityEngine.SpriteMeshType.FullRect);
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.CreateDashedSprite end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.ApplySortingOrder start.*/
+            ApplySortingOrder: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#ApplySortingOrder", this ); }
+
+                var r = this.GetComponent(UnityEngine.Renderer);
+                if (UnityEngine.Component.op_Inequality(r, null)) {
+                    r.sortingLayerName = this.sortingLayerName;
+                    r.sortingOrder = this.sortingOrder;
+                }
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.ApplySortingOrder end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.SetBounds start.*/
+            SetBounds: function (left, right) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#SetBounds", this ); }
+
+                this.leftPoint = left;
+                this.rightPoint = right;
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.SetBounds end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.SetSpeed start.*/
+            SetSpeed: function (newSpeed) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#SetSpeed", this ); }
+
+                this.speed = newSpeed;
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.SetSpeed end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.StartMoving start.*/
+            StartMoving: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#StartMoving", this ); }
+
+                this.isMoving = true;
+                Bridge.ensureBaseProperty(this, "gameObject").$UnityEngine$Component$gameObject.SetActive(true);
+                if (UnityEngine.Component.op_Inequality(this.aimLineRenderer, null)) {
+                    this.aimLineRenderer.enabled = true;
+                }
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.StartMoving end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.StopMoving start.*/
+            StopMoving: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#StopMoving", this ); }
+
+                this.isMoving = false;
+                if (UnityEngine.Component.op_Inequality(this.aimLineRenderer, null)) {
+                    this.aimLineRenderer.enabled = false;
+                }
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.StopMoving end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.Hide start.*/
+            Hide: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#Hide", this ); }
+
+                if (UnityEngine.Component.op_Inequality(this.aimLineRenderer, null)) {
+                    this.aimLineRenderer.enabled = false;
+                }
+                Bridge.ensureBaseProperty(this, "gameObject").$UnityEngine$Component$gameObject.SetActive(false);
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.Hide end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#Update", this ); }
+
+                if (this.pulseEffect) {
+                    var scale = 1.0 + Math.sin(UnityEngine.Time.time * this.pulseSpeed) * this.pulseScaleAmount;
+                    this.transform.localScale = this.baseScale.$clone().clone().scale( scale );
+                }
+                if (!this.isMoving || UnityEngine.Component.op_Equality(this.leftPoint, null) || UnityEngine.Component.op_Equality(this.rightPoint, null)) {
+                    return;
+                }
+                this.t += this.direction * this.speed * UnityEngine.Time.deltaTime;
+                if (this.t >= 1.0) {
+                    this.t = 1.0;
+                    this.direction = -1;
+                }
+                if (this.t <= 0.0) {
+                    this.t = 0.0;
+                    this.direction = 1;
+                }
+                var smoothT = pc.math.smoothstep(0.0, 1.0, this.t);
+                this.transform.position = new pc.Vec3().lerp( this.leftPoint.position, this.rightPoint.position, smoothT );
+                if (!(UnityEngine.Component.op_Inequality(this.aimLineRenderer, null)) || !this.isMoving) {
+                    return;
+                }
+                if (UnityEngine.Component.op_Inequality(this.ballTransform, null)) {
+                    this.aimLineRenderer.enabled = true;
+                    var startPos = new pc.Vec3( this.ballTransform.position.x, this.lineGroundY, this.ballTransform.position.z + 0.15 );
+                    var endPos = new pc.Vec3( this.transform.position.x, this.lineGroundY, this.transform.position.z );
+                    var delta = endPos.$clone().sub( startPos );
+                    var distance = delta.length();
+                    this.aimLineRenderer.transform.position = startPos.$clone();
+                    if (distance > 0.001) {
+                        var sideways = new pc.Vec3().cross( pc.Vec3.UP.clone(), delta.clone().normalize() );
+                        this.aimLineRenderer.transform.rotation = new pc.Quat().lookRotation( pc.Vec3.UP.clone(), sideways );
+                    }
+                    this.aimLineRenderer.size = new pc.Vec2( UnityEngine.Mathf.Max(distance, 0.01), this.lineWidth );
+                } else {
+                    var ballObj = UnityEngine.GameObject.FindWithTag("Ball");
+                    if (UnityEngine.GameObject.op_Inequality(ballObj, null)) {
+                        this.ballTransform = ballObj.transform;
+                    }
+                }
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.Update end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.GetCurrentPosition start.*/
+            GetCurrentPosition: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#GetCurrentPosition", this ); }
+
+                return this.transform.position.$clone();
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.GetCurrentPosition end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.GetNormalizedT start.*/
+            GetNormalizedT: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#GetNormalizedT", this ); }
+
+                return this.t;
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.GetNormalizedT end.*/
+
+            /*RonaldoPenalty.PenaltyTargetMover.OnDrawGizmosSelected start.*/
+            OnDrawGizmosSelected: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyTargetMover#OnDrawGizmosSelected", this ); }
+
+                if (UnityEngine.Component.op_Inequality(this.leftPoint, null) && UnityEngine.Component.op_Inequality(this.rightPoint, null)) {
+                    pc.generateStubProxy( 'UnityEngine.Gizmos', true ).color = new pc.Color( 1, 0, 0, 1 );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawLine', null );
+                    pc.generateStubProxy( 'UnityEngine.Gizmos', true ).color = new pc.Color( 1.0, 0.2, 0.2, 0.9 );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                    pc.stubProxy.reportMethod( 'UnityEngine.Gizmos.DrawWireSphere', null );
+                }
+            },
+            /*RonaldoPenalty.PenaltyTargetMover.OnDrawGizmosSelected end.*/
+
+
+        }
+    });
+    /*RonaldoPenalty.PenaltyTargetMover end.*/
+
+    /*RonaldoPenalty.PenaltyUIManager start.*/
+    Bridge.define("RonaldoPenalty.PenaltyUIManager", {
+        inherits: [UnityEngine.MonoBehaviour],
+        statics: {
+            fields: {
+                Instance: null
+            }
+        },
+        fields: {
+            roundIndicators: null,
+            iconEmpty: null,
+            iconCheck: null,
+            iconCross: null,
+            winEndcardPanel: null,
+            losePanel: null,
+            promptText: null,
+            objectsToHideOnWin: null,
+            objectsToHideOnLose: null,
+            extraObjectsToHide: null,
+            onEndcardClick: null,
+            initialIndicatorColors: null,
+            isWinEndcardActive: false
+        },
+        props: {
+            IconEmpty: {
+                get: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#IconEmpty#get", this ); }
+
+                    return this.iconEmpty;
+                }
+            },
+            IconCheck: {
+                get: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#IconCheck#get", this ); }
+
+                    return this.iconCheck;
+                }
+            },
+            IconCross: {
+                get: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#IconCross#get", this ); }
+
+                    return this.iconCross;
+                }
+            },
+            HasValidSprites: {
+                get: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#HasValidSprites#get", this ); }
+
+                    return this.iconCheck != null && this.iconCross != null;
+                }
+            }
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#init", this ); }
+
+                this.isWinEndcardActive = false;
+            }
+        },
+        methods: {
+            /*RonaldoPenalty.PenaltyUIManager.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#Awake", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Equality(RonaldoPenalty.PenaltyUIManager.Instance, null) || this.HasValidSprites) {
+                    RonaldoPenalty.PenaltyUIManager.Instance = this;
+                }
+                this.AutoFindReferences();
+            },
+            /*RonaldoPenalty.PenaltyUIManager.Awake end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#Start", this ); }
+
+                this.AutoFindReferences();
+                this.ResetUI();
+            },
+            /*RonaldoPenalty.PenaltyUIManager.Start end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.AutoFindReferences start.*/
+            AutoFindReferences: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#AutoFindReferences", this ); }
+
+                var $t, $t1;
+                var allUIMgrs = UnityEngine.Object.FindObjectsOfType(RonaldoPenalty.PenaltyUIManager);
+                var array = allUIMgrs;
+                $t = Bridge.getEnumerator(array);
+                try {
+                    while ($t.moveNext()) {
+                        var mgr = $t.Current;
+                        if (UnityEngine.MonoBehaviour.op_Inequality(mgr, null) && UnityEngine.MonoBehaviour.op_Inequality(mgr, this)) {
+                            if (this.iconEmpty == null && mgr.iconEmpty != null) {
+                                this.iconEmpty = mgr.iconEmpty;
+                            }
+                            if (this.iconCheck == null && mgr.iconCheck != null) {
+                                this.iconCheck = mgr.iconCheck;
+                            }
+                            if (this.iconCross == null && mgr.iconCross != null) {
+                                this.iconCross = mgr.iconCross;
+                            }
+                            if (UnityEngine.GameObject.op_Equality(this.winEndcardPanel, null) && UnityEngine.GameObject.op_Inequality(mgr.winEndcardPanel, null)) {
+                                this.winEndcardPanel = mgr.winEndcardPanel;
+                            }
+                            if (UnityEngine.GameObject.op_Equality(this.losePanel, null) && UnityEngine.GameObject.op_Inequality(mgr.losePanel, null)) {
+                                this.losePanel = mgr.losePanel;
+                            }
+                            if (UnityEngine.GameObject.op_Equality(this.promptText, null) && UnityEngine.GameObject.op_Inequality(mgr.promptText, null)) {
+                                this.promptText = mgr.promptText;
+                            }
+                            if ((this.objectsToHideOnWin == null || this.objectsToHideOnWin.length === 0) && mgr.objectsToHideOnWin != null && mgr.objectsToHideOnWin.length !== 0) {
+                                this.objectsToHideOnWin = mgr.objectsToHideOnWin;
+                            }
+                            if ((this.objectsToHideOnLose == null || this.objectsToHideOnLose.length === 0) && mgr.objectsToHideOnLose != null && mgr.objectsToHideOnLose.length !== 0) {
+                                this.objectsToHideOnLose = mgr.objectsToHideOnLose;
+                            }
+                            if ((this.extraObjectsToHide == null || this.extraObjectsToHide.length === 0) && mgr.extraObjectsToHide != null && mgr.extraObjectsToHide.length !== 0) {
+                                this.extraObjectsToHide = mgr.extraObjectsToHide;
+                            }
+                            if ((this.roundIndicators == null || this.roundIndicators.length === 0) && mgr.roundIndicators != null && mgr.roundIndicators.length !== 0) {
+                                this.roundIndicators = mgr.roundIndicators;
+                            }
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+                if (this.iconCheck == null || this.iconCross == null || this.iconEmpty == null) {
+                    var allSprites = UnityEngine.Resources.FindObjectsOfTypeAll(UnityEngine.Sprite);
+                    var array2 = allSprites;
+                    $t1 = Bridge.getEnumerator(array2);
+                    try {
+                        while ($t1.moveNext()) {
+                            var s = $t1.Current;
+                            if (!(s == null)) {
+                                if (this.iconCheck == null && (Bridge.referenceEquals(s.name, "Win") || Bridge.referenceEquals(s.name, "True-false_0") || Bridge.referenceEquals(s.name, "icon_check") || Bridge.referenceEquals(s.name, "BoxTick"))) {
+                                    this.iconCheck = s;
+                                }
+                                if (this.iconCross == null && (Bridge.referenceEquals(s.name, "Loss") || Bridge.referenceEquals(s.name, "lose") || Bridge.referenceEquals(s.name, "True-false_1") || Bridge.referenceEquals(s.name, "icon_cross") || Bridge.referenceEquals(s.name, "YOU LOSE"))) {
+                                    this.iconCross = s;
+                                }
+                                if (this.iconEmpty == null && (Bridge.referenceEquals(s.name, "WhiteBorder") || Bridge.referenceEquals(s.name, "icon_empty") || Bridge.referenceEquals(s.name, "red_border"))) {
+                                    this.iconEmpty = s;
+                                }
+                            }
+                        }
+                    } finally {
+                        if (Bridge.is($t1, System.IDisposable)) {
+                            $t1.System$IDisposable$Dispose();
+                        }
+                    }
+                }
+                if (this.roundIndicators == null || this.roundIndicators.length === 0 || UnityEngine.MonoBehaviour.op_Equality(this.roundIndicators[0], null)) {
+                    var found = new (System.Collections.Generic.List$1(UnityEngine.UI.Image)).ctor();
+                    for (var i = 1; i <= 3; i = (i + 1) | 0) {
+                        var obj = UnityEngine.GameObject.Find(System.String.format("Round_{0}_Indicator", [Bridge.box(i, System.Int32)]));
+                        if (UnityEngine.GameObject.op_Inequality(obj, null)) {
+                            var img = obj.GetComponent(UnityEngine.UI.Image);
+                            if (UnityEngine.MonoBehaviour.op_Inequality(img, null)) {
+                                found.add(img);
+                            }
+                        }
+                    }
+                    if (found.Count > 0) {
+                        this.roundIndicators = found.ToArray();
+                    }
+                }
+                if (UnityEngine.GameObject.op_Equality(this.promptText, null)) {
+                    this.promptText = UnityEngine.GameObject.Find("Tap to play") || UnityEngine.GameObject.Find("Tap TO play") || UnityEngine.GameObject.Find("Tap To play") || UnityEngine.GameObject.Find("Tap To Play") || UnityEngine.GameObject.Find("PromptText");
+                }
+                if (UnityEngine.GameObject.op_Equality(this.losePanel, null)) {
+                    this.losePanel = UnityEngine.GameObject.Find("LosePanel");
+                }
+                if (UnityEngine.GameObject.op_Equality(this.winEndcardPanel, null)) {
+                    this.winEndcardPanel = UnityEngine.GameObject.Find("WinEndcardPanel") || UnityEngine.GameObject.Find("Endcard");
+                }
+            },
+            /*RonaldoPenalty.PenaltyUIManager.AutoFindReferences end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.CacheInitialColors start.*/
+            CacheInitialColors: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#CacheInitialColors", this ); }
+
+                if (this.roundIndicators == null || (this.initialIndicatorColors != null && this.initialIndicatorColors.length === this.roundIndicators.length)) {
+                    return;
+                }
+                this.initialIndicatorColors = System.Array.init(this.roundIndicators.length, function (){
+                    return new UnityEngine.Color();
+                }, UnityEngine.Color);
+                for (var i = 0; i < this.roundIndicators.length; i = (i + 1) | 0) {
+                    if (UnityEngine.MonoBehaviour.op_Inequality(this.roundIndicators[i], null)) {
+                        this.initialIndicatorColors[i] = this.roundIndicators[i].color.$clone();
+                    }
+                }
+            },
+            /*RonaldoPenalty.PenaltyUIManager.CacheInitialColors end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.SetupReferences start.*/
+            SetupReferences: function (indicators, lose, prompt, winEndcard, empty, check, cross) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#SetupReferences", this ); }
+
+                if (winEndcard === void 0) { winEndcard = null; }
+                if (empty === void 0) { empty = null; }
+                if (check === void 0) { check = null; }
+                if (cross === void 0) { cross = null; }
+                this.roundIndicators = indicators;
+                this.losePanel = lose;
+                this.promptText = prompt;
+                this.winEndcardPanel = winEndcard;
+                if (empty != null) {
+                    this.iconEmpty = empty;
+                }
+                if (check != null) {
+                    this.iconCheck = check;
+                }
+                if (cross != null) {
+                    this.iconCross = cross;
+                }
+                this.CacheInitialColors();
+            },
+            /*RonaldoPenalty.PenaltyUIManager.SetupReferences end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.ResetUI start.*/
+            ResetUI: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#ResetUI", this ); }
+
+                this.isWinEndcardActive = false;
+                this.AutoFindReferences();
+                this.CacheInitialColors();
+                this.SetObjectsActive(this.objectsToHideOnWin, true);
+                this.SetObjectsActive(this.objectsToHideOnLose, true);
+                this.SetObjectsActive(this.extraObjectsToHide, true);
+                if (this.roundIndicators != null) {
+                    for (var i = 0; i < this.roundIndicators.length; i = (i + 1) | 0) {
+                        var img = this.roundIndicators[i];
+                        if (UnityEngine.MonoBehaviour.op_Inequality(img, null)) {
+                            if (this.iconEmpty != null) {
+                                img.sprite = this.iconEmpty;
+                            }
+                            if (this.initialIndicatorColors != null && i < this.initialIndicatorColors.length) {
+                                img.color = this.initialIndicatorColors[i].$clone();
+                            }
+                        }
+                    }
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.losePanel, null)) {
+                    this.losePanel.SetActive(false);
+                }
+                if (UnityEngine.GameObject.op_Inequality(this.winEndcardPanel, null)) {
+                    this.winEndcardPanel.SetActive(false);
+                }
+                this.SetPromptVisible(true);
+            },
+            /*RonaldoPenalty.PenaltyUIManager.ResetUI end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.SetPromptVisible start.*/
+            SetPromptVisible: function (visible) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#SetPromptVisible", this ); }
+
+                if (UnityEngine.GameObject.op_Inequality(this.promptText, null)) {
+                    this.promptText.SetActive(visible);
+                }
+            },
+            /*RonaldoPenalty.PenaltyUIManager.SetPromptVisible end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.UpdateRoundResult start.*/
+            UpdateRoundResult: function (roundIndex, isGoal) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#UpdateRoundResult", this ); }
+
+                this.AutoFindReferences();
+                this.CacheInitialColors();
+                if (this.roundIndicators == null || roundIndex < 0 || roundIndex >= this.roundIndicators.length) {
+                    return;
+                }
+                var img = this.roundIndicators[roundIndex];
+                if (UnityEngine.MonoBehaviour.op_Inequality(img, null)) {
+                    var targetSprite = (isGoal ? this.iconCheck : this.iconCross);
+                    if (targetSprite != null) {
+                        img.sprite = targetSprite;
+                        img.color = new pc.Color( 1, 1, 1, 1 );
+                        UnityEngine.Debug.Log$1(System.String.format("<color=green>[UI SUCCESS]</color> Round {0} ({1}) -> {2} Sprite='{3}'", Bridge.box(((roundIndex + 1) | 0), System.Int32), img.gameObject.name, isGoal ? "CHECK (WIN)" : "CROSS (LOSS)", targetSprite.name));
+                    } else {
+                        UnityEngine.Debug.LogWarning$1("<color=red>[UI ERROR]</color> Sprite " + ((isGoal ? "iconCheck" : "iconCross") || "") + " is null! Vui l\u00f2ng g\u00e1n Sprite Win/Loss v\u00e0o PenaltyUIManager.");
+                    }
+                }
+            },
+            /*RonaldoPenalty.PenaltyUIManager.UpdateRoundResult end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.ShowWinEndcard start.*/
+            ShowWinEndcard: function (onClickStore) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#ShowWinEndcard", this ); }
+
+                var $t;
+                this.SetPromptVisible(false);
+                if (UnityEngine.GameObject.op_Inequality(this.losePanel, null)) {
+                    this.losePanel.SetActive(false);
+                }
+                this.SetObjectsActive(this.objectsToHideOnWin, false);
+                this.SetObjectsActive(this.extraObjectsToHide, false);
+                this.onEndcardClick = onClickStore || GameManager.GotoStore;
+                this.isWinEndcardActive = true;
+                if (UnityEngine.GameObject.op_Inequality(this.winEndcardPanel, null)) {
+                    this.winEndcardPanel.SetActive(true);
+                }
+                UnityEngine.MonoBehaviour.op_Inequality(($t = Ply_SoundManager.Instance), null) ? $t.PlayFx(FxType.PlayerWin) : null;
+            },
+            /*RonaldoPenalty.PenaltyUIManager.ShowWinEndcard end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.ShowLoseScreen start.*/
+            ShowLoseScreen: function (autoResetDelay, onComplete) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#ShowLoseScreen", this ); }
+
+                var $t;
+                this.isWinEndcardActive = false;
+                this.SetPromptVisible(false);
+                if (UnityEngine.GameObject.op_Inequality(this.winEndcardPanel, null)) {
+                    this.winEndcardPanel.SetActive(false);
+                }
+                this.SetObjectsActive(this.objectsToHideOnLose, false);
+                this.SetObjectsActive(this.extraObjectsToHide, false);
+                if (UnityEngine.GameObject.op_Inequality(this.losePanel, null)) {
+                    this.losePanel.SetActive(true);
+                }
+                UnityEngine.MonoBehaviour.op_Inequality(($t = Ply_SoundManager.Instance), null) ? $t.PlayFx(FxType.PlayerLoose) : null;
+                this.StartCoroutine$1(this.LoseRoutine(autoResetDelay, onComplete));
+            },
+            /*RonaldoPenalty.PenaltyUIManager.ShowLoseScreen end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.SetObjectsActive start.*/
+            SetObjectsActive: function (list, active) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#SetObjectsActive", this ); }
+
+                if (list == null) {
+                    return;
+                }
+                for (var i = 0; i < list.length; i = (i + 1) | 0) {
+                    if (UnityEngine.GameObject.op_Inequality(list[i], null)) {
+                        list[i].SetActive(active);
+                    }
+                }
+            },
+            /*RonaldoPenalty.PenaltyUIManager.SetObjectsActive end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.LoseRoutine start.*/
+            LoseRoutine: function (delay, onComplete) {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#LoseRoutine", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(delay);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    if (UnityEngine.GameObject.op_Inequality(this.losePanel, null)) {
+                                            this.losePanel.SetActive(false);
+                                        }
+                                        !Bridge.staticEquals(onComplete, null) ? onComplete() : null;
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*RonaldoPenalty.PenaltyUIManager.LoseRoutine end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.GotoStore start.*/
+            GotoStore: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#GotoStore", this ); }
+
+                GameManager.GotoStore();
+            },
+            /*RonaldoPenalty.PenaltyUIManager.GotoStore end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.GoToStore start.*/
+            GoToStore: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#GoToStore", this ); }
+
+                GameManager.GotoStore();
+            },
+            /*RonaldoPenalty.PenaltyUIManager.GoToStore end.*/
+
+            /*RonaldoPenalty.PenaltyUIManager.OnClick_GotoStore start.*/
+            OnClick_GotoStore: function () {
+if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#OnClick_GotoStore", this ); }
+
+                GameManager.GotoStore();
+            },
+            /*RonaldoPenalty.PenaltyUIManager.OnClick_GotoStore end.*/
+
+
+        }
+    });
+    /*RonaldoPenalty.PenaltyUIManager end.*/
 
     /*SoundData start.*/
     Bridge.define("SoundData", {
@@ -4376,6 +6770,9 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#inherits", this ); }
                     get: function () {
 if ( TRACE ) { TRACE( "Ply_SoundManager#Instance#get", this ); }
 
+                        if (UnityEngine.MonoBehaviour.op_Equality(Ply_Singleton$1(Ply_SoundManager).Ins, null)) {
+                            Ply_Singleton$1(Ply_SoundManager).Ins = UnityEngine.Object.FindObjectOfType(Ply_SoundManager);
+                        }
                         return Ply_Singleton$1(Ply_SoundManager).Ins;
                     }
                 }
@@ -4660,7 +7057,7 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#StopLoopFx", this ); }
 
     if ( MODULE_reflection ) {
     var $m = Bridge.setMetadata,
-        $n = ["System","DG.Tweening","UnityEngine","UnityEngine.UI","System.Collections.Generic","System.Collections","UnityEngine.Audio","DG.Tweening.Core","DG.Tweening.Plugins.Core.PathCore","System.Globalization","DG.Tweening.Plugins.Options"];
+        $n = ["System","DG.Tweening","UnityEngine","UnityEngine.UI","System.Collections.Generic","System.Collections","RonaldoPenalty","UnityEngine.Audio","DG.Tweening.Core","DG.Tweening.Plugins.Core.PathCore","System.Globalization","DG.Tweening.Plugins.Options"];
 
     /*ALEvent start.*/
     $m("ALEvent", function () { return {"att":257,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"CHALLENGE_FAILED","is":true,"t":4,"rt":ALEvent,"sn":"CHALLENGE_FAILED","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"CHALLENGE_PASS_25","is":true,"t":4,"rt":ALEvent,"sn":"CHALLENGE_PASS_25","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"CHALLENGE_PASS_50","is":true,"t":4,"rt":ALEvent,"sn":"CHALLENGE_PASS_50","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"CHALLENGE_PASS_75","is":true,"t":4,"rt":ALEvent,"sn":"CHALLENGE_PASS_75","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"CHALLENGE_RETRY","is":true,"t":4,"rt":ALEvent,"sn":"CHALLENGE_RETRY","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"CHALLENGE_SOLVED","is":true,"t":4,"rt":ALEvent,"sn":"CHALLENGE_SOLVED","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"CHALLENGE_STARTED","is":true,"t":4,"rt":ALEvent,"sn":"CHALLENGE_STARTED","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"CTA_CLICKED","is":true,"t":4,"rt":ALEvent,"sn":"CTA_CLICKED","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"DISPLAYED","is":true,"t":4,"rt":ALEvent,"sn":"DISPLAYED","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"ENDCARD_SHOWN","is":true,"t":4,"rt":ALEvent,"sn":"ENDCARD_SHOWN","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"LOADED","is":true,"t":4,"rt":ALEvent,"sn":"LOADED","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}},{"a":2,"n":"LOADING","is":true,"t":4,"rt":ALEvent,"sn":"LOADING","box":function ($v) { return Bridge.box($v, ALEvent, System.Enum.toStringFn(ALEvent));}}]}; }, $n);
@@ -4671,7 +7068,7 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#StopLoopFx", this ); }
     /*AppLovinAnalytics end.*/
 
     /*BossController start.*/
-    $m("BossController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnGameEnded","t":8,"pi":[{"n":"isWin","pt":$n[0].Boolean,"ps":0}],"sn":"OnGameEnded","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"OnLastBoardPassed","t":8,"pi":[{"n":"player","pt":PlayerController,"ps":0}],"sn":"OnLastBoardPassed","rt":$n[0].Void,"p":[PlayerController]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartBossSequence","t":8,"pi":[{"n":"isWin","pt":$n[0].Boolean,"ps":0}],"sn":"StartBossSequence","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"bossSeq","t":4,"rt":$n[1].Sequence,"sn":"bossSeq"},{"at":[new UnityEngine.HeaderAttribute("Visual References"),new UnityEngine.TooltipAttribute("SpriteRenderer hi\u1ec3n th\u1ecb h\u00ecnh \u1ea3nh c\u1ee7a Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bossSpriteRenderer","t":4,"rt":$n[2].SpriteRenderer,"sn":"bossSpriteRenderer"},{"a":1,"n":"canClickToStore","t":4,"rt":$n[0].Boolean,"sn":"canClickToStore","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("GameObject hi\u1ec3n th\u1ecb h\u00ecnh \u1ea3nh c\u1ee7a C\u1ea7u th\u1ee7 (Character Visual)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"characterVisual","t":4,"rt":$n[2].GameObject,"sn":"characterVisual"},{"at":[new UnityEngine.HeaderAttribute("Player Reference"),new UnityEngine.TooltipAttribute("Tham chi\u1ebfu t\u1edbi PlayerController trong Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"currentPlayer","t":4,"rt":PlayerController,"sn":"currentPlayer"},{"at":[new UnityEngine.HeaderAttribute("Runtime Status"),new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 hi\u1ec7n t\u1ea1i c\u1ee7a C\u1ea7u th\u1ee7 (T\u1ef1 \u0111\u1ed9ng c\u1eadp nh\u1eadt \u0111\u1ec3 ti\u1ec7n theo d\u00f5i)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"currentPlayerLevel","t":4,"rt":$n[0].Int32,"sn":"currentPlayerLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("Timing Settings"),new UnityEngine.TooltipAttribute("Th\u1eddi gian ch\u1edd (gi\u00e2y) sau khi \u0111i qua c\u1ed5ng cu\u1ed1i tr\u01b0\u1edbc khi k\u00edch ho\u1ea1t \u0111\u1ea5u Boss (\u0110i\u1ec1n >= 0 \u0111\u1ec3 \u0111\u1ebfm ng\u01b0\u1ee3c sau c\u1ed5ng cu\u1ed1i, \u0111i\u1ec1n -1 \u0111\u1ec3 nh\u00e2n v\u1eadt \u0111i t\u1edbi End m\u1edbi k\u00edch ho\u1ea1t)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"delayAfterLastBoard","t":4,"rt":$n[0].Single,"sn":"delayAfterLastBoard","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Danh s\u00e1ch c\u00e1c GameObject ph\u1ee5 c\u1ea7n t\u1ef1 \u0111\u1ed9ng t\u1eaft khi UI Result xu\u1ea5t hi\u1ec7n (v\u00ed d\u1ee5 resultObject, extraWinObject...)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"extraObjectsToHide","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"extraObjectsToHide"},{"at":[new UnityEngine.TooltipAttribute("GameObject ph\u1ee5 hi\u1ec7n l\u00ean c\u00f9ng l\u00fac v\u1edbi Win Sprite (Ch\u1ec9 b\u1eadt khi Th\u1eafng)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"extraWinObject","t":4,"rt":$n[2].GameObject,"sn":"extraWinObject"},{"at":[new UnityEngine.TooltipAttribute("Th\u1eddi gian (gi\u00e2y) hi\u1ec3n th\u1ecb hi\u1ec7u \u1ee9ng m\u00e2y \u0111\u1ed1i kh\u00e1ng FightingCloud"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightDuration","t":4,"rt":$n[0].Single,"sn":"fightDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Fight Effect"),new UnityEngine.TooltipAttribute("GameObject / ParticleSystem hi\u1ec7u \u1ee9ng m\u00e2y \u0111\u1ed1i kh\u00e1ng (FightingCloud)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightingCloud","t":4,"rt":$n[2].GameObject,"sn":"fightingCloud"},{"at":[new UnityEngine.HeaderAttribute("Audio Settings (Ply_SoundManager)"),new UnityEngine.TooltipAttribute("Lo\u1ea1i \u00e2m thanh ph\u00e1t khi hi\u1ec7u \u1ee9ng FightingCloud xu\u1ea5t hi\u1ec7n"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightingCloudFx","t":4,"rt":FxType,"sn":"fightingCloudFx","box":function ($v) { return Bridge.box($v, FxType, System.Enum.toStringFn(FxType));}},{"a":1,"n":"isSequenceStarted","t":4,"rt":$n[0].Boolean,"sn":"isSequenceStarted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("UI Panel hi\u1ec3n th\u1ecb m\u00e0n h\u00ecnh Th\u1ea5t B\u1ea1i (Lose Panel)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"losePanel","t":4,"rt":$n[2].GameObject,"sn":"losePanel"},{"at":[new UnityEngine.TooltipAttribute("Lo\u1ea1i \u00e2m thanh ph\u00e1t khi m\u00e0n h\u00ecnh Lose Panel xu\u1ea5t hi\u1ec7n"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"losePanelFx","t":4,"rt":FxType,"sn":"losePanelFx","box":function ($v) { return Bridge.box($v, FxType, System.Enum.toStringFn(FxType));}},{"at":[new UnityEngine.TooltipAttribute("Sprite hi\u1ec3n th\u1ecb khi C\u1ea7u th\u1ee7 Th\u1ea5t b\u1ea1i tr\u01b0\u1edbc Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"lossSprite","t":4,"rt":$n[2].Sprite,"sn":"lossSprite"},{"at":[new UnityEngine.HeaderAttribute("Result Showcase"),new UnityEngine.TooltipAttribute("GameObject hi\u1ec3n th\u1ecb k\u1ebft qu\u1ea3 sau khi \u0111\u1ea5u v\u1edbi Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"resultObject","t":4,"rt":$n[2].GameObject,"sn":"resultObject"},{"at":[new UnityEngine.TooltipAttribute("SpriteRenderer tr\u00ean Result Object d\u00f9ng \u0111\u1ec3 g\u00e1n Sprite k\u1ebft qu\u1ea3"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"resultSpriteRenderer","t":4,"rt":$n[2].SpriteRenderer,"sn":"resultSpriteRenderer"},{"at":[new UnityEngine.TooltipAttribute("Th\u1eddi gian (gi\u00e2y) hi\u1ec3n th\u1ecb Result Object tr\u01b0\u1edbc khi b\u1eadt m\u00e0n h\u00ecnh Win/Loss UI"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"showResultDuration","t":4,"rt":$n[0].Single,"sn":"showResultDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("UI Result Panels"),new UnityEngine.TooltipAttribute("UI Panel hi\u1ec3n th\u1ecb m\u00e0n h\u00ecnh Chi\u1ebfn Th\u1eafng (Win Panel)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winPanel","t":4,"rt":$n[2].GameObject,"sn":"winPanel"},{"at":[new UnityEngine.TooltipAttribute("Lo\u1ea1i \u00e2m thanh ph\u00e1t khi m\u00e0n h\u00ecnh Win Panel xu\u1ea5t hi\u1ec7n"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winPanelFx","t":4,"rt":FxType,"sn":"winPanelFx","box":function ($v) { return Bridge.box($v, FxType, System.Enum.toStringFn(FxType));}},{"at":[new UnityEngine.TooltipAttribute("Sprite hi\u1ec3n th\u1ecb khi C\u1ea7u th\u1ee7 Chi\u1ebfn th\u1eafng Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winSprite","t":4,"rt":$n[2].Sprite,"sn":"winSprite"}]}; }, $n);
+    $m("BossController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnGameEnded","t":8,"pi":[{"n":"isWin","pt":$n[0].Boolean,"ps":0}],"sn":"OnGameEnded","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"OnLastBoardPassed","t":8,"pi":[{"n":"player","pt":PlayerController,"ps":0}],"sn":"OnLastBoardPassed","rt":$n[0].Void,"p":[PlayerController]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartBossSequence","t":8,"pi":[{"n":"isWin","pt":$n[0].Boolean,"ps":0}],"sn":"StartBossSequence","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"bossSeq","t":4,"rt":$n[1].Sequence,"sn":"bossSeq"},{"at":[new UnityEngine.HeaderAttribute("Visual References"),new UnityEngine.TooltipAttribute("SpriteRenderer hi\u1ec3n th\u1ecb h\u00ecnh \u1ea3nh c\u1ee7a Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bossSpriteRenderer","t":4,"rt":$n[2].SpriteRenderer,"sn":"bossSpriteRenderer"},{"a":1,"n":"canClickToStore","t":4,"rt":$n[0].Boolean,"sn":"canClickToStore","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("GameObject hi\u1ec3n th\u1ecb h\u00ecnh \u1ea3nh c\u1ee7a C\u1ea7u th\u1ee7 (Character Visual)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"characterVisual","t":4,"rt":$n[2].GameObject,"sn":"characterVisual"},{"at":[new UnityEngine.HeaderAttribute("Player Reference"),new UnityEngine.TooltipAttribute("Tham chi\u1ebfu t\u1edbi PlayerController trong Scene"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"currentPlayer","t":4,"rt":PlayerController,"sn":"currentPlayer"},{"at":[new UnityEngine.HeaderAttribute("Runtime Status"),new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 hi\u1ec7n t\u1ea1i c\u1ee7a C\u1ea7u th\u1ee7 (T\u1ef1 \u0111\u1ed9ng c\u1eadp nh\u1eadt \u0111\u1ec3 ti\u1ec7n theo d\u00f5i)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"currentPlayerLevel","t":4,"rt":$n[0].Int32,"sn":"currentPlayerLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("Timing Settings"),new UnityEngine.TooltipAttribute("Th\u1eddi gian ch\u1edd (gi\u00e2y) sau khi \u0111i qua c\u1ed5ng cu\u1ed1i tr\u01b0\u1edbc khi k\u00edch ho\u1ea1t \u0111\u1ea5u Boss (\u0110i\u1ec1n >= 0 \u0111\u1ec3 \u0111\u1ebfm ng\u01b0\u1ee3c sau c\u1ed5ng cu\u1ed1i, \u0111i\u1ec1n -1 \u0111\u1ec3 nh\u00e2n v\u1eadt \u0111i t\u1edbi End m\u1edbi k\u00edch ho\u1ea1t)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"delayAfterLastBoard","t":4,"rt":$n[0].Single,"sn":"delayAfterLastBoard","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Danh s\u00e1ch c\u00e1c GameObject ph\u1ee5 c\u1ea7n t\u1ef1 \u0111\u1ed9ng t\u1eaft cho C\u1ea2 HAI khi UI Result xu\u1ea5t hi\u1ec7n (v\u00ed d\u1ee5 resultObject, extraWinObject...)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"extraObjectsToHide","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"extraObjectsToHide"},{"at":[new UnityEngine.TooltipAttribute("GameObject ph\u1ee5 hi\u1ec7n l\u00ean c\u00f9ng l\u00fac v\u1edbi Win Sprite (Ch\u1ec9 b\u1eadt khi Th\u1eafng)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"extraWinObject","t":4,"rt":$n[2].GameObject,"sn":"extraWinObject"},{"at":[new UnityEngine.TooltipAttribute("Th\u1eddi gian (gi\u00e2y) hi\u1ec3n th\u1ecb hi\u1ec7u \u1ee9ng m\u00e2y \u0111\u1ed1i kh\u00e1ng FightingCloud"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightDuration","t":4,"rt":$n[0].Single,"sn":"fightDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Fight Effect"),new UnityEngine.TooltipAttribute("GameObject / ParticleSystem hi\u1ec7u \u1ee9ng m\u00e2y \u0111\u1ed1i kh\u00e1ng (FightingCloud)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightingCloud","t":4,"rt":$n[2].GameObject,"sn":"fightingCloud"},{"at":[new UnityEngine.HeaderAttribute("Audio Settings (Ply_SoundManager)"),new UnityEngine.TooltipAttribute("Lo\u1ea1i \u00e2m thanh ph\u00e1t khi hi\u1ec7u \u1ee9ng FightingCloud xu\u1ea5t hi\u1ec7n"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"fightingCloudFx","t":4,"rt":FxType,"sn":"fightingCloudFx","box":function ($v) { return Bridge.box($v, FxType, System.Enum.toStringFn(FxType));}},{"a":1,"n":"isSequenceStarted","t":4,"rt":$n[0].Boolean,"sn":"isSequenceStarted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("UI Panel hi\u1ec3n th\u1ecb m\u00e0n h\u00ecnh Th\u1ea5t B\u1ea1i (Lose Panel)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"losePanel","t":4,"rt":$n[2].GameObject,"sn":"losePanel"},{"at":[new UnityEngine.TooltipAttribute("Lo\u1ea1i \u00e2m thanh ph\u00e1t khi m\u00e0n h\u00ecnh Lose Panel xu\u1ea5t hi\u1ec7n"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"losePanelFx","t":4,"rt":FxType,"sn":"losePanelFx","box":function ($v) { return Bridge.box($v, FxType, System.Enum.toStringFn(FxType));}},{"at":[new UnityEngine.TooltipAttribute("Sprite hi\u1ec3n th\u1ecb khi C\u1ea7u th\u1ee7 Th\u1ea5t b\u1ea1i tr\u01b0\u1edbc Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"lossSprite","t":4,"rt":$n[2].Sprite,"sn":"lossSprite"},{"at":[new UnityEngine.TooltipAttribute("Danh s\u00e1ch GameObject ch\u1ec9 \u1ea9n khi LOSE"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"objectsToHideOnLose","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"objectsToHideOnLose"},{"at":[new UnityEngine.TooltipAttribute("Danh s\u00e1ch GameObject ch\u1ec9 \u1ea9n khi WIN"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"objectsToHideOnWin","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"objectsToHideOnWin"},{"at":[new UnityEngine.HeaderAttribute("Result Showcase"),new UnityEngine.TooltipAttribute("GameObject hi\u1ec3n th\u1ecb k\u1ebft qu\u1ea3 sau khi \u0111\u1ea5u v\u1edbi Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"resultObject","t":4,"rt":$n[2].GameObject,"sn":"resultObject"},{"at":[new UnityEngine.TooltipAttribute("SpriteRenderer tr\u00ean Result Object d\u00f9ng \u0111\u1ec3 g\u00e1n Sprite k\u1ebft qu\u1ea3"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"resultSpriteRenderer","t":4,"rt":$n[2].SpriteRenderer,"sn":"resultSpriteRenderer"},{"at":[new UnityEngine.TooltipAttribute("Th\u1eddi gian (gi\u00e2y) hi\u1ec3n th\u1ecb Result Object tr\u01b0\u1edbc khi b\u1eadt m\u00e0n h\u00ecnh Win/Loss UI"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"showResultDuration","t":4,"rt":$n[0].Single,"sn":"showResultDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("UI Result Panels"),new UnityEngine.TooltipAttribute("UI Panel hi\u1ec3n th\u1ecb m\u00e0n h\u00ecnh Chi\u1ebfn Th\u1eafng (Win Panel)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winPanel","t":4,"rt":$n[2].GameObject,"sn":"winPanel"},{"at":[new UnityEngine.TooltipAttribute("Lo\u1ea1i \u00e2m thanh ph\u00e1t khi m\u00e0n h\u00ecnh Win Panel xu\u1ea5t hi\u1ec7n"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winPanelFx","t":4,"rt":FxType,"sn":"winPanelFx","box":function ($v) { return Bridge.box($v, FxType, System.Enum.toStringFn(FxType));}},{"at":[new UnityEngine.TooltipAttribute("Sprite hi\u1ec3n th\u1ecb khi C\u1ea7u th\u1ee7 Chi\u1ebfn th\u1eafng Boss"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winSprite","t":4,"rt":$n[2].Sprite,"sn":"winSprite"}]}; }, $n);
     /*BossController end.*/
 
     /*CacheCollider start.*/
@@ -4721,7 +7118,7 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#StopLoopFx", this ); }
     /*GameEndUI end.*/
 
     /*GameManager start.*/
-    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"CheckWinCondition","is":true,"t":8,"pi":[{"n":"currentLevel","pt":$n[0].Int32,"ps":0}],"sn":"CheckWinCondition","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"GotoStore","is":true,"t":8,"sn":"GotoStore","rt":$n[0].Void},{"a":1,"n":"OnCharacterReachedEnd","t":8,"pi":[{"n":"currentLevel","pt":$n[0].Int32,"ps":0}],"sn":"OnCharacterReachedEnd","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"OnGameEnd","t":8,"pi":[{"n":"winState","pt":$n[0].Boolean,"ps":0}],"sn":"OnGameEnd","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"PauseGame","is":true,"t":8,"sn":"PauseGame","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"UnPauseGame","is":true,"t":8,"sn":"UnPauseGame","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"CurrentPlayerLevel","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_CurrentPlayerLevel","t":8,"rt":$n[0].Int32,"fg":"CurrentPlayerLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"CurrentPlayerLevel"},{"a":2,"n":"Instance","is":true,"t":16,"rt":GameManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":GameManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[GameManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":2,"n":"IsGamePause","is":true,"t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsGamePause","t":8,"rt":$n[0].Boolean,"fg":"IsGamePause","is":true,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsGamePause"},{"a":2,"n":"MainCamera","is":true,"t":16,"rt":$n[2].Camera,"g":{"a":2,"n":"get_MainCamera","t":8,"rt":$n[2].Camera,"fg":"MainCamera","is":true},"s":{"a":1,"n":"set_MainCamera","t":8,"p":[$n[2].Camera],"rt":$n[0].Void,"fs":"MainCamera","is":true},"fn":"MainCamera"},{"a":2,"n":"MaxLevel","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_MaxLevel","t":8,"rt":$n[0].Int32,"fg":"MaxLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"MaxLevel"},{"a":2,"n":"TotalMoveTime","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_TotalMoveTime","t":8,"rt":$n[0].Single,"fg":"TotalMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"fn":"TotalMoveTime"},{"a":2,"n":"WinLevel","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_WinLevel","t":8,"rt":$n[0].Int32,"fg":"WinLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"WinLevel"},{"a":2,"n":"isGameEnded","is":true,"t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_isGameEnded","t":8,"rt":$n[0].Boolean,"fg":"isGameEnded","is":true,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":1,"n":"set_isGameEnded","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"isGameEnded","is":true},"fn":"isGameEnded"},{"a":2,"n":"OnCharacterReachedTheEnd","is":true,"t":4,"rt":Function,"sn":"OnCharacterReachedTheEnd"},{"a":2,"n":"OnGameEnded","is":true,"t":4,"rt":Function,"sn":"OnGameEnded"},{"a":2,"n":"OnGameStart","is":true,"t":4,"rt":Function,"sn":"OnGameStart"},{"a":2,"n":"Player","t":4,"rt":PlayerController,"sn":"Player"},{"at":[new UnityEngine.HeaderAttribute("Runtime Status"),new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 hi\u1ec7n t\u1ea1i c\u1ee7a C\u1ea7u th\u1ee7 trong m\u00e0n ch\u01a1i (T\u1ef1 \u0111\u1ed9ng c\u1eadp nh\u1eadt \u0111\u1ec3 theo d\u00f5i)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"currentPlayerLevel","t":4,"rt":$n[0].Int32,"sn":"currentPlayerLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"isGamePaused","is":true,"t":4,"rt":$n[0].Boolean,"sn":"isGamePaused","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("Game Rules"),new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 t\u1ed1i \u0111a c\u1ea7u th\u1ee7 c\u00f3 th\u1ec3 \u0111\u1ea1t t\u1edbi (M\u1eb7c \u0111\u1ecbnh = 4)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"maxLevel","t":4,"rt":$n[0].Int32,"sn":"maxLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.TooltipAttribute("T\u1ed5ng th\u1eddi gian di chuy\u1ec3n t\u1eeb v\u1ecb tr\u00ed b\u1eaft \u0111\u1ea7u t\u1edbi \u0111i\u1ec3m \u0111\u00edch (gi\u00e2y)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"totalMoveTime","t":4,"rt":$n[0].Single,"sn":"totalMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 t\u1ed1i thi\u1ec3u c\u1ea7n \u0111\u1ea1t \u0111\u1ec3 t\u00ednh chi\u1ebfn th\u1eafng khi t\u1edbi \u0111\u00edch (Win Level)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winLevel","t":4,"rt":$n[0].Int32,"sn":"winLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":GameManager,"sn":"Instance"},{"a":1,"backing":true,"n":"<MainCamera>k__BackingField","is":true,"t":4,"rt":$n[2].Camera,"sn":"MainCamera"},{"a":1,"backing":true,"n":"<isGameEnded>k__BackingField","is":true,"t":4,"rt":$n[0].Boolean,"sn":"isGameEnded","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
+    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"CheckWinCondition","is":true,"t":8,"pi":[{"n":"currentLevel","pt":$n[0].Int32,"ps":0}],"sn":"CheckWinCondition","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"GoToStore","t":8,"sn":"GoToStore","rt":$n[0].Void},{"a":2,"n":"GotoStore","is":true,"t":8,"sn":"GotoStore","rt":$n[0].Void},{"a":1,"n":"OnCharacterReachedEnd","t":8,"pi":[{"n":"currentLevel","pt":$n[0].Int32,"ps":0}],"sn":"OnCharacterReachedEnd","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"OnClick_GotoStore","t":8,"sn":"OnClick_GotoStore","rt":$n[0].Void},{"a":1,"n":"OnGameEnd","t":8,"pi":[{"n":"winState","pt":$n[0].Boolean,"ps":0}],"sn":"OnGameEnd","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"PauseGame","is":true,"t":8,"sn":"PauseGame","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"UnPauseGame","is":true,"t":8,"sn":"UnPauseGame","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"CurrentPlayerLevel","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_CurrentPlayerLevel","t":8,"rt":$n[0].Int32,"fg":"CurrentPlayerLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"CurrentPlayerLevel"},{"a":2,"n":"Instance","is":true,"t":16,"rt":GameManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":GameManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[GameManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":2,"n":"IsGamePause","is":true,"t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsGamePause","t":8,"rt":$n[0].Boolean,"fg":"IsGamePause","is":true,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsGamePause"},{"a":2,"n":"MainCamera","is":true,"t":16,"rt":$n[2].Camera,"g":{"a":2,"n":"get_MainCamera","t":8,"rt":$n[2].Camera,"fg":"MainCamera","is":true},"s":{"a":1,"n":"set_MainCamera","t":8,"p":[$n[2].Camera],"rt":$n[0].Void,"fs":"MainCamera","is":true},"fn":"MainCamera"},{"a":2,"n":"MaxLevel","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_MaxLevel","t":8,"rt":$n[0].Int32,"fg":"MaxLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"MaxLevel"},{"a":2,"n":"TotalMoveTime","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_TotalMoveTime","t":8,"rt":$n[0].Single,"fg":"TotalMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"fn":"TotalMoveTime"},{"a":2,"n":"WinLevel","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_WinLevel","t":8,"rt":$n[0].Int32,"fg":"WinLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"WinLevel"},{"a":2,"n":"isGameEnded","is":true,"t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_isGameEnded","t":8,"rt":$n[0].Boolean,"fg":"isGameEnded","is":true,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":1,"n":"set_isGameEnded","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"isGameEnded","is":true},"fn":"isGameEnded"},{"a":2,"n":"OnCharacterReachedTheEnd","is":true,"t":4,"rt":Function,"sn":"OnCharacterReachedTheEnd"},{"a":2,"n":"OnGameEnded","is":true,"t":4,"rt":Function,"sn":"OnGameEnded"},{"a":2,"n":"OnGameStart","is":true,"t":4,"rt":Function,"sn":"OnGameStart"},{"a":2,"n":"Player","t":4,"rt":PlayerController,"sn":"Player"},{"at":[new UnityEngine.HeaderAttribute("Runtime Status"),new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 hi\u1ec7n t\u1ea1i c\u1ee7a C\u1ea7u th\u1ee7 trong m\u00e0n ch\u01a1i (T\u1ef1 \u0111\u1ed9ng c\u1eadp nh\u1eadt \u0111\u1ec3 theo d\u00f5i)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"currentPlayerLevel","t":4,"rt":$n[0].Int32,"sn":"currentPlayerLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"isGamePaused","is":true,"t":4,"rt":$n[0].Boolean,"sn":"isGamePaused","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastGotoStoreTime","is":true,"t":4,"rt":$n[0].Single,"sn":"lastGotoStoreTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Game Rules"),new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 t\u1ed1i \u0111a c\u1ea7u th\u1ee7 c\u00f3 th\u1ec3 \u0111\u1ea1t t\u1edbi (M\u1eb7c \u0111\u1ecbnh = 4)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"maxLevel","t":4,"rt":$n[0].Int32,"sn":"maxLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.TooltipAttribute("T\u1ed5ng th\u1eddi gian di chuy\u1ec3n t\u1eeb v\u1ecb tr\u00ed b\u1eaft \u0111\u1ea7u t\u1edbi \u0111i\u1ec3m \u0111\u00edch (gi\u00e2y)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"totalMoveTime","t":4,"rt":$n[0].Single,"sn":"totalMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("C\u1ea5p \u0111\u1ed9 t\u1ed1i thi\u1ec3u c\u1ea7n \u0111\u1ea1t \u0111\u1ec3 t\u00ednh chi\u1ebfn th\u1eafng khi t\u1edbi \u0111\u00edch (Win Level)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winLevel","t":4,"rt":$n[0].Int32,"sn":"winLevel","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":GameManager,"sn":"Instance"},{"a":1,"backing":true,"n":"<MainCamera>k__BackingField","is":true,"t":4,"rt":$n[2].Camera,"sn":"MainCamera"},{"a":1,"backing":true,"n":"<isGameEnded>k__BackingField","is":true,"t":4,"rt":$n[0].Boolean,"sn":"isGameEnded","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
     /*GameManager end.*/
 
     /*ImageScroller start.*/
@@ -4820,6 +7217,38 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#StopLoopFx", this ); }
     $m("Yielders", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"Get","is":true,"t":8,"pi":[{"n":"seconds","pt":$n[0].Single,"ps":0}],"sn":"Get","rt":$n[2].WaitForSeconds,"p":[$n[0].Single]},{"a":2,"n":"EndOfFrame","is":true,"t":16,"rt":$n[2].WaitForEndOfFrame,"g":{"a":2,"n":"get_EndOfFrame","t":8,"rt":$n[2].WaitForEndOfFrame,"fg":"EndOfFrame","is":true},"fn":"EndOfFrame"},{"a":2,"n":"FixedUpdate","is":true,"t":16,"rt":$n[2].WaitForFixedUpdate,"g":{"a":2,"n":"get_FixedUpdate","t":8,"rt":$n[2].WaitForFixedUpdate,"fg":"FixedUpdate","is":true},"fn":"FixedUpdate"},{"a":1,"n":"_endOfFrame","is":true,"t":4,"rt":$n[2].WaitForEndOfFrame,"sn":"_endOfFrame"},{"a":1,"n":"_fixedUpdate","is":true,"t":4,"rt":$n[2].WaitForFixedUpdate,"sn":"_fixedUpdate"},{"a":1,"n":"_timeInterval","is":true,"t":4,"rt":$n[4].Dictionary$2(System.Single,UnityEngine.WaitForSeconds),"sn":"_timeInterval"}]}; }, $n);
     /*Yielders end.*/
 
+    /*RonaldoPenalty.PenaltyBallController start.*/
+    $m("RonaldoPenalty.PenaltyBallController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"ApplyGoalPhysics","t":8,"sn":"ApplyGoalPhysics","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"CalculateVShapeTargetByX","t":8,"pi":[{"n":"crosshairX","pt":$n[0].Single,"ps":0},{"n":"normalizedOffset","out":true,"pt":$n[0].Single,"ps":1},{"n":"isInsideGoal","out":true,"pt":$n[0].Boolean,"ps":2}],"sn":"CalculateVShapeTargetByX","rt":$n[2].Vector3,"p":[$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":1,"n":"FlyIntoGoalUntilHit","t":8,"pi":[{"n":"target","pt":$n[2].Vector3,"ps":0},{"n":"start","pt":$n[2].Vector3,"ps":1},{"n":"spinSpeed","pt":$n[0].Single,"ps":2}],"sn":"FlyIntoGoalUntilHit","rt":$n[5].IEnumerator,"p":[$n[2].Vector3,$n[2].Vector3,$n[0].Single]},{"a":1,"n":"FlyOutOfBounds","t":8,"pi":[{"n":"target","pt":$n[2].Vector3,"ps":0},{"n":"start","pt":$n[2].Vector3,"ps":1},{"n":"spinSpeed","pt":$n[0].Single,"ps":2}],"sn":"FlyOutOfBounds","rt":$n[5].IEnumerator,"p":[$n[2].Vector3,$n[2].Vector3,$n[0].Single]},{"a":1,"n":"FlyTrajectory","t":8,"pi":[{"n":"target","pt":$n[2].Vector3,"ps":0},{"n":"arcApex","pt":$n[0].Single,"ps":1},{"n":"normalizedOffset","pt":$n[0].Single,"ps":2},{"n":"isInsideGoal","pt":$n[0].Boolean,"ps":3}],"sn":"FlyTrajectory","rt":$n[5].IEnumerator,"p":[$n[2].Vector3,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":1,"n":"HandleCollision","t":8,"pi":[{"n":"hitObj","pt":$n[2].GameObject,"ps":0},{"n":"collisionType","pt":$n[0].String,"ps":1}],"sn":"HandleCollision","rt":$n[0].Void,"p":[$n[2].GameObject,$n[0].String]},{"a":1,"n":"LogVelocityFramesForDebug","t":8,"sn":"LogVelocityFramesForDebug","rt":$n[5].IEnumerator},{"a":1,"n":"OnCollisionEnter","t":8,"pi":[{"n":"collision","pt":$n[2].Collision,"ps":0}],"sn":"OnCollisionEnter","rt":$n[0].Void,"p":[$n[2].Collision]},{"a":1,"n":"OnDrawGizmosSelected","t":8,"sn":"OnDrawGizmosSelected","rt":$n[0].Void},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[2].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[2].Collider]},{"a":2,"n":"ResetBall","t":8,"sn":"ResetBall","rt":$n[0].Void},{"a":2,"n":"SetGoalCenter","t":8,"pi":[{"n":"center","pt":$n[2].Transform,"ps":0},{"n":"width","dv":3.2,"o":true,"pt":$n[0].Single,"ps":1}],"sn":"SetGoalCenter","rt":$n[0].Void,"p":[$n[2].Transform,$n[0].Single]},{"a":2,"n":"SetVShapeMarkers","t":8,"pi":[{"n":"left","pt":$n[2].Transform,"ps":0},{"n":"center","pt":$n[2].Transform,"ps":1},{"n":"right","pt":$n[2].Transform,"ps":2}],"sn":"SetVShapeMarkers","rt":$n[0].Void,"p":[$n[2].Transform,$n[2].Transform,$n[2].Transform]},{"a":2,"n":"Shoot","t":8,"pi":[{"n":"crosshairPos","pt":$n[2].Vector3,"ps":0}],"sn":"Shoot","rt":$n[0].Void,"p":[$n[2].Vector3]},{"at":[new UnityEngine.HeaderAttribute("Block Bounce (Va ch\u1ea1m Goalkeeper/Defender)"),new UnityEngine.TooltipAttribute("T\u1ed1c \u0111\u1ed9 b\u1eafn ra (m/s) khi b\u1ecb ch\u1eb7n. K\u1ebft h\u1ee3p v\u1edbi Physic Material (Bounciness) tr\u00ean Collider c\u1ee7a b\u00f3ng \u0111\u1ec3 t\u1ea1o l\u1ef1c n\u1ea3y th\u1eadt qua Unity Physics.")],"a":2,"n":"blockBounceSpeed","t":4,"rt":$n[0].Single,"sn":"blockBounceSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("\u0110\u1ed9 cao (tr\u1ee5c Y, D\u01af\u01a0NG = h\u1ea5t l\u00ean) \u00e9p c\u1ee9ng v\u00e0o h\u01b0\u1edbng ph\u1ea3n x\u1ea1 tr\u01b0\u1edbc khi giao cho Physics, \u0111\u1ec3 c\u00fa n\u1ea3y lu\u00f4n h\u1ea5t l\u00ean ch\u1ee9 kh\u00f4ng s\u01b0\u1ee3t ngang")],"a":2,"n":"blockBounceUpward","t":4,"rt":$n[0].Single,"sn":"blockBounceUpward","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Transform \u0111i\u1ec3m th\u1ea5p nh\u1ea5t \u1edf gi\u1eefa c\u1ee7a ch\u1eef V (BottomCenter)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bottomCenter","t":4,"rt":$n[2].Transform,"sn":"bottomCenter"},{"at":[new UnityEngine.TooltipAttribute("\u0110\u1ed9 cao \u0111i\u1ec3m th\u1ea5p nh\u1ea5t \u1edf ch\u00ednh gi\u1eefa (s\u00e1t \u0111\u1ea5t)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"bottomCenterY","t":4,"rt":$n[0].Single,"sn":"bottomCenterY","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"currentIsInsideGoal","t":4,"rt":$n[0].Boolean,"sn":"currentIsInsideGoal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"currentShotDirection","t":4,"rt":$n[2].Vector3,"sn":"currentShotDirection"},{"a":1,"n":"currentShotTarget","t":4,"rt":$n[2].Vector3,"sn":"currentShotTarget"},{"at":[new UnityEngine.HeaderAttribute("Flight Settings"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"flightTime","t":4,"rt":$n[0].Single,"sn":"flightTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Linear Damping l\u00fac r\u01a1i trong l\u01b0\u1edbi - \u0111\u1ec3 TH\u1ea4P m\u1edbi c\u00f2n th\u1ea5y n\u1ea3y theo Bounciness, \u0111\u1ec3 cao qu\u00e1 s\u1ebd m\u1ea5t h\u1eb3n \u0111\u1ed9 n\u1ea3y, r\u01a1i th\u1eb3ng \u0111\u1ee9ng lu\u00f4n")],"a":2,"n":"goalDropDamping","t":4,"rt":$n[0].Single,"sn":"goalDropDamping","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("\u0110\u1ed9 ch\u00fac (tr\u1ee5c Y, \u00c2M = ch\u00fac xu\u1ed1ng) \u00e9p v\u00e0o h\u01b0\u1edbng r\u01a1i tr\u01b0\u1edbc khi giao Physics, \u0111\u1ec3 r\u01a1i nhanh xu\u1ed1ng l\u01b0\u1edbi thay v\u00ec tr\u00f4i ngang")],"a":2,"n":"goalFallDownward","t":4,"rt":$n[0].Single,"sn":"goalFallDownward","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Goal Drop (R\u01a1i v\u00e0o l\u01b0\u1edbi l\u00fac ghi b\u00e0n)"),new UnityEngine.TooltipAttribute("T\u1ed1c \u0111\u1ed9 r\u01a1i ban \u0111\u1ea7u (m/s) khi ghi b\u00e0n, giao cho Physics \u0111\u1ec3 r\u01a1i/n\u1ea3y t\u1ef1 nhi\u00ean")],"a":2,"n":"goalFallSpeed","t":4,"rt":$n[0].Single,"sn":"goalFallSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Goal Collider Tag"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"goalTag","t":4,"rt":$n[0].String,"sn":"goalTag"},{"at":[new UnityEngine.TooltipAttribute("V\u1ecb tr\u00ed tr\u1ee5c Z c\u1ee7a khung th\u00e0nh"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"goalZ","t":4,"rt":$n[0].Single,"sn":"goalZ","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("Kho\u1ea3ng c\u00e1ch t\u1eeb t\u00e2m g\u00f4n sang 2 b\u00ean c\u1ed9t d\u1ecdc"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"halfWidth","t":4,"rt":$n[0].Single,"sn":"halfWidth","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"hasResolved","t":4,"rt":$n[0].Boolean,"sn":"hasResolved","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"initialPosition","t":4,"rt":$n[2].Vector3,"sn":"initialPosition"},{"a":1,"n":"initialRotation","t":4,"rt":$n[2].Quaternion,"sn":"initialRotation"},{"a":1,"n":"isFlying","t":4,"rt":$n[0].Boolean,"sn":"isFlying","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isGoalScored","t":4,"rt":$n[0].Boolean,"sn":"isGoalScored","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("V-Shape 3D Target Setup (\u0110\u01b0\u1eddng ch\u1eef V xanh l\u00e1 trong khung th\u00e0nh)"),new UnityEngine.TooltipAttribute("Transform \u0111i\u1ec3m g\u00f3c cao b\u00ean tr\u00e1i c\u1ee7a ch\u1eef V (LeftTop)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"leftTop","t":4,"rt":$n[2].Transform,"sn":"leftTop"},{"at":[new UnityEngine.HeaderAttribute("T\u1ecda \u0111\u1ed9 Ch\u1eef V M\u1eb7c \u0110\u1ecbnh (N\u1ebfu kh\u00f4ng g\u00e1n Transform)"),new UnityEngine.TooltipAttribute("\u0110\u1ed9 cao \u0111i\u1ec3m g\u00f3c cao b\u00ean tr\u00e1i"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"leftTopY","t":4,"rt":$n[0].Single,"sn":"leftTopY","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"rb","t":4,"rt":$n[2].Rigidbody,"sn":"rb"},{"at":[new UnityEngine.TooltipAttribute("Transform \u0111i\u1ec3m g\u00f3c cao b\u00ean ph\u1ea3i c\u1ee7a ch\u1eef V (RightTop)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rightTop","t":4,"rt":$n[2].Transform,"sn":"rightTop"},{"at":[new UnityEngine.TooltipAttribute("\u0110\u1ed9 cao \u0111i\u1ec3m g\u00f3c cao b\u00ean ph\u1ea3i"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rightTopY","t":4,"rt":$n[0].Single,"sn":"rightTopY","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"trailRenderer","t":4,"rt":$n[2].TrailRenderer,"sn":"trailRenderer"},{"a":2,"n":"OnBlocked","t":2,"ad":{"a":2,"n":"add_OnBlocked","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnBlocked","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnBlocked","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnBlocked","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"OnGoal","t":2,"ad":{"a":2,"n":"add_OnGoal","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnGoal","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnGoal","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnGoal","rt":$n[0].Void,"p":[Function]}}]}; }, $n);
+    /*RonaldoPenalty.PenaltyBallController end.*/
+
+    /*RonaldoPenalty.PenaltyDefenderAI start.*/
+    $m("RonaldoPenalty.PenaltyDefenderAI", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Activate","t":8,"sn":"Activate","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CalculateCurrentT","t":8,"sn":"CalculateCurrentT","rt":$n[0].Void},{"a":2,"n":"Deactivate","t":8,"sn":"Deactivate","rt":$n[0].Void},{"a":1,"n":"OnDrawGizmosSelected","t":8,"sn":"OnDrawGizmosSelected","rt":$n[0].Void},{"a":2,"n":"ResetPosition","t":8,"sn":"ResetPosition","rt":$n[0].Void},{"a":2,"n":"SetBounds","t":8,"pi":[{"n":"left","pt":$n[2].Transform,"ps":0},{"n":"right","pt":$n[2].Transform,"ps":1}],"sn":"SetBounds","rt":$n[0].Void,"p":[$n[2].Transform,$n[2].Transform]},{"a":2,"n":"SetSpeed","t":8,"pi":[{"n":"newSpeed","pt":$n[0].Single,"ps":0}],"sn":"SetSpeed","rt":$n[0].Void,"p":[$n[0].Single]},{"a":2,"n":"SetupRound","t":8,"pi":[{"n":"round","pt":$n[0].Int32,"ps":0}],"sn":"SetupRound","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"direction","t":4,"rt":$n[0].Int32,"sn":"direction","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"initialPosition","t":4,"rt":$n[2].Vector3,"sn":"initialPosition"},{"a":1,"n":"isMoving","t":4,"rt":$n[0].Boolean,"sn":"isMoving","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("Movement Bounds"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"leftLimit","t":4,"rt":$n[2].Transform,"sn":"leftLimit"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rightLimit","t":4,"rt":$n[2].Transform,"sn":"rightLimit"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"speed","t":4,"rt":$n[0].Single,"sn":"speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Initial State"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"startActive","t":4,"rt":$n[0].Boolean,"sn":"startActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"t","t":4,"rt":$n[0].Single,"sn":"t","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*RonaldoPenalty.PenaltyDefenderAI end.*/
+
+    /*RonaldoPenalty.PenaltyGameManager start.*/
+    $m("RonaldoPenalty.PenaltyGameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"EndGameEvaluationRoutine","t":8,"sn":"EndGameEvaluationRoutine","rt":$n[5].IEnumerator},{"a":1,"n":"ExecuteShot","t":8,"sn":"ExecuteShot","rt":$n[0].Void},{"a":2,"n":"GoToStore","t":8,"sn":"GoToStore","rt":$n[0].Void},{"a":2,"n":"GotoStore","t":8,"sn":"GotoStore","rt":$n[0].Void},{"a":1,"n":"HandleGoal","t":8,"sn":"HandleGoal","rt":$n[0].Void},{"a":1,"n":"HandleMiss","t":8,"sn":"HandleMiss","rt":$n[0].Void},{"a":1,"n":"InitGameFlow","t":8,"sn":"InitGameFlow","rt":$n[0].Void},{"a":1,"n":"NextRoundRoutine","t":8,"sn":"NextRoundRoutine","rt":$n[5].IEnumerator},{"a":1,"n":"ResetToGameplayInitialState","t":8,"sn":"ResetToGameplayInitialState","rt":$n[0].Void},{"a":1,"n":"ResolveUIManager","t":8,"sn":"ResolveUIManager","rt":$n[0].Void},{"a":2,"n":"RestartGame","t":8,"sn":"RestartGame","rt":$n[0].Void},{"a":2,"n":"SetupDependencies","t":8,"pi":[{"n":"b","pt":$n[6].PenaltyBallController,"ps":0},{"n":"t","pt":$n[6].PenaltyTargetMover,"ps":1},{"n":"gk","pt":$n[6].PenaltyGoalkeeperAI,"ps":2},{"n":"def2","pt":$n[6].PenaltyDefenderAI,"ps":3},{"n":"def3","pt":$n[6].PenaltyDefenderAI,"ps":4},{"n":"anim","pt":$n[6].PenaltyPlayerAnimator,"ps":5},{"n":"ui","pt":$n[6].PenaltyUIManager,"ps":6}],"sn":"SetupDependencies","rt":$n[0].Void,"p":[$n[6].PenaltyBallController,$n[6].PenaltyTargetMover,$n[6].PenaltyGoalkeeperAI,$n[6].PenaltyDefenderAI,$n[6].PenaltyDefenderAI,$n[6].PenaltyPlayerAnimator,$n[6].PenaltyUIManager]},{"a":1,"n":"ShootBallAfterDelay","t":8,"pi":[{"n":"crosshairPos","pt":$n[2].Vector3,"ps":0},{"n":"delay","pt":$n[0].Single,"ps":1}],"sn":"ShootBallAfterDelay","rt":$n[5].IEnumerator,"p":[$n[2].Vector3,$n[0].Single]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"StartAiming","t":8,"sn":"StartAiming","rt":$n[0].Void},{"a":1,"n":"StartRound","t":8,"pi":[{"n":"round","pt":$n[0].Int32,"ps":0}],"sn":"StartRound","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"TrackRoundProgress","t":8,"pi":[{"n":"roundJustFinished","pt":$n[0].Int32,"ps":0}],"sn":"TrackRoundProgress","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"Instance","is":true,"t":16,"rt":$n[6].PenaltyGameManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":$n[6].PenaltyGameManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[$n[6].PenaltyGameManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.HeaderAttribute("Controllers"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"ball","t":4,"rt":$n[6].PenaltyBallController,"sn":"ball"},{"a":1,"n":"currentRound","t":4,"rt":$n[0].Int32,"sn":"currentRound","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"currentState","t":4,"rt":$n[6].PenaltyGameState,"sn":"currentState","box":function ($v) { return Bridge.box($v, RonaldoPenalty.PenaltyGameState, System.Enum.toStringFn(RonaldoPenalty.PenaltyGameState));}},{"at":[new UnityEngine.HeaderAttribute("Defenders Theo T\u1eebng Round (Round 1 Kh\u00f4ng C\u00f3)"),new UnityEngine.TooltipAttribute("H\u1eadu v\u1ec7 xu\u1ea5t hi\u1ec7n \u1edf L\u1ea7n s\u00fat 2 (VD: Messi)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"defenderRound2","t":4,"rt":$n[6].PenaltyDefenderAI,"sn":"defenderRound2"},{"at":[new UnityEngine.TooltipAttribute("H\u1eadu v\u1ec7 xu\u1ea5t hi\u1ec7n \u1edf L\u1ea7n s\u00fat 3 (C\u1ea7u th\u1ee7 ti\u1ebfp theo)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"defenderRound3","t":4,"rt":$n[6].PenaltyDefenderAI,"sn":"defenderRound3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"delayBetweenRounds","t":4,"rt":$n[0].Single,"sn":"delayBetweenRounds","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"goalkeeper","t":4,"rt":$n[6].PenaltyGoalkeeperAI,"sn":"goalkeeper"},{"a":1,"n":"isChallengeStarted","t":4,"rt":$n[0].Boolean,"sn":"isChallengeStarted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isTapToStoreActive","t":4,"rt":$n[0].Boolean,"sn":"isTapToStoreActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("\u0110\u1ed9 tr\u1ec5 t\u1eeb khi Click/Ronaldo vung ch\u00e2n \u0111\u1ebfn khi ch\u00e2n ch\u1ea1m b\u00f3ng (gi\u00e2y)")],"a":2,"n":"kickImpactDelay","t":4,"rt":$n[0].Single,"sn":"kickImpactDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"pass25Tracked","t":4,"rt":$n[0].Boolean,"sn":"pass25Tracked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"pass50Tracked","t":4,"rt":$n[0].Boolean,"sn":"pass50Tracked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"pass75Tracked","t":4,"rt":$n[0].Boolean,"sn":"pass75Tracked","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.TooltipAttribute("Hi\u1ec7n Prompt Text v\u00e0 ch\u1edd tap l\u1ea7n 1 tr\u01b0\u1edbc m\u1ed7i hi\u1ec7p (true) hay ch\u1ec9 \u1edf hi\u1ec7p \u0111\u1ea7u ti\u00ean (false)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"promptEveryRound","t":4,"rt":$n[0].Boolean,"sn":"promptEveryRound","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"ronaldoAnimator","t":4,"rt":$n[6].PenaltyPlayerAnimator,"sn":"ronaldoAnimator"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"targetMover","t":4,"rt":$n[6].PenaltyTargetMover,"sn":"targetMover"},{"at":[new UnityEngine.HeaderAttribute("Settings"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"targetSpeeds","t":4,"rt":$n[0].Array.type(System.Single),"sn":"targetSpeeds"},{"a":1,"n":"totalGoals","t":4,"rt":$n[0].Int32,"sn":"totalGoals","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"uiManager","t":4,"rt":$n[6].PenaltyUIManager,"sn":"uiManager"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":$n[6].PenaltyGameManager,"sn":"Instance"}]}; }, $n);
+    /*RonaldoPenalty.PenaltyGameManager end.*/
+
+    /*RonaldoPenalty.PenaltyGameState start.*/
+    $m("RonaldoPenalty.PenaltyGameState", function () { return {"att":257,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Aiming","is":true,"t":4,"rt":$n[6].PenaltyGameState,"sn":"Aiming","box":function ($v) { return Bridge.box($v, RonaldoPenalty.PenaltyGameState, System.Enum.toStringFn(RonaldoPenalty.PenaltyGameState));}},{"a":2,"n":"Lose","is":true,"t":4,"rt":$n[6].PenaltyGameState,"sn":"Lose","box":function ($v) { return Bridge.box($v, RonaldoPenalty.PenaltyGameState, System.Enum.toStringFn(RonaldoPenalty.PenaltyGameState));}},{"a":2,"n":"Result","is":true,"t":4,"rt":$n[6].PenaltyGameState,"sn":"Result","box":function ($v) { return Bridge.box($v, RonaldoPenalty.PenaltyGameState, System.Enum.toStringFn(RonaldoPenalty.PenaltyGameState));}},{"a":2,"n":"Shooting","is":true,"t":4,"rt":$n[6].PenaltyGameState,"sn":"Shooting","box":function ($v) { return Bridge.box($v, RonaldoPenalty.PenaltyGameState, System.Enum.toStringFn(RonaldoPenalty.PenaltyGameState));}},{"a":2,"n":"WaitingForStart","is":true,"t":4,"rt":$n[6].PenaltyGameState,"sn":"WaitingForStart","box":function ($v) { return Bridge.box($v, RonaldoPenalty.PenaltyGameState, System.Enum.toStringFn(RonaldoPenalty.PenaltyGameState));}}]}; }, $n);
+    /*RonaldoPenalty.PenaltyGameState end.*/
+
+    /*RonaldoPenalty.PenaltyGoalkeeperAI start.*/
+    $m("RonaldoPenalty.PenaltyGoalkeeperAI", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"OnDrawGizmosSelected","t":8,"sn":"OnDrawGizmosSelected","rt":$n[0].Void},{"a":2,"n":"SetBounds","t":8,"pi":[{"n":"left","pt":$n[2].Transform,"ps":0},{"n":"right","pt":$n[2].Transform,"ps":1}],"sn":"SetBounds","rt":$n[0].Void,"p":[$n[2].Transform,$n[2].Transform]},{"a":2,"n":"SetupRound","t":8,"pi":[{"n":"round","pt":$n[0].Int32,"ps":0}],"sn":"SetupRound","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"StopPatrol","t":8,"sn":"StopPatrol","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.HeaderAttribute("Speed Settings"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"baseSpeed","t":4,"rt":$n[0].Single,"sn":"baseSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"changeSpeedByRound","t":4,"rt":$n[0].Boolean,"sn":"changeSpeedByRound","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"currentSpeed","t":4,"rt":$n[0].Single,"sn":"currentSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"direction","t":4,"rt":$n[0].Int32,"sn":"direction","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"isPatrolling","t":4,"rt":$n[0].Boolean,"sn":"isPatrolling","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("Movement Bounds"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"leftPost","t":4,"rt":$n[2].Transform,"sn":"leftPost"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rightPost","t":4,"rt":$n[2].Transform,"sn":"rightPost"},{"a":1,"n":"startPos","t":4,"rt":$n[2].Vector3,"sn":"startPos"},{"a":1,"n":"t","t":4,"rt":$n[0].Single,"sn":"t","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*RonaldoPenalty.PenaltyGoalkeeperAI end.*/
+
+    /*RonaldoPenalty.PenaltyPlayerAnimator start.*/
+    $m("RonaldoPenalty.PenaltyPlayerAnimator", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"PlayCelebrate","t":8,"sn":"PlayCelebrate","rt":$n[0].Void},{"a":2,"n":"PlayDisappointed","t":8,"sn":"PlayDisappointed","rt":$n[0].Void},{"a":2,"n":"PlayIdle","t":8,"sn":"PlayIdle","rt":$n[0].Void},{"a":2,"n":"PlayKick","t":8,"sn":"PlayKick","rt":$n[0].Void},{"a":1,"n":"ReturnToIdleRoutine","t":8,"sn":"ReturnToIdleRoutine","rt":$n[5].IEnumerator},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.HeaderAttribute("Animator Reference"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"animator","t":4,"rt":$n[2].Animator,"sn":"animator"},{"a":1,"n":"hashCelebrate","t":4,"rt":$n[0].Int32,"sn":"hashCelebrate","ro":true,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"hashDisappointed","t":4,"rt":$n[0].Int32,"sn":"hashDisappointed","ro":true,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"hashIdle","t":4,"rt":$n[0].Int32,"sn":"hashIdle","ro":true,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"hashKick","t":4,"rt":$n[0].Int32,"sn":"hashKick","ro":true,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.HeaderAttribute("Kick Settings"),new UnityEngine.TooltipAttribute("Th\u1eddi gian animation s\u00fat b\u00f3ng (s\u1ebd t\u1ef1 \u0111\u1ed9ng ph\u00e1t hi\u1ec7n n\u1ebfu \u0111\u1ec3 <= 0)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"kickDuration","t":4,"rt":$n[0].Single,"sn":"kickDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"returnToIdleCoroutine","t":4,"rt":$n[2].Coroutine,"sn":"returnToIdleCoroutine"}]}; }, $n);
+    /*RonaldoPenalty.PenaltyPlayerAnimator end.*/
+
+    /*RonaldoPenalty.PenaltyTargetMover start.*/
+    $m("RonaldoPenalty.PenaltyTargetMover", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"ApplySortingOrder","t":8,"sn":"ApplySortingOrder","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CreateDashedSprite","t":8,"sn":"CreateDashedSprite","rt":$n[2].Sprite},{"a":2,"n":"GetCurrentPosition","t":8,"sn":"GetCurrentPosition","rt":$n[2].Vector3},{"a":2,"n":"GetNormalizedT","t":8,"sn":"GetNormalizedT","rt":$n[0].Single,"box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"Hide","t":8,"sn":"Hide","rt":$n[0].Void},{"a":1,"n":"OnDrawGizmosSelected","t":8,"sn":"OnDrawGizmosSelected","rt":$n[0].Void},{"a":2,"n":"SetBallTransform","t":8,"pi":[{"n":"ball","pt":$n[2].Transform,"ps":0}],"sn":"SetBallTransform","rt":$n[0].Void,"p":[$n[2].Transform]},{"a":2,"n":"SetBounds","t":8,"pi":[{"n":"left","pt":$n[2].Transform,"ps":0},{"n":"right","pt":$n[2].Transform,"ps":1}],"sn":"SetBounds","rt":$n[0].Void,"p":[$n[2].Transform,$n[2].Transform]},{"a":2,"n":"SetSpeed","t":8,"pi":[{"n":"newSpeed","pt":$n[0].Single,"ps":0}],"sn":"SetSpeed","rt":$n[0].Void,"p":[$n[0].Single]},{"a":2,"n":"SetupAimLineSprite","t":8,"sn":"SetupAimLineSprite","rt":$n[0].Void},{"a":2,"n":"StartMoving","t":8,"sn":"StartMoving","rt":$n[0].Void},{"a":2,"n":"StopMoving","t":8,"sn":"StopMoving","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.HeaderAttribute("Dashed Aim Line (Sprite thay cho LineRenderer)"),new UnityEngine.TooltipAttribute("SpriteRenderer v\u1ebd \u0111\u01b0\u1eddng n\u00e9t \u0111\u1ee9t (t\u1ef1 t\u1ea1o l\u00fac Awake n\u1ebfu \u0111\u1ec3 tr\u1ed1ng, KH\u00d4NG parent v\u00e0o Crosshair \u0111\u1ec3 kh\u00f4ng b\u1ecb \u1ea3nh h\u01b0\u1edfng b\u1edfi hi\u1ec7u \u1ee9ng Pulse)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"aimLineRenderer","t":4,"rt":$n[2].SpriteRenderer,"sn":"aimLineRenderer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"ballTransform","t":4,"rt":$n[2].Transform,"sn":"ballTransform"},{"a":1,"n":"baseScale","t":4,"rt":$n[2].Vector3,"sn":"baseScale"},{"at":[new UnityEngine.TooltipAttribute("M\u00e0u v\u00e0ng t\u01b0\u01a1i c\u1ee7a n\u00e9t \u0111\u1ee9t"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"dashColor","t":4,"rt":$n[2].Color,"sn":"dashColor"},{"at":[new UnityEngine.TooltipAttribute("M\u1eadt \u0111\u1ed9 n\u00e9t \u0111\u1ee9t: s\u1ed1 chu k\u1ef3 g\u1ea1ch/kho\u1ea3ng-tr\u1ed1ng tr\u00ean m\u1ed7i \u0111\u01a1n v\u1ecb kho\u1ea3ng c\u00e1ch. C\u00c0NG TH\u1ea4P -> g\u1ea1ch c\u00e0ng th\u01b0a/d\u00e0i ra"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"dashDensity","t":4,"rt":$n[0].Single,"sn":"dashDensity","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("T\u1ef7 l\u1ec7 ph\u1ea7n \u0111\u1eb7c (v\u1ea1ch) trong 1 chu k\u1ef3, c\u00f2n l\u1ea1i l\u00e0 kho\u1ea3ng tr\u1ed1ng. C\u00c0NG TH\u1ea4P -> v\u1ea1ch c\u00e0ng ng\u1eafn, kho\u1ea3ng tr\u1ed1ng c\u00e0ng nhi\u1ec1u (th\u01b0a h\u01a1n)"),new UnityEngine.RangeAttribute(0.05, 0.9),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"dashRatio","t":4,"rt":$n[0].Single,"sn":"dashRatio","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"dashedSprite","t":4,"rt":$n[2].Sprite,"sn":"dashedSprite"},{"a":1,"n":"dashedTexture","t":4,"rt":$n[2].Texture2D,"sn":"dashedTexture"},{"a":1,"n":"direction","t":4,"rt":$n[0].Int32,"sn":"direction","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"isMoving","t":4,"rt":$n[0].Boolean,"sn":"isMoving","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("Movement Bounds (\u0110\u01b0\u1eddng ch\u1ea1y ngang m\u00e0u \u0110\u1ecf)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"leftPoint","t":4,"rt":$n[2].Transform,"sn":"leftPoint"},{"at":[new UnityEngine.TooltipAttribute("\u0110\u1ed9 cao c\u1ee7a line tr\u00ean m\u1eb7t c\u1ecf \u0111\u1ec3 kh\u00f4ng b\u1ecb ch\u00ecm"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"lineGroundY","t":4,"rt":$n[0].Single,"sn":"lineGroundY","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.TooltipAttribute("\u0110\u1ed9 r\u1ed9ng c\u1ee7a v\u1ea1ch n\u00e9t \u0111\u1ee9t"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"lineWidth","t":4,"rt":$n[0].Single,"sn":"lineWidth","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Visual Effects"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pulseEffect","t":4,"rt":$n[0].Boolean,"sn":"pulseEffect","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pulseScaleAmount","t":4,"rt":$n[0].Single,"sn":"pulseScaleAmount","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pulseSpeed","t":4,"rt":$n[0].Single,"sn":"pulseSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rightPoint","t":4,"rt":$n[2].Transform,"sn":"rightPoint"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"sortingLayerName","t":4,"rt":$n[0].String,"sn":"sortingLayerName"},{"at":[new UnityEngine.HeaderAttribute("Rendering Order (Always On Top)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"sortingOrder","t":4,"rt":$n[0].Int32,"sn":"sortingOrder","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"speed","t":4,"rt":$n[0].Single,"sn":"speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"t","t":4,"rt":$n[0].Single,"sn":"t","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*RonaldoPenalty.PenaltyTargetMover end.*/
+
+    /*RonaldoPenalty.PenaltyUIManager start.*/
+    $m("RonaldoPenalty.PenaltyUIManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AutoFindReferences","t":8,"sn":"AutoFindReferences","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CacheInitialColors","t":8,"sn":"CacheInitialColors","rt":$n[0].Void},{"a":2,"n":"GoToStore","t":8,"sn":"GoToStore","rt":$n[0].Void},{"a":2,"n":"GotoStore","t":8,"sn":"GotoStore","rt":$n[0].Void},{"a":1,"n":"LoseRoutine","t":8,"pi":[{"n":"delay","pt":$n[0].Single,"ps":0},{"n":"onComplete","pt":Function,"ps":1}],"sn":"LoseRoutine","rt":$n[5].IEnumerator,"p":[$n[0].Single,Function]},{"a":2,"n":"OnClick_GotoStore","t":8,"sn":"OnClick_GotoStore","rt":$n[0].Void},{"a":2,"n":"ResetUI","t":8,"sn":"ResetUI","rt":$n[0].Void},{"a":1,"n":"SetObjectsActive","t":8,"pi":[{"n":"list","pt":System.Array.type(UnityEngine.GameObject),"ps":0},{"n":"active","pt":$n[0].Boolean,"ps":1}],"sn":"SetObjectsActive","rt":$n[0].Void,"p":[System.Array.type(UnityEngine.GameObject),$n[0].Boolean]},{"a":2,"n":"SetPromptVisible","t":8,"pi":[{"n":"visible","pt":$n[0].Boolean,"ps":0}],"sn":"SetPromptVisible","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"SetupReferences","t":8,"pi":[{"n":"indicators","pt":System.Array.type(UnityEngine.UI.Image),"ps":0},{"n":"lose","pt":$n[2].GameObject,"ps":1},{"n":"prompt","pt":$n[2].GameObject,"ps":2},{"n":"winEndcard","dv":null,"o":true,"pt":$n[2].GameObject,"ps":3},{"n":"empty","dv":null,"o":true,"pt":$n[2].Sprite,"ps":4},{"n":"check","dv":null,"o":true,"pt":$n[2].Sprite,"ps":5},{"n":"cross","dv":null,"o":true,"pt":$n[2].Sprite,"ps":6}],"sn":"SetupReferences","rt":$n[0].Void,"p":[System.Array.type(UnityEngine.UI.Image),$n[2].GameObject,$n[2].GameObject,$n[2].GameObject,$n[2].Sprite,$n[2].Sprite,$n[2].Sprite]},{"a":2,"n":"ShowLoseScreen","t":8,"pi":[{"n":"autoResetDelay","pt":$n[0].Single,"ps":0},{"n":"onComplete","pt":Function,"ps":1}],"sn":"ShowLoseScreen","rt":$n[0].Void,"p":[$n[0].Single,Function]},{"a":2,"n":"ShowWinEndcard","t":8,"pi":[{"n":"onClickStore","pt":Function,"ps":0}],"sn":"ShowWinEndcard","rt":$n[0].Void,"p":[Function]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"UpdateRoundResult","t":8,"pi":[{"n":"roundIndex","pt":$n[0].Int32,"ps":0},{"n":"isGoal","pt":$n[0].Boolean,"ps":1}],"sn":"UpdateRoundResult","rt":$n[0].Void,"p":[$n[0].Int32,$n[0].Boolean]},{"a":2,"n":"HasValidSprites","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_HasValidSprites","t":8,"rt":$n[0].Boolean,"fg":"HasValidSprites","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"HasValidSprites"},{"a":2,"n":"IconCheck","t":16,"rt":$n[2].Sprite,"g":{"a":2,"n":"get_IconCheck","t":8,"rt":$n[2].Sprite,"fg":"IconCheck"},"fn":"IconCheck"},{"a":2,"n":"IconCross","t":16,"rt":$n[2].Sprite,"g":{"a":2,"n":"get_IconCross","t":8,"rt":$n[2].Sprite,"fg":"IconCross"},"fn":"IconCross"},{"a":2,"n":"IconEmpty","t":16,"rt":$n[2].Sprite,"g":{"a":2,"n":"get_IconEmpty","t":8,"rt":$n[2].Sprite,"fg":"IconEmpty"},"fn":"IconEmpty"},{"a":2,"n":"Instance","is":true,"t":16,"rt":$n[6].PenaltyUIManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":$n[6].PenaltyUIManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[$n[6].PenaltyUIManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.TooltipAttribute("Danh s\u00e1ch c\u00e1c GameObject c\u1ea7n \u1ea9n cho C\u1ea2 HAI (Win & Lose) - Ho\u1eb7c \u0111\u1ec3 tr\u1ed1ng n\u1ebfu \u0111\u00e3 chia ri\u00eang \u1edf tr\u00ean"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"extraObjectsToHide","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"extraObjectsToHide"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"iconCheck","t":4,"rt":$n[2].Sprite,"sn":"iconCheck"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"iconCross","t":4,"rt":$n[2].Sprite,"sn":"iconCross"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"iconEmpty","t":4,"rt":$n[2].Sprite,"sn":"iconEmpty"},{"a":1,"n":"initialIndicatorColors","t":4,"rt":System.Array.type(UnityEngine.Color),"sn":"initialIndicatorColors"},{"a":1,"n":"isWinEndcardActive","t":4,"rt":$n[0].Boolean,"sn":"isWinEndcardActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"losePanel","t":4,"rt":$n[2].GameObject,"sn":"losePanel"},{"at":[new UnityEngine.TooltipAttribute("Danh s\u00e1ch c\u00e1c GameObject ch\u1ec9 \u1ea9n khi LOSE (VD: ScorePanel, Target...)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"objectsToHideOnLose","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"objectsToHideOnLose"},{"at":[new UnityEngine.HeaderAttribute("Hide On Result"),new UnityEngine.TooltipAttribute("Danh s\u00e1ch c\u00e1c GameObject ch\u1ec9 \u1ea9n khi WIN (VD: ScorePanel, Gameplay UI...)"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"objectsToHideOnWin","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"objectsToHideOnWin"},{"a":1,"n":"onEndcardClick","t":4,"rt":Function,"sn":"onEndcardClick"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"promptText","t":4,"rt":$n[2].GameObject,"sn":"promptText"},{"at":[new UnityEngine.HeaderAttribute("Score Indicators"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"roundIndicators","t":4,"rt":System.Array.type(UnityEngine.UI.Image),"sn":"roundIndicators"},{"at":[new UnityEngine.HeaderAttribute("Panels & Prompts"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"winEndcardPanel","t":4,"rt":$n[2].GameObject,"sn":"winEndcardPanel"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":$n[6].PenaltyUIManager,"sn":"Instance"}]}; }, $n);
+    /*RonaldoPenalty.PenaltyUIManager end.*/
+
     /*DG.Tweening.DOTweenCYInstruction start.*/
     $m("DG.Tweening.DOTweenCYInstruction", function () { return {"nested":[$n[1].DOTweenCYInstruction.WaitForCompletion,$n[1].DOTweenCYInstruction.WaitForRewind,$n[1].DOTweenCYInstruction.WaitForKill,$n[1].DOTweenCYInstruction.WaitForElapsedLoops,$n[1].DOTweenCYInstruction.WaitForPosition,$n[1].DOTweenCYInstruction.WaitForStart],"att":1048961,"a":2,"s":true}; }, $n);
     /*DG.Tweening.DOTweenCYInstruction end.*/
@@ -4849,23 +7278,23 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#StopLoopFx", this ); }
     /*DG.Tweening.DOTweenCYInstruction+WaitForStart end.*/
 
     /*DG.Tweening.DOTweenModuleAudio start.*/
-    $m("DG.Tweening.DOTweenModuleAudio", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOComplete","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0},{"n":"withCallbacks","dv":false,"o":true,"pt":$n[0].Boolean,"ps":1}],"sn":"DOComplete","rt":$n[0].Int32,"p":[$n[6].AudioMixer,$n[0].Boolean],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].AudioSource,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].AudioSource,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFlip","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DOFlip","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOGoto","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0},{"n":"to","pt":$n[0].Single,"ps":1},{"n":"andPlay","dv":false,"o":true,"pt":$n[0].Boolean,"ps":2}],"sn":"DOGoto","rt":$n[0].Int32,"p":[$n[6].AudioMixer,$n[0].Single,$n[0].Boolean],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOKill","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0},{"n":"complete","dv":false,"o":true,"pt":$n[0].Boolean,"ps":1}],"sn":"DOKill","rt":$n[0].Int32,"p":[$n[6].AudioMixer,$n[0].Boolean],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPause","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DOPause","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPitch","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].AudioSource,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPitch","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].AudioSource,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPlay","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DOPlay","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPlayBackwards","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DOPlayBackwards","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPlayForward","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DOPlayForward","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DORestart","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DORestart","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DORewind","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DORewind","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOSetFloat","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0},{"n":"floatName","pt":$n[0].String,"ps":1},{"n":"endValue","pt":$n[0].Single,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOSetFloat","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[6].AudioMixer,$n[0].String,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOSmoothRewind","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DOSmoothRewind","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOTogglePause","is":true,"t":8,"pi":[{"n":"target","pt":$n[6].AudioMixer,"ps":0}],"sn":"DOTogglePause","rt":$n[0].Int32,"p":[$n[6].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
+    $m("DG.Tweening.DOTweenModuleAudio", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOComplete","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0},{"n":"withCallbacks","dv":false,"o":true,"pt":$n[0].Boolean,"ps":1}],"sn":"DOComplete","rt":$n[0].Int32,"p":[$n[7].AudioMixer,$n[0].Boolean],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].AudioSource,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[8].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].AudioSource,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFlip","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DOFlip","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOGoto","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0},{"n":"to","pt":$n[0].Single,"ps":1},{"n":"andPlay","dv":false,"o":true,"pt":$n[0].Boolean,"ps":2}],"sn":"DOGoto","rt":$n[0].Int32,"p":[$n[7].AudioMixer,$n[0].Single,$n[0].Boolean],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOKill","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0},{"n":"complete","dv":false,"o":true,"pt":$n[0].Boolean,"ps":1}],"sn":"DOKill","rt":$n[0].Int32,"p":[$n[7].AudioMixer,$n[0].Boolean],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPause","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DOPause","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPitch","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].AudioSource,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPitch","rt":$n[8].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].AudioSource,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPlay","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DOPlay","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPlayBackwards","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DOPlayBackwards","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOPlayForward","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DOPlayForward","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DORestart","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DORestart","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DORewind","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DORewind","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOSetFloat","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0},{"n":"floatName","pt":$n[0].String,"ps":1},{"n":"endValue","pt":$n[0].Single,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOSetFloat","rt":$n[8].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[7].AudioMixer,$n[0].String,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOSmoothRewind","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DOSmoothRewind","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"DOTogglePause","is":true,"t":8,"pi":[{"n":"target","pt":$n[7].AudioMixer,"ps":0}],"sn":"DOTogglePause","rt":$n[0].Int32,"p":[$n[7].AudioMixer],"box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
     /*DG.Tweening.DOTweenModuleAudio end.*/
 
     /*DG.Tweening.DOTweenModulePhysics start.*/
-    $m("DG.Tweening.DOTweenModulePhysics", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOJump","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJump","rt":$n[1].Sequence,"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":$n[8].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOLocalPath$1","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,$n[8].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector3),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOLocalPath","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,System.Array.type(UnityEngine.Vector3),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DOLookAt","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"towards","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"axisConstraint","dv":0,"o":true,"pt":$n[1].AxisConstraint,"ps":3},{"n":"up","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Vector3),"ps":4}],"sn":"DOLookAt","rt":$n[7].TweenerCore$3(UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions),"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[1].AxisConstraint,$n[0].Nullable$1(UnityEngine.Vector3)]},{"a":2,"n":"DOMove","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMove","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveX","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveY","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveZ","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveZ","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":$n[8].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOPath$1","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,$n[8].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector3),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOPath","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,System.Array.type(UnityEngine.Vector3),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DORotate","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"mode","dv":0,"o":true,"pt":$n[1].RotateMode,"ps":3}],"sn":"DORotate","rt":$n[7].TweenerCore$3(UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions),"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[1].RotateMode]}]}; }, $n);
+    $m("DG.Tweening.DOTweenModulePhysics", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOJump","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJump","rt":$n[1].Sequence,"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":$n[9].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOLocalPath$1","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,$n[9].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector3),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOLocalPath","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,System.Array.type(UnityEngine.Vector3),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DOLookAt","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"towards","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"axisConstraint","dv":0,"o":true,"pt":$n[1].AxisConstraint,"ps":3},{"n":"up","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Vector3),"ps":4}],"sn":"DOLookAt","rt":$n[8].TweenerCore$3(UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions),"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[1].AxisConstraint,$n[0].Nullable$1(UnityEngine.Vector3)]},{"a":2,"n":"DOMove","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMove","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveX","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveY","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveZ","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveZ","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":$n[9].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOPath$1","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,$n[9].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector3),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOPath","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody,System.Array.type(UnityEngine.Vector3),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DORotate","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"mode","dv":0,"o":true,"pt":$n[1].RotateMode,"ps":3}],"sn":"DORotate","rt":$n[8].TweenerCore$3(UnityEngine.Quaternion,UnityEngine.Vector3,DG.Tweening.Plugins.Options.QuaternionOptions),"p":[$n[2].Rigidbody,$n[2].Vector3,$n[0].Single,$n[1].RotateMode]}]}; }, $n);
     /*DG.Tweening.DOTweenModulePhysics end.*/
 
     /*DG.Tweening.DOTweenModulePhysics2D start.*/
-    $m("DG.Tweening.DOTweenModulePhysics2D", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOJump","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJump","rt":$n[1].Sequence,"p":[$n[2].Rigidbody2D,$n[2].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":$n[8].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOLocalPath$1","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,$n[8].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector2),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOLocalPath","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,System.Array.type(UnityEngine.Vector2),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DOMove","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMove","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody2D,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveX","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody2D,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveY","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody2D,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":$n[8].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOPath$1","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,$n[8].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector2),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOPath","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,System.Array.type(UnityEngine.Vector2),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DORotate","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DORotate","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].Rigidbody2D,$n[0].Single,$n[0].Single]}]}; }, $n);
+    $m("DG.Tweening.DOTweenModulePhysics2D", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOJump","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJump","rt":$n[1].Sequence,"p":[$n[2].Rigidbody2D,$n[2].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":$n[9].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOLocalPath$1","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,$n[9].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOLocalPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector2),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOLocalPath","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,System.Array.type(UnityEngine.Vector2),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DOMove","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMove","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody2D,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveX","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody2D,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMoveY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMoveY","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Rigidbody2D,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":4,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":$n[9].Path,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":3}],"sn":"DOPath$1","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,$n[9].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"DOPath","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"path","pt":System.Array.type(UnityEngine.Vector2),"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"pathType","dv":0,"o":true,"pt":$n[1].PathType,"ps":3},{"n":"pathMode","dv":1,"o":true,"pt":$n[1].PathMode,"ps":4},{"n":"resolution","dv":10,"o":true,"pt":$n[0].Int32,"ps":5},{"n":"gizmoColor","dv":null,"o":true,"pt":$n[0].Nullable$1(UnityEngine.Color),"ps":6}],"sn":"DOPath","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].Rigidbody2D,System.Array.type(UnityEngine.Vector2),$n[0].Single,$n[1].PathType,$n[1].PathMode,$n[0].Int32,$n[0].Nullable$1(UnityEngine.Color)]},{"a":2,"n":"DORotate","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Rigidbody2D,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DORotate","rt":$n[8].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].Rigidbody2D,$n[0].Single,$n[0].Single]}]}; }, $n);
     /*DG.Tweening.DOTweenModulePhysics2D end.*/
 
     /*DG.Tweening.DOTweenModuleSprite start.*/
-    $m("DG.Tweening.DOTweenModuleSprite", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor","rt":$n[1].Tweener,"p":[$n[2].SpriteRenderer,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[2].SpriteRenderer,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[2].SpriteRenderer,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[1].Sequence,"p":[$n[2].SpriteRenderer,pc.ColorGradient,$n[0].Single]}]}; }, $n);
+    $m("DG.Tweening.DOTweenModuleSprite", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor","rt":$n[1].Tweener,"p":[$n[2].SpriteRenderer,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[2].SpriteRenderer,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[2].SpriteRenderer,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].SpriteRenderer,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[1].Sequence,"p":[$n[2].SpriteRenderer,pc.ColorGradient,$n[0].Single]}]}; }, $n);
     /*DG.Tweening.DOTweenModuleSprite end.*/
 
     /*DG.Tweening.DOTweenModuleUI start.*/
-    $m("DG.Tweening.DOTweenModuleUI", function () { return {"nested":[$n[1].DOTweenModuleUI.Utils],"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOAnchorMax","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorMax","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorMin","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorMin","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3D","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3D","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector3,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DX","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DY","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DZ","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DZ","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPosX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPosX","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPosY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPosY","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Graphic,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor","rt":$n[1].Tweener,"p":[$n[3].Graphic,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor$1","rt":$n[1].Tweener,"p":[$n[3].Image,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor$2","rt":$n[1].Tweener,"p":[$n[3].Text,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Graphic,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Graphic,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$1","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Image,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Outline,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$2","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Outline,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$3","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Text,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOCounter","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"fromValue","pt":$n[0].Int32,"ps":1},{"n":"endValue","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3},{"n":"addThousandsSeparator","dv":true,"o":true,"pt":$n[0].Boolean,"ps":4},{"n":"culture","dv":null,"o":true,"pt":$n[9].CultureInfo,"ps":5}],"sn":"DOCounter","rt":$n[7].TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions),"p":[$n[3].Text,$n[0].Int32,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[9].CultureInfo]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].CanvasGroup,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].CanvasGroup,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Graphic,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$1","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Graphic,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$2","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Image,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Outline,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$3","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Outline,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$4","rt":$n[7].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Text,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFillAmount","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFillAmount","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[3].Image,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFlexibleSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].LayoutElement,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOFlexibleSize","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].LayoutElement,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[1].Sequence,"p":[$n[3].Image,pc.ColorGradient,$n[0].Single]},{"a":2,"n":"DOHorizontalNormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].ScrollRect,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOHorizontalNormalizedPos","rt":$n[1].Tweener,"p":[$n[3].ScrollRect,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOJumpAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJumpAnchorPos","rt":$n[1].Sequence,"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMinSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].LayoutElement,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMinSize","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].LayoutElement,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DONormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].ScrollRect,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DONormalizedPos","rt":$n[1].Tweener,"p":[$n[3].ScrollRect,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOPivot","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivot","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single]},{"a":2,"n":"DOPivotX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivotX","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPivotY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivotY","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPreferredSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].LayoutElement,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOPreferredSize","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].LayoutElement,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOPunchAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"punch","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"elasticity","dv":1.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOPunchAnchorPos","rt":$n[1].Tweener,"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOScale","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Outline,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOScale","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].Outline,$n[2].Vector2,$n[0].Single]},{"a":2,"n":"DOShakeAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1},{"n":"strength","dv":100.0,"o":true,"pt":$n[0].Single,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"randomness","dv":90.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5},{"n":"fadeOut","dv":true,"o":true,"pt":$n[0].Boolean,"ps":6},{"n":"randomnessMode","dv":0,"o":true,"pt":$n[1].ShakeRandomnessMode,"ps":7}],"sn":"DOShakeAnchorPos","rt":$n[1].Tweener,"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[0].Boolean,$n[1].ShakeRandomnessMode]},{"a":2,"n":"DOShakeAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1},{"n":"strength","pt":$n[2].Vector2,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"randomness","dv":90.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5},{"n":"fadeOut","dv":true,"o":true,"pt":$n[0].Boolean,"ps":6},{"n":"randomnessMode","dv":0,"o":true,"pt":$n[1].ShakeRandomnessMode,"ps":7}],"sn":"DOShakeAnchorPos$1","rt":$n[1].Tweener,"p":[$n[2].RectTransform,$n[0].Single,$n[2].Vector2,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[0].Boolean,$n[1].ShakeRandomnessMode]},{"a":2,"n":"DOShapeCircle","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"center","pt":$n[2].Vector2,"ps":1},{"n":"endValueDegrees","pt":$n[0].Single,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3},{"n":"relativeCenter","dv":false,"o":true,"pt":$n[0].Boolean,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOShapeCircle","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.CircleOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Single,$n[0].Boolean,$n[0].Boolean]},{"a":2,"n":"DOSizeDelta","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOSizeDelta","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOText","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[0].String,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"richTextEnabled","dv":true,"o":true,"pt":$n[0].Boolean,"ps":3},{"n":"scrambleMode","dv":0,"o":true,"pt":$n[1].ScrambleMode,"ps":4},{"n":"scrambleChars","dv":null,"o":true,"pt":$n[0].String,"ps":5}],"sn":"DOText","rt":$n[7].TweenerCore$3(System.String,System.String,DG.Tweening.Plugins.Options.StringOptions),"p":[$n[3].Text,$n[0].String,$n[0].Single,$n[0].Boolean,$n[1].ScrambleMode,$n[0].String]},{"a":2,"n":"DOValue","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Slider,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOValue","rt":$n[7].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[3].Slider,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOVerticalNormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].ScrollRect,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOVerticalNormalizedPos","rt":$n[1].Tweener,"p":[$n[3].ScrollRect,$n[0].Single,$n[0].Single,$n[0].Boolean]}]}; }, $n);
+    $m("DG.Tweening.DOTweenModuleUI", function () { return {"nested":[$n[1].DOTweenModuleUI.Utils],"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOAnchorMax","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorMax","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorMin","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorMin","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3D","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector3,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3D","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector3,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DX","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DY","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPos3DZ","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPos3DZ","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPosX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPosX","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOAnchorPosY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOAnchorPosY","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Graphic,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor","rt":$n[1].Tweener,"p":[$n[3].Graphic,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor$1","rt":$n[1].Tweener,"p":[$n[3].Image,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOBlendableColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOBlendableColor$2","rt":$n[1].Tweener,"p":[$n[3].Text,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Graphic,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Graphic,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$1","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Image,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Outline,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$2","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Outline,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[2].Color,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOColor$3","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Text,$n[2].Color,$n[0].Single]},{"a":2,"n":"DOCounter","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"fromValue","pt":$n[0].Int32,"ps":1},{"n":"endValue","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3},{"n":"addThousandsSeparator","dv":true,"o":true,"pt":$n[0].Boolean,"ps":4},{"n":"culture","dv":null,"o":true,"pt":$n[10].CultureInfo,"ps":5}],"sn":"DOCounter","rt":$n[8].TweenerCore$3(System.Int32,System.Int32,DG.Tweening.Plugins.Options.NoOptions),"p":[$n[3].Text,$n[0].Int32,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[10].CultureInfo]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].CanvasGroup,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade","rt":$n[8].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[2].CanvasGroup,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Graphic,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$1","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Graphic,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$2","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Image,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Outline,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$3","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Outline,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFade","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFade$4","rt":$n[8].TweenerCore$3(UnityEngine.Color,UnityEngine.Color,DG.Tweening.Plugins.Options.ColorOptions),"p":[$n[3].Text,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFillAmount","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOFillAmount","rt":$n[8].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[3].Image,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOFlexibleSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].LayoutElement,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOFlexibleSize","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].LayoutElement,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Image,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[1].Sequence,"p":[$n[3].Image,pc.ColorGradient,$n[0].Single]},{"a":2,"n":"DOHorizontalNormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].ScrollRect,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOHorizontalNormalizedPos","rt":$n[1].Tweener,"p":[$n[3].ScrollRect,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOJumpAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"jumpPower","pt":$n[0].Single,"ps":2},{"n":"numJumps","pt":$n[0].Int32,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOJumpAnchorPos","rt":$n[1].Sequence,"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOMinSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].LayoutElement,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOMinSize","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].LayoutElement,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DONormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].ScrollRect,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DONormalizedPos","rt":$n[1].Tweener,"p":[$n[3].ScrollRect,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOPivot","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivot","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single]},{"a":2,"n":"DOPivotX","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivotX","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPivotY","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOPivotY","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single]},{"a":2,"n":"DOPreferredSize","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].LayoutElement,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOPreferredSize","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].LayoutElement,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOPunchAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"punch","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"elasticity","dv":1.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOPunchAnchorPos","rt":$n[1].Tweener,"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOScale","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Outline,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOScale","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[3].Outline,$n[2].Vector2,$n[0].Single]},{"a":2,"n":"DOShakeAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1},{"n":"strength","dv":100.0,"o":true,"pt":$n[0].Single,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"randomness","dv":90.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5},{"n":"fadeOut","dv":true,"o":true,"pt":$n[0].Boolean,"ps":6},{"n":"randomnessMode","dv":0,"o":true,"pt":$n[1].ShakeRandomnessMode,"ps":7}],"sn":"DOShakeAnchorPos","rt":$n[1].Tweener,"p":[$n[2].RectTransform,$n[0].Single,$n[0].Single,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[0].Boolean,$n[1].ShakeRandomnessMode]},{"a":2,"n":"DOShakeAnchorPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"duration","pt":$n[0].Single,"ps":1},{"n":"strength","pt":$n[2].Vector2,"ps":2},{"n":"vibrato","dv":10,"o":true,"pt":$n[0].Int32,"ps":3},{"n":"randomness","dv":90.0,"o":true,"pt":$n[0].Single,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5},{"n":"fadeOut","dv":true,"o":true,"pt":$n[0].Boolean,"ps":6},{"n":"randomnessMode","dv":0,"o":true,"pt":$n[1].ShakeRandomnessMode,"ps":7}],"sn":"DOShakeAnchorPos$1","rt":$n[1].Tweener,"p":[$n[2].RectTransform,$n[0].Single,$n[2].Vector2,$n[0].Int32,$n[0].Single,$n[0].Boolean,$n[0].Boolean,$n[1].ShakeRandomnessMode]},{"a":2,"n":"DOShapeCircle","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"center","pt":$n[2].Vector2,"ps":1},{"n":"endValueDegrees","pt":$n[0].Single,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3},{"n":"relativeCenter","dv":false,"o":true,"pt":$n[0].Boolean,"ps":4},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":5}],"sn":"DOShapeCircle","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.CircleOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Single,$n[0].Boolean,$n[0].Boolean]},{"a":2,"n":"DOSizeDelta","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].RectTransform,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOSizeDelta","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].RectTransform,$n[2].Vector2,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOText","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Text,"ps":0},{"n":"endValue","pt":$n[0].String,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"richTextEnabled","dv":true,"o":true,"pt":$n[0].Boolean,"ps":3},{"n":"scrambleMode","dv":0,"o":true,"pt":$n[1].ScrambleMode,"ps":4},{"n":"scrambleChars","dv":null,"o":true,"pt":$n[0].String,"ps":5}],"sn":"DOText","rt":$n[8].TweenerCore$3(System.String,System.String,DG.Tweening.Plugins.Options.StringOptions),"p":[$n[3].Text,$n[0].String,$n[0].Single,$n[0].Boolean,$n[1].ScrambleMode,$n[0].String]},{"a":2,"n":"DOValue","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].Slider,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOValue","rt":$n[8].TweenerCore$3(System.Single,System.Single,DG.Tweening.Plugins.Options.FloatOptions),"p":[$n[3].Slider,$n[0].Single,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"DOVerticalNormalizedPos","is":true,"t":8,"pi":[{"n":"target","pt":$n[3].ScrollRect,"ps":0},{"n":"endValue","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2},{"n":"snapping","dv":false,"o":true,"pt":$n[0].Boolean,"ps":3}],"sn":"DOVerticalNormalizedPos","rt":$n[1].Tweener,"p":[$n[3].ScrollRect,$n[0].Single,$n[0].Single,$n[0].Boolean]}]}; }, $n);
     /*DG.Tweening.DOTweenModuleUI end.*/
 
     /*DG.Tweening.DOTweenModuleUI+Utils start.*/
@@ -4873,7 +7302,7 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#StopLoopFx", this ); }
     /*DG.Tweening.DOTweenModuleUI+Utils end.*/
 
     /*DG.Tweening.DOTweenModuleUnityVersion start.*/
-    $m("DG.Tweening.DOTweenModuleUnityVersion", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[1].Sequence,"p":[$n[2].Material,pc.ColorGradient,$n[0].Single]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"property","pt":$n[0].String,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOGradientColor$1","rt":$n[1].Sequence,"p":[$n[2].Material,pc.ColorGradient,$n[0].String,$n[0].Single]},{"a":2,"n":"DOOffset","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"propertyID","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOOffset","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Material,$n[2].Vector2,$n[0].Int32,$n[0].Single]},{"a":2,"n":"DOTiling","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"propertyID","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOTiling","rt":$n[7].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Material,$n[2].Vector2,$n[0].Int32,$n[0].Single]},{"a":2,"n":"WaitForCompletion","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForCompletion","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForElapsedLoops","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"elapsedLoops","pt":$n[0].Int32,"ps":1},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":2}],"sn":"WaitForElapsedLoops","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Int32,$n[0].Boolean]},{"a":2,"n":"WaitForKill","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForKill","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForPosition","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"position","pt":$n[0].Single,"ps":1},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":2}],"sn":"WaitForPosition","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"WaitForRewind","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForRewind","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForStart","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForStart","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]}]}; }, $n);
+    $m("DG.Tweening.DOTweenModuleUnityVersion", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"DOGradientColor","rt":$n[1].Sequence,"p":[$n[2].Material,pc.ColorGradient,$n[0].Single]},{"a":2,"n":"DOGradientColor","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"gradient","pt":pc.ColorGradient,"ps":1},{"n":"property","pt":$n[0].String,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOGradientColor$1","rt":$n[1].Sequence,"p":[$n[2].Material,pc.ColorGradient,$n[0].String,$n[0].Single]},{"a":2,"n":"DOOffset","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"propertyID","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOOffset","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Material,$n[2].Vector2,$n[0].Int32,$n[0].Single]},{"a":2,"n":"DOTiling","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Material,"ps":0},{"n":"endValue","pt":$n[2].Vector2,"ps":1},{"n":"propertyID","pt":$n[0].Int32,"ps":2},{"n":"duration","pt":$n[0].Single,"ps":3}],"sn":"DOTiling","rt":$n[8].TweenerCore$3(UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.Options.VectorOptions),"p":[$n[2].Material,$n[2].Vector2,$n[0].Int32,$n[0].Single]},{"a":2,"n":"WaitForCompletion","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForCompletion","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForElapsedLoops","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"elapsedLoops","pt":$n[0].Int32,"ps":1},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":2}],"sn":"WaitForElapsedLoops","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Int32,$n[0].Boolean]},{"a":2,"n":"WaitForKill","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForKill","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForPosition","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"position","pt":$n[0].Single,"ps":1},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":2}],"sn":"WaitForPosition","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Single,$n[0].Boolean]},{"a":2,"n":"WaitForRewind","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForRewind","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]},{"a":2,"n":"WaitForStart","is":true,"t":8,"pi":[{"n":"t","pt":$n[1].Tween,"ps":0},{"n":"returnCustomYieldInstruction","pt":$n[0].Boolean,"ps":1}],"sn":"WaitForStart","rt":$n[2].CustomYieldInstruction,"p":[$n[1].Tween,$n[0].Boolean]}]}; }, $n);
     /*DG.Tweening.DOTweenModuleUnityVersion end.*/
 
     /*DG.Tweening.DOTweenModuleUtils start.*/
@@ -4881,7 +7310,7 @@ if ( TRACE ) { TRACE( "Ply_SoundManager#StopLoopFx", this ); }
     /*DG.Tweening.DOTweenModuleUtils end.*/
 
     /*DG.Tweening.DOTweenModuleUtils+Physics start.*/
-    $m("DG.Tweening.DOTweenModuleUtils.Physics", function () { return {"td":$n[1].DOTweenModuleUtils,"att":1048962,"a":2,"s":true,"m":[{"a":2,"n":"CreateDOTweenPathTween","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].MonoBehaviour,"ps":0},{"n":"tweenRigidbody","pt":$n[0].Boolean,"ps":1},{"n":"isLocal","pt":$n[0].Boolean,"ps":2},{"n":"path","pt":$n[8].Path,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"pathMode","pt":$n[1].PathMode,"ps":5}],"sn":"CreateDOTweenPathTween","rt":$n[7].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].MonoBehaviour,$n[0].Boolean,$n[0].Boolean,$n[8].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"HasRigidbody","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Component,"ps":0}],"sn":"HasRigidbody","rt":$n[0].Boolean,"p":[$n[2].Component],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"HasRigidbody2D","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Component,"ps":0}],"sn":"HasRigidbody2D","rt":$n[0].Boolean,"p":[$n[2].Component],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"SetOrientationOnPath","is":true,"t":8,"pi":[{"n":"options","pt":$n[10].PathOptions,"ps":0},{"n":"t","pt":$n[1].Tween,"ps":1},{"n":"newRot","pt":$n[2].Quaternion,"ps":2},{"n":"trans","pt":$n[2].Transform,"ps":3}],"sn":"SetOrientationOnPath","rt":$n[0].Void,"p":[$n[10].PathOptions,$n[1].Tween,$n[2].Quaternion,$n[2].Transform]}]}; }, $n);
+    $m("DG.Tweening.DOTweenModuleUtils.Physics", function () { return {"td":$n[1].DOTweenModuleUtils,"att":1048962,"a":2,"s":true,"m":[{"a":2,"n":"CreateDOTweenPathTween","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].MonoBehaviour,"ps":0},{"n":"tweenRigidbody","pt":$n[0].Boolean,"ps":1},{"n":"isLocal","pt":$n[0].Boolean,"ps":2},{"n":"path","pt":$n[9].Path,"ps":3},{"n":"duration","pt":$n[0].Single,"ps":4},{"n":"pathMode","pt":$n[1].PathMode,"ps":5}],"sn":"CreateDOTweenPathTween","rt":$n[8].TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions),"p":[$n[2].MonoBehaviour,$n[0].Boolean,$n[0].Boolean,$n[9].Path,$n[0].Single,$n[1].PathMode]},{"a":2,"n":"HasRigidbody","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Component,"ps":0}],"sn":"HasRigidbody","rt":$n[0].Boolean,"p":[$n[2].Component],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"HasRigidbody2D","is":true,"t":8,"pi":[{"n":"target","pt":$n[2].Component,"ps":0}],"sn":"HasRigidbody2D","rt":$n[0].Boolean,"p":[$n[2].Component],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"SetOrientationOnPath","is":true,"t":8,"pi":[{"n":"options","pt":$n[11].PathOptions,"ps":0},{"n":"t","pt":$n[1].Tween,"ps":1},{"n":"newRot","pt":$n[2].Quaternion,"ps":2},{"n":"trans","pt":$n[2].Transform,"ps":3}],"sn":"SetOrientationOnPath","rt":$n[0].Void,"p":[$n[11].PathOptions,$n[1].Tween,$n[2].Quaternion,$n[2].Transform]}]}; }, $n);
     /*DG.Tweening.DOTweenModuleUtils+Physics end.*/
 
     }});
