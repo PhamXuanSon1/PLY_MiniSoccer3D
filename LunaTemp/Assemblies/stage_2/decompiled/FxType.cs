@@ -6,5 +6,6 @@ public enum FxType
 	RightChoice,
 	WrongChoice,
 	MaxLevel,
-	FightingCloud
+	FightingCloud,
+	Confetti
 }

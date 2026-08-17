@@ -31,6 +31,15 @@ namespace RonaldoPenalty
 		[SerializeField]
 		private GameObject promptText;
 
+		[Header("Win Celebration Objects")]
+		[Tooltip("Danh sách các GameObject sẽ HIỆN LÊN ngay khi Win (VD: 2 obj hiệu ứng chúc mừng / celebration...)")]
+		[SerializeField]
+		private GameObject[] objectsToShowOnWin;
+
+		[Tooltip("Thời gian chờ hiệu ứng chúc mừng trước khi chuyển sang màn hình Win Endcard và ẩn các obj (giây)")]
+		[SerializeField]
+		private float winDelay = 2f;
+
 		[Header("Hide On Result")]
 		[Tooltip("Danh sách các GameObject chỉ ẩn khi WIN (VD: ScorePanel, Gameplay UI...)")]
 		[SerializeField]
@@ -224,6 +233,7 @@ namespace RonaldoPenalty
 			isWinEndcardActive = false;
 			AutoFindReferences();
 			CacheInitialColors();
+			SetObjectsActive(objectsToShowOnWin, false);
 			SetObjectsActive(objectsToHideOnWin, true);
 			SetObjectsActive(objectsToHideOnLose, true);
 			SetObjectsActive(extraObjectsToHide, true);
@@ -291,10 +301,26 @@ namespace RonaldoPenalty
 
 		public void ShowWinEndcard(Action onClickStore)
 		{
+			ShowWinEndcard(winDelay, onClickStore);
+		}
+
+		public void ShowWinEndcard(float delay, Action onClickStore)
+		{
 			SetPromptVisible(false);
 			if (losePanel != null)
 			{
 				losePanel.SetActive(false);
+			}
+			SetObjectsActive(objectsToShowOnWin, true);
+			Ply_SoundManager.Instance?.PlayFx(FxType.Confetti);
+			StartCoroutine(WinRoutine(delay, onClickStore));
+		}
+
+		private IEnumerator WinRoutine(float delay, Action onClickStore)
+		{
+			if (delay > 0f)
+			{
+				yield return new WaitForSeconds(delay);
 			}
 			SetObjectsActive(objectsToHideOnWin, false);
 			SetObjectsActive(extraObjectsToHide, false);

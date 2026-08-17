@@ -363,8 +363,7 @@ namespace RonaldoPenalty
             if (isWin)
             {
                 currentState = PenaltyGameState.Result;
-                isTapToStoreActive = true;
-                if (ronaldoAnimator != null) ronaldoAnimator.PlayIdle();
+                if (ronaldoAnimator != null) ronaldoAnimator.PlayCelebrate();
 
                 AppLovinAnalytics.Track(ALEvent.CHALLENGE_SOLVED);
                 AppLovinAnalytics.Track(ALEvent.ENDCARD_SHOWN);
@@ -372,7 +371,7 @@ namespace RonaldoPenalty
 
                 if (uiManager != null)
                 {
-                    uiManager.ShowWinEndcard(() =>
+                    uiManager.ShowWinEndcard(2.0f, () =>
                     {
                         GameManager.GotoStore();
                     });
@@ -381,6 +380,8 @@ namespace RonaldoPenalty
                 {
                     Ply_SoundManager.Instance?.PlayFx(FxType.PlayerWin);
                 }
+
+                StartCoroutine(EnableTapToStoreAfterDelay(2.0f));
                 GameManager.OnGameEnded?.Invoke(true);
             }
             else
@@ -410,6 +411,15 @@ namespace RonaldoPenalty
 
                 GameManager.OnGameEnded?.Invoke(false);
             }
+        }
+
+        private IEnumerator EnableTapToStoreAfterDelay(float delay)
+        {
+            if (delay > 0f)
+            {
+                yield return new WaitForSeconds(delay);
+            }
+            isTapToStoreActive = true;
         }
 
         private void ResetToGameplayInitialState()

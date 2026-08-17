@@ -126,8 +126,18 @@
                 "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset"
             ],
             "includes": [
+                "Assets/Epic Toon FX/Materials/Misc/Unsorted/confetti_AB.mat",
+                "Assets/Epic Toon FX/Textures/confetti.png",
                 "Assets/Resources/DOTweenSettings.asset",
-                "Assets/TextMesh Pro/Resources/TMP Settings.asset"
+                "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+                "Assets/_Game/Material/WinConfetti 1.mat",
+                "Assets/_Game/Material/WinConfetti 2.mat",
+                "Assets/_Game/Material/WinConfetti 3.mat",
+                "Assets/_Game/Material/WinConfetti 4.mat",
+                "Assets/_Game/Material/WinConfetti.mat",
+                "Assets/_Game/Sound/confetti (mp3cut.net).mp3",
+                "Assets/_Game/Sprite1/confetti.png",
+                "Assets/_LGame/Prefabs/ConfettiDirectionalRainbow.prefab"
             ]
         },
         "scenes": [
@@ -36223,6 +36233,14 @@
                     {
                         "name": "StartAiming",
                         "excluded": false
+                    },
+                    {
+                        "name": "TrackRoundProgress",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EnableTapToStoreAfterDelay",
+                        "excluded": false
                     }
                 ]
             },
@@ -36290,7 +36308,7 @@
                     },
                     {
                         "name": "PlayCelebrate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PlayDisappointed",
@@ -36429,10 +36447,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "Update",
-                        "excluded": false
-                    },
-                    {
                         "name": "GotoStore",
                         "excluded": true
                     },
@@ -36451,6 +36465,14 @@
                     {
                         "name": "OnClick_GotoStore",
                         "excluded": true
+                    },
+                    {
+                        "name": "ShowWinEndcard$1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "WinRoutine",
+                        "excluded": false
                     }
                 ]
             },
@@ -36775,6 +36797,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/_Game/Sprite/PLY20/LOS VOLTAJE (mp3cut.net).mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 64,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sound/confetti (mp3cut.net).mp3"
                     }
                 ]
             },

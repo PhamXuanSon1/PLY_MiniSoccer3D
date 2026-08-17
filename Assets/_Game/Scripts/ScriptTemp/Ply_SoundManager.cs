@@ -12,7 +12,8 @@ public enum FxType
     RightChoice = 3,
     WrongChoice = 4,
     MaxLevel = 5,
-    FightingCloud = 6
+    FightingCloud = 6,
+    Confetti = 7
 }
 
 [System.Serializable]
@@ -32,6 +33,7 @@ public class FxAudio
     public SoundData WrongChoice;
     public SoundData MaxLevel;
     public SoundData FightingCloud;
+    public SoundData Confetti;
 
     public SoundData GetSoundData(FxType type)
     {
@@ -51,6 +53,8 @@ public class FxAudio
                 return MaxLevel;
             case FxType.FightingCloud:
                 return FightingCloud;
+            case FxType.Confetti:
+                return Confetti;
         }
         return null;
     }
@@ -141,6 +145,27 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
         if (!enableSound) return 0f;
 
         SoundData data = audioClips.GetSoundData(fxType);
+        if (data == null || data.clip == null)
+        {
+            if (fxType == FxType.Confetti)
+            {
+                AudioClip[] allClips = Resources.FindObjectsOfTypeAll<AudioClip>();
+                foreach (var c in allClips)
+                {
+                    if (c != null && c.name.ToLower().Contains("confetti"))
+                    {
+                        if (data == null)
+                        {
+                            data = new SoundData();
+                            audioClips.Confetti = data;
+                        }
+                        data.clip = c;
+                        break;
+                    }
+                }
+            }
+        }
+
         if (data == null || data.clip == null)
             return 0f;
 

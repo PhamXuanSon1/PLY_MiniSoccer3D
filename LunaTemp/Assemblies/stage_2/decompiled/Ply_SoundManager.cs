@@ -103,6 +103,24 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
 			return 0f;
 		}
 		SoundData data = audioClips.GetSoundData(fxType);
+		if ((data == null || data.clip == null) && fxType == FxType.Confetti)
+		{
+			AudioClip[] allClips = Resources.FindObjectsOfTypeAll<AudioClip>();
+			AudioClip[] array = allClips;
+			foreach (AudioClip c in array)
+			{
+				if (c != null && c.name.ToLower().Contains("confetti"))
+				{
+					if (data == null)
+					{
+						data = new SoundData();
+						audioClips.Confetti = data;
+					}
+					data.clip = c;
+					break;
+				}
+			}
+		}
 		if (data == null || data.clip == null)
 		{
 			return 0f;

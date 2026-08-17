@@ -21,6 +21,12 @@ namespace RonaldoPenalty
         [SerializeField] private GameObject losePanel;
         [SerializeField] private GameObject promptText;
 
+        [Header("Win Celebration Objects")]
+        [Tooltip("Danh sách các GameObject sẽ HIỆN LÊN ngay khi Win (VD: 2 obj hiệu ứng chúc mừng / celebration...)")]
+        [SerializeField] private GameObject[] objectsToShowOnWin;
+        [Tooltip("Thời gian chờ hiệu ứng chúc mừng trước khi chuyển sang màn hình Win Endcard và ẩn các obj (giây)")]
+        [SerializeField] private float winDelay = 2.0f;
+
         [Header("Hide On Result")]
         [Tooltip("Danh sách các GameObject chỉ ẩn khi WIN (VD: ScorePanel, Gameplay UI...)")]
         [SerializeField] private GameObject[] objectsToHideOnWin;
@@ -192,6 +198,9 @@ namespace RonaldoPenalty
             AutoFindReferences();
             CacheInitialColors();
 
+            // Ẩn các đối tượng chúc mừng khi về màn hình Gameplay
+            SetObjectsActive(objectsToShowOnWin, false);
+
             // Hiển thị lại các đối tượng phụ khi quay về màn hình Gameplay
             SetObjectsActive(objectsToHideOnWin, true);
             SetObjectsActive(objectsToHideOnLose, true);
@@ -252,8 +261,30 @@ namespace RonaldoPenalty
 
         public void ShowWinEndcard(Action onClickStore)
         {
+            ShowWinEndcard(winDelay, onClickStore);
+        }
+
+        public void ShowWinEndcard(float delay, Action onClickStore)
+        {
             SetPromptVisible(false);
             if (losePanel != null) losePanel.SetActive(false);
+
+            // 1. Ngay khi Win: Hiện các đối tượng chúc mừng (2 obj)
+            SetObjectsActive(objectsToShowOnWin, true);
+
+            // 2. Bật sound Confetti (pháo giấy chúc mừng) ngay lập tức
+            Ply_SoundManager.Instance?.PlayFx(FxType.Confetti);
+
+            // 3. Sau khoảng delay (2 giây) mới chuyển sang màn hình Win, tắt các obj hide và bật sound Win Game
+            StartCoroutine(WinRoutine(delay, onClickStore));
+        }
+
+        private IEnumerator WinRoutine(float delay, Action onClickStore)
+        {
+            if (delay > 0f)
+            {
+                yield return new WaitForSeconds(delay);
+            }
 
             // Tự động ẩn các đối tượng phụ được cấu hình cho Win và Common
             SetObjectsActive(objectsToHideOnWin, false);
@@ -267,7 +298,7 @@ namespace RonaldoPenalty
                 winEndcardPanel.SetActive(true);
             }
 
-            // Phát âm thanh Chiến Thắng (WinGame)
+            // Phát âm thanh Chiến Thắng Endcard (WinGame)
             Ply_SoundManager.Instance?.PlayFx(FxType.PlayerWin);
         }
 

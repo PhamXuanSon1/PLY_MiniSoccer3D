@@ -17,6 +17,8 @@ public class FxAudio
 
 	public SoundData FightingCloud;
 
+	public SoundData Confetti;
+
 	public SoundData GetSoundData(FxType type)
 	{
 		switch (type)
@@ -35,6 +37,8 @@ public class FxAudio
 			return MaxLevel;
 		case FxType.FightingCloud:
 			return FightingCloud;
+		case FxType.Confetti:
+			return Confetti;
 		default:
 			return null;
 		}
