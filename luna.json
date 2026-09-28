@@ -1,7 +1,7 @@
 {
     "version": "7.0.0",
     "projectId": "605a7f485ee7a504abb4a2ddde992494",
-    "applicationID": 40548,
+    "applicationID": 33920,
     "creativeName": "PLY_V13_Fix",
     "pgServer": "EU",
     "window": {
@@ -80,7 +80,7 @@
             "externalSources": [],
             "externalJSLibraries": [],
             "scriptingDefines": [],
-            "msbuildVersion": "18.7",
+            "msbuildVersion": "18.10",
             "monoVersion": "9.0.2",
             "dotnetVersion": ""
         },
@@ -362,10 +362,6 @@
             },
             {
                 "name": "Bridge.GeneratorEnumerable",
-                "excluded": true
-            },
-            {
-                "name": "Bridge.GeneratorEnumerator",
                 "excluded": true
             },
             {
@@ -1554,10 +1550,6 @@
             },
             {
                 "name": "UnityEngine.ControllerColliderHit",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.CustomYieldInstruction",
                 "excluded": true
             },
             {
@@ -6130,11 +6122,11 @@
             },
             {
                 "name": "UnityEngine.WaitForEndOfFrame",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.WaitForFixedUpdate",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Components.Behaviour",
@@ -6450,11 +6442,11 @@
             },
             {
                 "name": "UnityEngine.UI.CoroutineTween.ColorTween.ColorTweenCallback",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.UI.CoroutineTween.ColorTween.ColorTweenMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.UI.CoroutineTween.FloatTween.FloatTweenCallback",
@@ -8662,7 +8654,7 @@
                     },
                     {
                         "name": "isWhiteSpace",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isDigit",
@@ -12402,7 +12394,7 @@
                     },
                     {
                         "name": "Current#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$IEnumerator$Current#get",
@@ -12700,7 +12692,7 @@
                     },
                     {
                         "name": "Peek",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Pop",
@@ -15072,7 +15064,7 @@
                     },
                     {
                         "name": "UnsafeAddListener",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UnsafeRemoveListener",
@@ -15324,7 +15316,7 @@
                     },
                     {
                         "name": "LerpUnclamped",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Approximately",
@@ -15854,7 +15846,7 @@
                     },
                     {
                         "name": "GetLayerIDFromValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetLayerValueFromName",
@@ -16470,11 +16462,11 @@
                 "instanceMethods": [
                     {
                         "name": "Invoke",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddListener",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RemoveListener",
@@ -17078,7 +17070,7 @@
                     },
                     {
                         "name": "forward#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "forward#set",
@@ -18772,7 +18764,7 @@
                     },
                     {
                         "name": "highlightedColor#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "highlightedColor#set",
@@ -18780,7 +18772,7 @@
                     },
                     {
                         "name": "pressedColor#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "pressedColor#set",
@@ -18788,7 +18780,7 @@
                     },
                     {
                         "name": "selectedColor#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "selectedColor#set",
@@ -18812,7 +18804,7 @@
                     },
                     {
                         "name": "fadeDuration#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fadeDuration#set",
@@ -18884,7 +18876,7 @@
                     },
                     {
                         "name": "mode#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mode#set",
@@ -18984,7 +18976,7 @@
                     },
                     {
                         "name": "highlightedSprite#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "highlightedSprite#set",
@@ -18992,7 +18984,7 @@
                     },
                     {
                         "name": "pressedSprite#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "pressedSprite#set",
@@ -19000,7 +18992,7 @@
                     },
                     {
                         "name": "selectedSprite#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "selectedSprite#set",
@@ -19038,7 +19030,7 @@
                 "instanceMethods": [
                     {
                         "name": "Start",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Init",
@@ -19046,7 +19038,7 @@
                     },
                     {
                         "name": "StartTween",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "StopTween",
@@ -19100,7 +19092,7 @@
                     },
                     {
                         "name": "depth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "material#get",
@@ -19244,7 +19236,7 @@
                     },
                     {
                         "name": "Raycast",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "LayoutComplete",
@@ -19520,7 +19512,7 @@
                     },
                     {
                         "name": "alphaHitTestMinimumThreshold#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "alphaHitTestMinimumThreshold#set",
@@ -19576,7 +19568,7 @@
                     },
                     {
                         "name": "IsRaycastLocationValid",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "MapCoordinate",
@@ -23262,7 +23254,7 @@
                     },
                     {
                         "name": "Invoke",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -24048,19 +24040,19 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Cancel",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "HandleFixedUpdate",
@@ -24072,7 +24064,7 @@
                     },
                     {
                         "name": "MoveNext",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -24086,7 +24078,7 @@
                     },
                     {
                         "name": "Invoke",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Invoke$1",
@@ -28964,7 +28956,7 @@
                     },
                     {
                         "name": "sortingLayerID#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingLayerID#set",
@@ -29024,7 +29016,7 @@
                     },
                     {
                         "name": "sortingOrder#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sortingOrder#set",
@@ -29714,7 +29706,7 @@
                     },
                     {
                         "name": "highlightedTrigger#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "highlightedTrigger#set",
@@ -29722,7 +29714,7 @@
                     },
                     {
                         "name": "pressedTrigger#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "pressedTrigger#set",
@@ -29730,7 +29722,7 @@
                     },
                     {
                         "name": "selectedTrigger#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "selectedTrigger#set",
@@ -30068,7 +30060,7 @@
                     },
                     {
                         "name": "startColor#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "targetColor#get",
@@ -30076,7 +30068,7 @@
                     },
                     {
                         "name": "targetColor#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "tweenMode#get",
@@ -30084,39 +30076,39 @@
                     },
                     {
                         "name": "tweenMode#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "duration#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "duration#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ignoreTimeScale#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ignoreTimeScale#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TweenValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddOnChangedCallback",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetIgnoreTimescale",
@@ -30128,7 +30120,7 @@
                     },
                     {
                         "name": "ValidTarget",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -30140,7 +30132,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -30352,7 +30344,7 @@
                     },
                     {
                         "name": "m_IgnoreReversedGraphics#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "m_IgnoreReversedGraphics#set",
@@ -30540,7 +30532,7 @@
                     },
                     {
                         "name": "OnPointerClick",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnSubmit",
@@ -30548,7 +30540,7 @@
                     },
                     {
                         "name": "Press",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnFinishSubmit",
@@ -33494,7 +33486,7 @@
                     },
                     {
                         "name": "CheckWinCondition",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PauseGame",
@@ -33506,7 +33498,7 @@
                     },
                     {
                         "name": "GotoStore",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "MaxLevel#get",
@@ -33546,6 +33538,10 @@
                     },
                     {
                         "name": "OnCharacterReachedEnd",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnClick_GotoStore",
                         "excluded": false
                     }
                 ]
@@ -34414,7 +34410,7 @@
                     },
                     {
                         "name": "direction#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "direction#set",
@@ -34422,7 +34418,7 @@
                     },
                     {
                         "name": "origin#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "origin#set",
@@ -35187,6 +35183,50 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "Bridge.GeneratorEnumerator",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Current#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "getCurrent",
+                        "excluded": false
+                    },
+                    {
+                        "name": "getCurrent$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "reset",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.CustomYieldInstruction",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Current#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "moveNext",
+                        "excluded": true
+                    },
+                    {
+                        "name": "reset",
+                        "excluded": true
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -35294,6 +35334,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/_Game/Sprite/encard new/Replay.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sprite/brainrot_mini_challenge_256.png"
                     }
                 ]
             },

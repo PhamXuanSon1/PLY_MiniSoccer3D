@@ -39,10 +39,6 @@ public class ChoiceBoardHolder : MonoBehaviour
 			holderCollider.enabled = false;
 		}
 		ProgressTrackingManager.Instance?.AddProgress();
-		if (IsLastBoard)
-		{
-			OnLastBoardPassed?.Invoke(player);
-		}
 		ChoiceBoard tempChoiceBoard = GetNearestBoard(currentWorldPos);
 		if (!(tempChoiceBoard != null))
 		{
@@ -65,6 +61,10 @@ public class ChoiceBoardHolder : MonoBehaviour
 			{
 				GameManager.OnGameEnded?.Invoke(false);
 			}
+		}
+		if (IsLastBoard)
+		{
+			OnLastBoardPassed?.Invoke(player);
 		}
 		DOVirtual.DelayedCall(0.6f, delegate
 		{

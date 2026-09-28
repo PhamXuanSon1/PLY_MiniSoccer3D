@@ -35,11 +35,6 @@ public class ChoiceBoardHolder : MonoBehaviour
         // Cộng tiến độ tiến trình (AddProgress +1)
         ProgressTrackingManager.Instance?.AddProgress(1);
 
-        if (IsLastBoard)
-        {
-            OnLastBoardPassed?.Invoke(player);
-        }
-
         ChoiceBoard tempChoiceBoard = GetNearestBoard(currentWorldPos);
         if (tempChoiceBoard != null)
         {
@@ -62,6 +57,12 @@ public class ChoiceBoardHolder : MonoBehaviour
                 {
                     GameManager.OnGameEnded?.Invoke(false);
                 }
+            }
+
+            // Báo bảng cuối sau khi đã áp dụng lựa chọn để BossController đọc đúng level/kết quả.
+            if (IsLastBoard)
+            {
+                OnLastBoardPassed?.Invoke(player);
             }
 
             // Ẩn toàn bộ cụm ChoiceBoardHolder sau khi hiệu ứng 0.5s hoàn tất

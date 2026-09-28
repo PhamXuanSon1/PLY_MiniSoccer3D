@@ -55,6 +55,9 @@ public class BossController : MonoBehaviour
     [Tooltip("Thời gian chờ (giây) sau khi đi qua cổng cuối trước khi kích hoạt đấu Boss (Điền >= 0 để đếm ngược sau cổng cuối, điền -1 để nhân vật đi tới End mới kích hoạt)")]
     [SerializeField] private float delayAfterLastBoard = 1.5f;
 
+    [Tooltip("Thời gian chờ (giây) trước khi bật FightingCloud khi thua")]
+    [SerializeField] private float delayAfterLastBoardOnLoss = 1f;
+
     [Tooltip("Thời gian (giây) hiển thị hiệu ứng mây đối kháng FightingCloud")]
     [SerializeField] private float fightDuration = 3f;
 
@@ -112,11 +115,12 @@ public class BossController : MonoBehaviour
     private void OnLastBoardPassed(PlayerController player)
     {
         if (isSequenceStarted) return;
-        // Nếu delayAfterLastBoard < 0 (vd -1), không bật Sequence sớm ở đây mà chờ nhân vật chạy hết tới EndPos (sự kiện OnGameEnded)
-        if (delayAfterLastBoard < 0f) return;
-
         if (player != null) currentPlayer = player;
         bool isWin = GameManager.CheckWinCondition(currentPlayer != null ? currentPlayer.CurrentLevel : 1);
+
+        // Nếu cấu hình chờ tới EndPos, chỉ nhánh thắng chờ; nhánh thua vẫn bắt đầu tại bảng cuối.
+        if (isWin && delayAfterLastBoard < 0f) return;
+
         StartBossSequence(isWin);
     }
 
@@ -135,20 +139,16 @@ public class BossController : MonoBehaviour
         bossSeq = DOTween.Sequence();
         bossSeq.SetUpdate(true); // Đảm bảo hoạt động kể cả khi timescale bị thay đổi
 
-        // 1. Chờ delayAfterLastBoard (chỉ áp dụng nếu delayAfterLastBoard > 0)
-        if (delayAfterLastBoard > 0f)
+        // 1. Chờ trước khi bật FightingCloud; nhánh thua dùng thời gian riêng.
+        float sequenceDelay = isWin ? delayAfterLastBoard : delayAfterLastBoardOnLoss;
+        if (sequenceDelay > 0f)
         {
-            bossSeq.AppendInterval(delayAfterLastBoard);
+            bossSeq.AppendInterval(sequenceDelay);
         }
 
         // 2. Tắt Boss & Character Visual, Dừng Player, Bật FightingCloud & Phát Sound từ SoundManager
         bossSeq.AppendCallback(() =>
         {
-            if (currentPlayer != null)
-            {
-                currentPlayer.StopMoving();
-            }
-
             if (bossSpriteRenderer != null) bossSpriteRenderer.gameObject.SetActive(false);
             if (characterVisual != null) characterVisual.SetActive(false);
 

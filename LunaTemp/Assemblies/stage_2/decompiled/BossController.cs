@@ -70,6 +70,10 @@ public class BossController : MonoBehaviour
 	[SerializeField]
 	private float delayAfterLastBoard = 1.5f;
 
+	[Tooltip("Thời gian chờ (giây) trước khi bật FightingCloud khi thua")]
+	[SerializeField]
+	private float delayAfterLastBoardOnLoss = 1f;
+
 	[Tooltip("Thời gian (giây) hiển thị hiệu ứng mây đối kháng FightingCloud")]
 	[SerializeField]
 	private float fightDuration = 3f;
@@ -142,14 +146,17 @@ public class BossController : MonoBehaviour
 
 	private void OnLastBoardPassed(PlayerController player)
 	{
-		if (!isSequenceStarted && !(delayAfterLastBoard < 0f))
+		if (!isSequenceStarted)
 		{
 			if (player != null)
 			{
 				currentPlayer = player;
 			}
 			bool isWin = GameManager.CheckWinCondition((!(currentPlayer != null)) ? 1 : currentPlayer.CurrentLevel);
-			StartBossSequence(isWin);
+			if (!isWin || !(delayAfterLastBoard < 0f))
+			{
+				StartBossSequence(isWin);
+			}
 		}
 	}
 
@@ -171,16 +178,13 @@ public class BossController : MonoBehaviour
 		bossSeq?.Kill();
 		bossSeq = DOTween.Sequence();
 		bossSeq.SetUpdate(true);
-		if (delayAfterLastBoard > 0f)
+		float sequenceDelay = (isWin ? delayAfterLastBoard : delayAfterLastBoardOnLoss);
+		if (sequenceDelay > 0f)
 		{
-			bossSeq.AppendInterval(delayAfterLastBoard);
+			bossSeq.AppendInterval(sequenceDelay);
 		}
 		bossSeq.AppendCallback(delegate
 		{
-			if (currentPlayer != null)
-			{
-				currentPlayer.StopMoving();
-			}
 			if (bossSpriteRenderer != null)
 			{
 				bossSpriteRenderer.gameObject.SetActive(false);
