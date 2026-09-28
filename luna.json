@@ -80,7 +80,7 @@
             "externalSources": [],
             "externalJSLibraries": [],
             "scriptingDefines": [],
-            "msbuildVersion": "18.7",
+            "msbuildVersion": "18.10",
             "monoVersion": "9.0.2",
             "dotnetVersion": ""
         },
@@ -35525,6 +35525,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/_Game/Sprite/FootBallBG.png"
+                    },
+                    {
+                        "maxWidth": 2048,
+                        "maxHeight": 2048,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sprite/PLY21/textures/Group 2.png"
                     }
                 ]
             },
@@ -35534,7 +35544,7 @@
                     "startTime": "00:00.000",
                     "endTime": "00:00.000",
                     "lengthInSeconds": 0.0,
-                    "bitrate": 128,
+                    "bitrate": 64,
                     "script": "",
                     "ext": ""
                 },
@@ -35578,6 +35588,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/_Game/Sound/Lose.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 64,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sound/snaptik_7658697490673224981_v3.mp3"
                     }
                 ]
             },

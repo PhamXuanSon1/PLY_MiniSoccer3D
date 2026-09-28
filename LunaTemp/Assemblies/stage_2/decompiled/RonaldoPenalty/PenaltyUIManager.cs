@@ -116,6 +116,10 @@ namespace RonaldoPenalty
 					{
 						promptText = mgr.promptText;
 					}
+					if ((objectsToShowOnWin == null || objectsToShowOnWin.Length == 0) && mgr.objectsToShowOnWin != null && mgr.objectsToShowOnWin.Length != 0)
+					{
+						objectsToShowOnWin = mgr.objectsToShowOnWin;
+					}
 					if ((objectsToHideOnWin == null || objectsToHideOnWin.Length == 0) && mgr.objectsToHideOnWin != null && mgr.objectsToHideOnWin.Length != 0)
 					{
 						objectsToHideOnWin = mgr.objectsToHideOnWin;
@@ -322,6 +326,7 @@ namespace RonaldoPenalty
 			{
 				yield return new WaitForSeconds(delay);
 			}
+			SetObjectsActive(objectsToShowOnWin, false);
 			SetObjectsActive(objectsToHideOnWin, false);
 			SetObjectsActive(extraObjectsToHide, false);
 			onEndcardClick = onClickStore ?? new Action(GameManager.GotoStore);
@@ -341,6 +346,7 @@ namespace RonaldoPenalty
 			{
 				winEndcardPanel.SetActive(false);
 			}
+			SetObjectsActive(objectsToShowOnWin, false);
 			SetObjectsActive(objectsToHideOnLose, false);
 			SetObjectsActive(extraObjectsToHide, false);
 			if (losePanel != null)

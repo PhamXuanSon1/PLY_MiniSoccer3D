@@ -5880,6 +5880,9 @@ if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#AutoFindReferences", this
                             if (UnityEngine.GameObject.op_Equality(this.promptText, null) && UnityEngine.GameObject.op_Inequality(mgr.promptText, null)) {
                                 this.promptText = mgr.promptText;
                             }
+                            if ((this.objectsToShowOnWin == null || this.objectsToShowOnWin.length === 0) && mgr.objectsToShowOnWin != null && mgr.objectsToShowOnWin.length !== 0) {
+                                this.objectsToShowOnWin = mgr.objectsToShowOnWin;
+                            }
                             if ((this.objectsToHideOnWin == null || this.objectsToHideOnWin.length === 0) && mgr.objectsToHideOnWin != null && mgr.objectsToHideOnWin.length !== 0) {
                                 this.objectsToHideOnWin = mgr.objectsToHideOnWin;
                             }
@@ -6116,7 +6119,8 @@ if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#WinRoutine", this ); }
                                     continue;
                                 }
                                 case 3: {
-                                    this.SetObjectsActive(this.objectsToHideOnWin, false);
+                                    this.SetObjectsActive(this.objectsToShowOnWin, false);
+                                        this.SetObjectsActive(this.objectsToHideOnWin, false);
                                         this.SetObjectsActive(this.extraObjectsToHide, false);
                                         this.onEndcardClick = onClickStore || GameManager.GotoStore;
                                         this.isWinEndcardActive = true;
@@ -6150,6 +6154,7 @@ if ( TRACE ) { TRACE( "RonaldoPenalty.PenaltyUIManager#ShowLoseScreen", this ); 
                 if (UnityEngine.GameObject.op_Inequality(this.winEndcardPanel, null)) {
                     this.winEndcardPanel.SetActive(false);
                 }
+                this.SetObjectsActive(this.objectsToShowOnWin, false);
                 this.SetObjectsActive(this.objectsToHideOnLose, false);
                 this.SetObjectsActive(this.extraObjectsToHide, false);
                 if (UnityEngine.GameObject.op_Inequality(this.losePanel, null)) {

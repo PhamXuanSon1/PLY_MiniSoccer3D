@@ -73,6 +73,10 @@ namespace RonaldoPenalty
                     if (winEndcardPanel == null && mgr.winEndcardPanel != null) winEndcardPanel = mgr.winEndcardPanel;
                     if (losePanel == null && mgr.losePanel != null) losePanel = mgr.losePanel;
                     if (promptText == null && mgr.promptText != null) promptText = mgr.promptText;
+                    if ((objectsToShowOnWin == null || objectsToShowOnWin.Length == 0) && mgr.objectsToShowOnWin != null && mgr.objectsToShowOnWin.Length > 0)
+                    {
+                        objectsToShowOnWin = mgr.objectsToShowOnWin;
+                    }
                     if ((objectsToHideOnWin == null || objectsToHideOnWin.Length == 0) && mgr.objectsToHideOnWin != null && mgr.objectsToHideOnWin.Length > 0)
                     {
                         objectsToHideOnWin = mgr.objectsToHideOnWin;
@@ -286,6 +290,9 @@ namespace RonaldoPenalty
                 yield return new WaitForSeconds(delay);
             }
 
+            // Tắt các đối tượng chúc mừng sau khi hết thời gian chờ
+            SetObjectsActive(objectsToShowOnWin, false);
+
             // Tự động ẩn các đối tượng phụ được cấu hình cho Win và Common
             SetObjectsActive(objectsToHideOnWin, false);
             SetObjectsActive(extraObjectsToHide, false);
@@ -307,6 +314,9 @@ namespace RonaldoPenalty
             isWinEndcardActive = false;
             SetPromptVisible(false);
             if (winEndcardPanel != null) winEndcardPanel.SetActive(false);
+
+            // Tắt các đối tượng chúc mừng (nếu đang bật)
+            SetObjectsActive(objectsToShowOnWin, false);
 
             // Tự động ẩn các đối tượng phụ được cấu hình cho Lose và Common
             SetObjectsActive(objectsToHideOnLose, false);
