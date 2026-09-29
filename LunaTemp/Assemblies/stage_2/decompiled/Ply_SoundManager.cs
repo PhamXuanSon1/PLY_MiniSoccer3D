@@ -24,6 +24,11 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
 
 	private float _lastBgmVolume;
 
+	[Tooltip("Chỉ bắt đầu phát BGM khi người chơi click/chạm lần đầu tiên")]
+	public bool playBgmOnFirstClick = true;
+
+	private bool _bgmStarted;
+
 	public static Ply_SoundManager Instance => Ply_Singleton<Ply_SoundManager>.Ins;
 
 	public override void Awake()
@@ -54,10 +59,25 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
 		_lastEnableSound = enableSound;
 		_lastBgmVolume = bgmVolume;
 		UpdateBGMState();
+		if (playBgmOnFirstClick)
+		{
+			if (sound != null)
+			{
+				sound.Stop();
+			}
+		}
+		else
+		{
+			PlayBGM();
+		}
 	}
 
 	private void Update()
 	{
+		if (!_bgmStarted && Input.GetMouseButtonDown(0))
+		{
+			PlayBGM();
+		}
 		if (_lastEnableSound != enableSound || _lastBgmVolume != bgmVolume)
 		{
 			_lastEnableSound = enableSound;
@@ -134,8 +154,18 @@ public class Ply_SoundManager : Ply_Singleton<Ply_SoundManager>
 		}
 	}
 
+	public void PlayBGM()
+	{
+		_bgmStarted = true;
+		if (sound != null && !sound.isPlaying)
+		{
+			sound.Play();
+		}
+	}
+
 	public void StopBGM()
 	{
+		_bgmStarted = true;
 		if (sound != null)
 		{
 			sound.Stop();

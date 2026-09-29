@@ -62,22 +62,74 @@ public class PlayerVisual : MonoBehaviour
 	[SerializeField]
 	private float maxBoostDuration = 2.25f;
 
-	[Tooltip("Màu nháy của SpriteRenderer khi Boost (alpha thấp = nháy mờ)")]
-	[SerializeField]
-	private Color maxBoostFlashColor = new Color(1f, 1f, 1f, 0.35f);
-
-	[Tooltip("Thời gian một nhịp nháy (giây)")]
-	[SerializeField]
-	private float maxBoostFlashInterval = 0.1f;
-
 	[Tooltip("Thời gian thu nhỏ PowerFullPar về 0 trước khi tắt (giây)")]
 	[SerializeField]
 	private float maxPowerParHideDuration = 0.25f;
+
+	[Header("Max Level Glow Animation (như video ref)")]
+	[Tooltip("Bấm Tools > PLY > Build Max Level Glow Animation để tự tạo layer, AnimationClip và gán các ô dưới đây")]
+	[SerializeField]
+	private AnimationClip maxGlowClip;
+
+	[Tooltip("Tên State chứa Max Glow Clip trong Animator Controller")]
+	[SerializeField]
+	private string maxGlowStateName = "MaxLevelGlow";
+
+	[Tooltip("Tốc độ chạy animation (1 = đúng tốc độ video, ~4s)")]
+	[SerializeField]
+	private float glowTimelineSpeed = 1f;
+
+	[Tooltip("Độ sáng viền hào quang giữ lại sau khi hết Boost (0 = tắt hẳn)")]
+	[Range(0f, 1f)]
+	[SerializeField]
+	private float rimGlowAlphaAfterBoost = 0f;
+
+	[Tooltip("Các layer glow con (Editor tool tự gán): hào quang sau, bóng trắng, hào quang trước, FX mờ/lệch màu")]
+	[SerializeField]
+	private SpriteRenderer rimGlowBack;
+
+	[SerializeField]
+	private SpriteRenderer whiteFront;
+
+	[SerializeField]
+	private SpriteRenderer glowFront;
+
+	[SerializeField]
+	private SpriteRenderer burstLayer;
+
+	[Header("Max Level Glow Sprites (dùng cho Editor tool)")]
+	[Tooltip("Sprite bóng trắng cùng dáng với Sprite Level 4 (Ply23/fullWhite)")]
+	[SerializeField]
+	private Sprite glowSilhouetteSprite;
+
+	[Tooltip("Sprite hào quang trắng đã làm mờ viền (Ply23/fullWhiteGlow)")]
+	[SerializeField]
+	private Sprite glowHaloSprite;
+
+	[Tooltip("Sprite nhân vật trắng chói bị mờ chuyển động ngang (Ply23/fx_blurBurst)")]
+	[SerializeField]
+	private Sprite blurBurstSprite;
+
+	[Tooltip("Sprite ảnh màu mờ chuyển động ngang, tối (Ply23/fx_blurColor)")]
+	[SerializeField]
+	private Sprite blurColorSprite;
+
+	[Tooltip("Sprite mờ chuyển động + lệch màu RGB (Ply23/fx_blurChroma)")]
+	[SerializeField]
+	private Sprite blurChromaSprite;
+
+	[Tooltip("Sprite nhân vật có viền lệch màu RGB nhẹ (Ply23/fx_chromaEdge)")]
+	[SerializeField]
+	private Sprite chromaEdgeSprite;
 
 	[Header("Effects")]
 	[Tooltip("Particle System phát hiệu ứng khi nhân vật đạt sức mạnh tối đa")]
 	[SerializeField]
 	private ParticleSystem maxPowerPar;
+
+	[Tooltip("Bật PowerFullPar khi Boost (video ref không có particle -> mặc định tắt)")]
+	[SerializeField]
+	private bool showPowerFullParOnBoost = false;
 
 	private Vector3 defaultScale;
 
@@ -95,13 +147,16 @@ public class PlayerVisual : MonoBehaviour
 
 	private Tween maxBoostEndTween;
 
-	private Tween flashTween;
+	private bool isGlowPlaying;
 
 	private bool isMaxBoosting;
+
+	private bool UseGlowEffect => visualAnimator != null && maxGlowClip != null;
 
 	private void Awake()
 	{
 		InitScale();
+		ResetGlowLayers();
 	}
 
 	private void InitScale()
@@ -151,7 +206,6 @@ public class PlayerVisual : MonoBehaviour
 		GameManager.OnGameStart = (Action)Delegate.Remove(GameManager.OnGameStart, new Action(OnGameStart));
 		level4DelayTween?.Kill();
 		maxBoostEndTween?.Kill();
-		flashTween?.Kill();
 	}
 
 	private void OnGameStart()
@@ -186,7 +240,19 @@ public class PlayerVisual : MonoBehaviour
 		if (levelSprite != null && levelSprite.Length != 0)
 		{
 			int levelIdx = Mathf.Clamp(currentLevel - 1, 0, levelSprite.Length - 1);
-			if (isMaxLevel)
+			if (isMaxLevel && UseGlowEffect)
+			{
+				if (visualAnimator != null)
+				{
+					visualAnimator.enabled = false;
+				}
+				AssingPlayerVisual(levelSprite[levelIdx]);
+				if (isMaxBoosting)
+				{
+					PlayGlowSequence();
+				}
+			}
+			else if (isMaxLevel)
 			{
 				if (visualAnimator != null)
 				{
@@ -206,7 +272,7 @@ public class PlayerVisual : MonoBehaviour
 					}
 					if (isMaxBoosting)
 					{
-						StartFlashing();
+						PlayGlowSequence();
 					}
 				});
 			}
@@ -250,20 +316,23 @@ public class PlayerVisual : MonoBehaviour
 	private void BeginMaxBoost()
 	{
 		isMaxBoosting = true;
-		if (maxPowerPar != null)
+		if (maxPowerPar != null && showPowerFullParOnBoost)
 		{
 			maxPowerPar.transform.DOKill();
 			maxPowerPar.transform.localScale = maxPowerParDefaultScale;
 			maxPowerPar.gameObject.SetActive(true);
 		}
 		maxBoostEndTween?.Kill();
-		maxBoostEndTween = DOVirtual.DelayedCall(maxBoostDuration, EndMaxBoost);
+		if (!UseGlowEffect)
+		{
+			maxBoostEndTween = DOVirtual.DelayedCall(maxBoostDuration, EndMaxBoost);
+		}
 	}
 
 	private void EndMaxBoost()
 	{
 		isMaxBoosting = false;
-		StopFlashing();
+		StopGlowSequence(rimGlowAlphaAfterBoost);
 		if (isGameStarted)
 		{
 			StartBouncing();
@@ -287,7 +356,7 @@ public class PlayerVisual : MonoBehaviour
 	{
 		maxBoostEndTween?.Kill();
 		isMaxBoosting = false;
-		StopFlashing();
+		StopGlowSequence(0f);
 		if (maxPowerPar != null)
 		{
 			maxPowerPar.transform.DOKill();
@@ -295,23 +364,101 @@ public class PlayerVisual : MonoBehaviour
 		}
 	}
 
-	private void StartFlashing()
+	private void PlayGlowSequence()
 	{
-		if (!(playerSpriteRenderer == null))
+		if (UseGlowEffect)
 		{
-			flashTween?.Kill();
-			playerSpriteRenderer.color = defaultColor;
-			flashTween = playerSpriteRenderer.DOColor(maxBoostFlashColor, maxBoostFlashInterval).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+			SetGlowLayersEnabled(true);
+			visualAnimator.enabled = true;
+			visualAnimator.speed = Mathf.Max(0.01f, glowTimelineSpeed);
+			visualAnimator.Play(maxGlowStateName, 0, 0f);
+			isGlowPlaying = true;
 		}
 	}
 
-	private void StopFlashing()
+	private void Update()
 	{
-		flashTween?.Kill();
-		flashTween = null;
+		if (!isGlowPlaying || visualAnimator == null || !visualAnimator.enabled)
+		{
+			return;
+		}
+		AnimatorStateInfo state = visualAnimator.GetCurrentAnimatorStateInfo(0);
+		if (state.shortNameHash == Animator.StringToHash(maxGlowStateName) && state.normalizedTime >= 1f)
+		{
+			isGlowPlaying = false;
+			if (isMaxBoosting)
+			{
+				EndMaxBoost();
+			}
+		}
+	}
+
+	private void StopGlowSequence(float keepRimAlpha)
+	{
+		isGlowPlaying = false;
+		if (visualAnimator != null)
+		{
+			visualAnimator.enabled = false;
+			visualAnimator.speed = 1f;
+		}
 		if (playerSpriteRenderer != null)
 		{
 			playerSpriteRenderer.color = defaultColor;
+		}
+		SetLayerAlpha(whiteFront, 0f);
+		SetLayerAlpha(glowFront, 0f);
+		SetLayerAlpha(burstLayer, 0f);
+		if (!(rimGlowBack != null))
+		{
+			return;
+		}
+		rimGlowBack.DOKill();
+		rimGlowBack.DOFade(keepRimAlpha, scaleTransitionDuration).OnComplete(delegate
+		{
+			if (keepRimAlpha <= 0f)
+			{
+				SetGlowLayersEnabled(false);
+			}
+		});
+	}
+
+	private void ResetGlowLayers()
+	{
+		SetLayerAlpha(rimGlowBack, 0f);
+		SetLayerAlpha(whiteFront, 0f);
+		SetLayerAlpha(glowFront, 0f);
+		SetLayerAlpha(burstLayer, 0f);
+		SetGlowLayersEnabled(false);
+	}
+
+	private void SetLayerAlpha(SpriteRenderer sr, float alpha)
+	{
+		if (!(sr == null))
+		{
+			sr.DOKill();
+			Color c = sr.color;
+			c.a = alpha;
+			sr.color = c;
+		}
+	}
+
+	private void SetGlowLayersEnabled(bool enabled)
+	{
+		if (rimGlowBack != null)
+		{
+			rimGlowBack.enabled = enabled;
+		}
+		if (whiteFront != null)
+		{
+			whiteFront.enabled = enabled;
+		}
+		if (glowFront != null)
+		{
+			glowFront.enabled = enabled;
+		}
+		if (burstLayer != null)
+		{
+			burstLayer.enabled = enabled;
 		}
 	}
 
@@ -352,7 +499,11 @@ public class PlayerVisual : MonoBehaviour
 		}
 		if (maxPowerPar != null)
 		{
-			maxPowerPar.gameObject.SetActive(enableState && isMaxBoosting);
+			maxPowerPar.gameObject.SetActive(enableState && isMaxBoosting && showPowerFullParOnBoost);
+		}
+		if (!enableState)
+		{
+			SetGlowLayersEnabled(false);
 		}
 	}
 }
