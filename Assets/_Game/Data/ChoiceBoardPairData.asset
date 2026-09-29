@@ -14,32 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceBoardPairData
   ChoicePairDatas:
   - choiceData1:
-      VisualSprite: {fileID: 21300000, guid: cb378b19ad0537d4db23083d78d6ec8a, type: 3}
+      VisualSprite: {fileID: 21300000, guid: f35ac872199932647ae2d08b7d3b1e2f, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 0
     choiceData2:
       VisualSprite: {fileID: 21300000, guid: cec279145cbd8a94ca2501452291f8c8, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 1
   - choiceData1:
-      VisualSprite: {fileID: 21300000, guid: cb378b19ad0537d4db23083d78d6ec8a, type: 3}
+      VisualSprite: {fileID: 21300000, guid: f35ac872199932647ae2d08b7d3b1e2f, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 0
     choiceData2:
       VisualSprite: {fileID: 21300000, guid: cec279145cbd8a94ca2501452291f8c8, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 1
   - choiceData1:
-      VisualSprite: {fileID: 21300000, guid: cb378b19ad0537d4db23083d78d6ec8a, type: 3}
+      VisualSprite: {fileID: 21300000, guid: f35ac872199932647ae2d08b7d3b1e2f, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 0
     choiceData2:
       VisualSprite: {fileID: 21300000, guid: cec279145cbd8a94ca2501452291f8c8, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 1
   - choiceData1:
-      VisualSprite: {fileID: 21300000, guid: cb378b19ad0537d4db23083d78d6ec8a, type: 3}
+      VisualSprite: {fileID: 21300000, guid: f35ac872199932647ae2d08b7d3b1e2f, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 0
     choiceData2:
       VisualSprite: {fileID: 21300000, guid: cec279145cbd8a94ca2501452291f8c8, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 1
   - choiceData1:
-      VisualSprite: {fileID: 21300000, guid: cb378b19ad0537d4db23083d78d6ec8a, type: 3}
+      VisualSprite: {fileID: 21300000, guid: f35ac872199932647ae2d08b7d3b1e2f, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 0
     choiceData2:
       VisualSprite: {fileID: 21300000, guid: cec279145cbd8a94ca2501452291f8c8, type: 3}
+      BorderSprite: {fileID: 0}
       ChoiceType: 1
