@@ -62,6 +62,8 @@ public class ChoiceBoardHolder : MonoBehaviour
             // Báo bảng cuối sau khi đã áp dụng lựa chọn để BossController đọc đúng level/kết quả.
             if (IsLastBoard)
             {
+                // Đi qua ChoiceBoardHolder cuối cùng -> tắt nhạc nền
+                Ply_SoundManager.Instance?.StopBGM();
                 OnLastBoardPassed?.Invoke(player);
             }
 
