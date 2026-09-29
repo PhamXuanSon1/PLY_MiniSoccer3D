@@ -1,8 +1,8 @@
 {
     "version": "7.0.0",
     "projectId": "605a7f485ee7a504abb4a2ddde992494",
-    "applicationID": 33920,
-    "creativeName": "PLY_V13_Fix",
+    "applicationID": 40548,
+    "creativeName": "Ply23_MiniSoccer_RonaldoRun",
     "pgServer": "EU",
     "window": {
         "‐⁏": true
@@ -31918,7 +31918,7 @@
                     },
                     {
                         "name": "To$8",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "To$10",
@@ -33586,7 +33586,7 @@
                     },
                     {
                         "name": "HandleMouseInput",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "HandleTouchInput",
@@ -33683,6 +33683,10 @@
                     {
                         "name": "OnSwipe",
                         "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
                     }
                 ]
             },
@@ -33737,6 +33741,30 @@
                     {
                         "name": "SetVisualEnable",
                         "excluded": true
+                    },
+                    {
+                        "name": "GetTargetPlayerScale",
+                        "excluded": false
+                    },
+                    {
+                        "name": "BeginMaxBoost",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EndMaxBoost",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CancelMaxBoost",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StartFlashing",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopFlashing",
+                        "excluded": false
                     }
                 ]
             },
@@ -35042,7 +35070,7 @@
                 "instanceMethods": [
                     {
                         "name": "DOColor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOFade",
@@ -35344,6 +35372,46 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/_Game/Sprite/brainrot_mini_challenge_256.png"
+                    },
+                    {
+                        "maxWidth": 365,
+                        "maxHeight": 230,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sprite/lv2_8 2.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sprite/Icon (1).png"
+                    },
+                    {
+                        "maxWidth": 500,
+                        "maxHeight": 500,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sprite/red_border.png"
+                    },
+                    {
+                        "maxWidth": 500,
+                        "maxHeight": 500,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Game/Sprite/CyanBoard.png"
                     }
                 ]
             },

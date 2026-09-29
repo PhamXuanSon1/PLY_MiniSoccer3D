@@ -278,7 +278,7 @@ MonoBehaviour:
   fightingCloud: {fileID: 1945029895}
   resultObject: {fileID: 593099069}
   resultSpriteRenderer: {fileID: 593099071}
-  winSprite: {fileID: 21300000, guid: 108ca792624e4d348b81de6e34882f0a, type: 3}
+  winSprite: {fileID: 21300000, guid: 2f23106a2d661c54bb5923e9c7d4da4a, type: 3}
   lossSprite: {fileID: 21300000, guid: 259af38aea8387b4faefd5ec59cd8e0a, type: 3}
   extraWinObject: {fileID: 500447748}
   winPanel: {fileID: 1982723037}
@@ -289,7 +289,7 @@ MonoBehaviour:
   fightingCloudFx: 6
   winPanelFx: 1
   losePanelFx: 2
-  delayAfterLastBoard: -1
+  delayAfterLastBoard: 1.5
   delayAfterLastBoardOnLoss: 1
   fightDuration: 2
   showResultDuration: 3.5
@@ -750,15 +750,15 @@ RectTransform:
   m_GameObject: {fileID: 699109600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1261151313}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 179, y: 844}
-  m_SizeDelta: {x: 256, y: 256}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -203.8, y: -116}
+  m_SizeDelta: {x: 281, y: 153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &699109602
 MonoBehaviour:
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 042a17d1aa7edea4b8a35a863510cd35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6534770d61f5a714e9f64e767fe4c603, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1312,7 +1312,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3092cb71887b13147b6b7281ce78404e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00e69ec3b7746044a92a92d46f9e3e26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1479,8 +1479,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d7b705ff31af8714da0a301b60b3f1ac, type: 3}
-  m_Resource: {fileID: 8300000, guid: d7b705ff31af8714da0a301b60b3f1ac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 780d53f84d849a44a8d725f5a811841a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 780d53f84d849a44a8d725f5a811841a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.28
   m_Pitch: 1
@@ -1887,15 +1887,15 @@ MonoBehaviour:
   playerSpriteRenderer: {fileID: 904003602}
   fakeShadowRenderer: {fileID: 0}
   levelSprite:
-  - {fileID: 21300000, guid: 3092cb71887b13147b6b7281ce78404e, type: 3}
-  - {fileID: 21300000, guid: 7429c8f573b9177458a09b78905e5336, type: 3}
-  - {fileID: 21300000, guid: a157ef1ebb4ccdb4f97abef05e7341ca, type: 3}
-  - {fileID: 21300000, guid: 833380317682ab14798f4fb531f9b21f, type: 3}
+  - {fileID: 21300000, guid: 00e69ec3b7746044a92a92d46f9e3e26, type: 3}
+  - {fileID: 21300000, guid: cc59dc9ee766df346a99939dc34c3f53, type: 3}
+  - {fileID: 21300000, guid: 0360b9f9858614847a6c0613083fb721, type: 3}
+  - {fileID: 21300000, guid: 75189708b2540b54bb05d406c89f4601, type: 3}
   levelScaleMultipliers:
   - 1
   - 1
-  - 1.2
-  - 1.5
+  - 1
+  - 1
   maxPowerParScaleMultiplier: 1.1
   bounceYMultiplier: 0.95
   bounceDuration: 0.4
@@ -1903,6 +1903,11 @@ MonoBehaviour:
   visualAnimator: {fileID: 904003603}
   level4TriggerName: 1
   level4SpriteDelay: 0.3
+  maxBoostScaleMultiplier: 1.2
+  maxBoostDuration: 2.25
+  maxBoostFlashColor: {r: 1, g: 1, b: 1, a: 0.35}
+  maxBoostFlashInterval: 0.1
+  maxPowerParHideDuration: 0.25
   maxPowerPar: {fileID: 1777669748}
 --- !u!224 &1395076188 stripped
 RectTransform:
@@ -2055,6 +2060,7 @@ MonoBehaviour:
   winPar: {fileID: 1777669748}
   currentLevel: 1
   dragSmoothSpeed: 20
+  dragScreenRatioForFullTrack: 0.5
   moveCurve:
     serializedVersion: 2
     m_Curve:
@@ -2464,9 +2470,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1261151313}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -122, y: 842}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 124, y: -118}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1887656957
