@@ -66,11 +66,17 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Tốc độ làm mượt vị trí khi người chơi kéo vuốt")]
     [SerializeField] private float dragSmoothSpeed = 20f;
 
+    [Tooltip("Tỉ lệ cạnh ngắn màn hình cần vuốt để đi hết bề ngang đường chạy (0.5 = vuốt nửa cạnh ngắn)")]
+    [SerializeField] private float dragScreenRatioForFullTrack = 0.5f;
+
     [Tooltip("Đường cong gia tốc di chuyển của nhân vật")]
     [SerializeField] private AnimationCurve moveCurve;
 
     private Vector3 currentLocalPos;
     private bool OnRight;
+    private bool isDragActive;
+    private float dragStartScreenX;
+    private float dragStartLocalX;
 
     private Sequence moveSeq;
     private bool gameStart;
@@ -165,18 +171,20 @@ public class PlayerController : MonoBehaviour
         gameStart = true;
     }
 
+    private void Update()
+    {
+        // Lerp liên tục mỗi frame về vị trí mục tiêu (không phụ thuộc tần suất sự kiện Drag)
+        if (!gameStart || playerTransform == null) return;
+
+        playerTransform.localPosition = Vector3.Lerp(
+            playerTransform.localPosition,
+            currentLocalPos,
+            Time.deltaTime * dragSmoothSpeed);
+    }
+
     private void OnDrag(Vector2 screenPosition)
     {
-        if (playerTransform == null || mainCam == null) return;
-
-        float screenZ = mainCam.WorldToScreenPoint(playerTransform.position).z;
-        Vector3 screenPoint = new Vector3(screenPosition.x, screenPosition.y, screenZ);
-        Vector3 worldPoint = mainCam.ScreenToWorldPoint(screenPoint);
-
-        Transform parent = playerTransform.parent;
-        Vector3 localPoint = parent != null
-            ? parent.InverseTransformPoint(worldPoint)
-            : playerTransform.localPosition;
+        if (playerTransform == null) return;
 
         float leftX = trackLeftTransform != null ? trackLeftTransform.localPosition.x : -2f;
         float rightX = trackRightTransform != null ? trackRightTransform.localPosition.x : 2f;
@@ -184,17 +192,25 @@ public class PlayerController : MonoBehaviour
         float minX = Mathf.Min(leftX, rightX);
         float maxX = Mathf.Max(leftX, rightX);
 
-        float targetX = Mathf.Clamp(localPoint.x, minX, maxX);
+        // Kéo tương đối: nhân vật dịch theo quãng vuốt của ngón tay, không cần chạm đúng vào nhân vật
+        if (!isDragActive)
+        {
+            isDragActive = true;
+            dragStartScreenX = screenPosition.x;
+            dragStartLocalX = playerTransform.localPosition.x;
+            playerTransform.DOKill();
+        }
+
+        // Dùng cạnh ngắn của màn hình để độ nhạy giống nhau ở cả màn dọc lẫn màn ngang
+        float screenShortSide = Mathf.Min(Screen.width, Screen.height);
+        float screenWidthForFullTrack = Mathf.Max(1f, screenShortSide * dragScreenRatioForFullTrack);
+        float deltaX = (screenPosition.x - dragStartScreenX) / screenWidthForFullTrack * (maxX - minX);
+        float targetX = Mathf.Clamp(dragStartLocalX + deltaX, minX, maxX);
 
         currentLocalPos = new Vector3(
             targetX,
             playerTransform.localPosition.y,
             playerTransform.localPosition.z);
-
-        playerTransform.localPosition = Vector3.Lerp(
-            playerTransform.localPosition,
-            currentLocalPos,
-            Time.deltaTime * dragSmoothSpeed);
 
         if (!gameStart)
         {
@@ -205,10 +221,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnDragEnd()
     {
-        if (playerTransform != null)
-        {
-            currentLocalPos = playerTransform.localPosition;
-        }
+        // Giữ nguyên mục tiêu để nhân vật tiếp tục trượt tới đúng chỗ ngón tay vừa thả
+        isDragActive = false;
     }
 
     private void SwitchTrack(bool rightTrack)

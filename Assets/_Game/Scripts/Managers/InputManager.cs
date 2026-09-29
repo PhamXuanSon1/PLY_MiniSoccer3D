@@ -38,11 +38,9 @@ public class InputManager : MonoBehaviour
 
     private void HandleInput()
     {
-#if UNITY_EDITOR || UNITY_STANDALONE
+        // Luna/WebGL: touch được giả lập thành mouse (Input.simulateMouseWithTouches),
+        // và Luna không báo đều TouchPhase.Stationary -> dùng mouse cho mọi nền tảng
         HandleMouseInput();
-#else
-        HandleTouchInput();
-#endif
     }
 
     private void HandleMouseInput()
