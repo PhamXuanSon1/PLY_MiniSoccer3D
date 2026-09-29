@@ -8535,6 +8535,22 @@
             {
                 "name": "DG.Tweening.Plugins.Core.ITPlugin$4",
                 "excluded": false
+            },
+            {
+                "name": "MaxLevelGlowTimeline",
+                "excluded": true
+            },
+            {
+                "name": "MaxLevelGlowTimeline.Key",
+                "excluded": true
+            },
+            {
+                "name": "MaxLevelGlowTimeline.State",
+                "excluded": true
+            },
+            {
+                "name": "MaxLevelGlowTimeline.BurstFx",
+                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -22871,6 +22887,10 @@
                     {
                         "name": "StopLoopFx",
                         "excluded": true
+                    },
+                    {
+                        "name": "PlayBGM",
+                        "excluded": false
                     }
                 ]
             },
@@ -26880,7 +26900,7 @@
                     },
                     {
                         "name": "speed#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "animatorController#get",
@@ -33759,11 +33779,31 @@
                         "excluded": false
                     },
                     {
-                        "name": "StartFlashing",
+                        "name": "UseGlowEffect#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PlayGlowSequence",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Update",
                         "excluded": false
                     },
                     {
-                        "name": "StopFlashing",
+                        "name": "StopGlowSequence",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ResetGlowLayers",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetLayerAlpha",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetGlowLayersEnabled",
                         "excluded": false
                     }
                 ]
