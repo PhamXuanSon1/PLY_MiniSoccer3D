@@ -53,6 +53,27 @@ public class PlayerVisual : MonoBehaviour
 	[SerializeField]
 	private float level4SpriteDelay = 0.3f;
 
+	[Header("Max Level Boost Settings")]
+	[Tooltip("Tỉ lệ phóng to thêm khi vừa lên Max Level (nhân với Level Scale Multiplier)")]
+	[SerializeField]
+	private float maxBoostScaleMultiplier = 1.4f;
+
+	[Tooltip("Thời gian nhân vật to lên + nháy nháy trước khi về lại bình thường (giây)")]
+	[SerializeField]
+	private float maxBoostDuration = 2.25f;
+
+	[Tooltip("Màu nháy của SpriteRenderer khi Boost (alpha thấp = nháy mờ)")]
+	[SerializeField]
+	private Color maxBoostFlashColor = new Color(1f, 1f, 1f, 0.35f);
+
+	[Tooltip("Thời gian một nhịp nháy (giây)")]
+	[SerializeField]
+	private float maxBoostFlashInterval = 0.1f;
+
+	[Tooltip("Thời gian thu nhỏ PowerFullPar về 0 trước khi tắt (giây)")]
+	[SerializeField]
+	private float maxPowerParHideDuration = 0.25f;
+
 	[Header("Effects")]
 	[Tooltip("Particle System phát hiệu ứng khi nhân vật đạt sức mạnh tối đa")]
 	[SerializeField]
@@ -71,6 +92,12 @@ public class PlayerVisual : MonoBehaviour
 	private int currentLevelInternal = 1;
 
 	private Tween level4DelayTween;
+
+	private Tween maxBoostEndTween;
+
+	private Tween flashTween;
+
+	private bool isMaxBoosting;
 
 	private void Awake()
 	{
@@ -123,6 +150,8 @@ public class PlayerVisual : MonoBehaviour
 	{
 		GameManager.OnGameStart = (Action)Delegate.Remove(GameManager.OnGameStart, new Action(OnGameStart));
 		level4DelayTween?.Kill();
+		maxBoostEndTween?.Kill();
+		flashTween?.Kill();
 	}
 
 	private void OnGameStart()
@@ -142,9 +171,18 @@ public class PlayerVisual : MonoBehaviour
 	public void UpdateVisualBylevel(int currentLevel)
 	{
 		InitScale();
+		bool wasMaxLevel = currentLevelInternal >= 4;
 		currentLevelInternal = currentLevel;
 		level4DelayTween?.Kill();
 		bool isMaxLevel = currentLevel >= 4;
+		if (isMaxLevel && !wasMaxLevel)
+		{
+			BeginMaxBoost();
+		}
+		else if (!isMaxLevel)
+		{
+			CancelMaxBoost();
+		}
 		if (levelSprite != null && levelSprite.Length != 0)
 		{
 			int levelIdx = Mathf.Clamp(currentLevel - 1, 0, levelSprite.Length - 1);
@@ -155,6 +193,7 @@ public class PlayerVisual : MonoBehaviour
 					visualAnimator.enabled = true;
 					visualAnimator.SetTrigger(level4TriggerName);
 				}
+				AssingPlayerVisual(levelSprite[levelIdx]);
 				level4DelayTween = DOVirtual.DelayedCall(level4SpriteDelay, delegate
 				{
 					if (visualAnimator != null)
@@ -165,7 +204,10 @@ public class PlayerVisual : MonoBehaviour
 					{
 						playerSpriteRenderer.color = defaultColor;
 					}
-					AssingPlayerVisual(levelSprite[levelIdx]);
+					if (isMaxBoosting)
+					{
+						StartFlashing();
+					}
 				});
 			}
 			else
@@ -181,45 +223,111 @@ public class PlayerVisual : MonoBehaviour
 				AssingPlayerVisual(levelSprite[levelIdx]);
 			}
 		}
-		if (maxPowerPar != null)
-		{
-			maxPowerPar.gameObject.SetActive(isMaxLevel);
-		}
 		if (isGameStarted)
 		{
 			StartBouncing();
 			return;
 		}
-		float playerScaleMult = GetScaleMultiplierForLevel(currentLevel);
-		Vector3 targetPlayerScale = defaultScale * playerScaleMult;
-		Vector3 targetParScale = (isMaxLevel ? (maxPowerParDefaultScale * maxPowerParScaleMultiplier) : maxPowerParDefaultScale);
 		base.transform.DOKill();
-		base.transform.localScale = targetPlayerScale;
+		base.transform.localScale = GetTargetPlayerScale();
+		if (maxPowerPar != null && isMaxBoosting)
+		{
+			maxPowerPar.transform.DOKill();
+			maxPowerPar.transform.localScale = maxPowerParDefaultScale * maxPowerParScaleMultiplier;
+		}
+	}
+
+	private Vector3 GetTargetPlayerScale()
+	{
+		float mult = GetScaleMultiplierForLevel(currentLevelInternal);
+		if (isMaxBoosting)
+		{
+			mult *= maxBoostScaleMultiplier;
+		}
+		return defaultScale * mult;
+	}
+
+	private void BeginMaxBoost()
+	{
+		isMaxBoosting = true;
 		if (maxPowerPar != null)
 		{
 			maxPowerPar.transform.DOKill();
-			maxPowerPar.transform.localScale = targetParScale;
+			maxPowerPar.transform.localScale = maxPowerParDefaultScale;
+			maxPowerPar.gameObject.SetActive(true);
+		}
+		maxBoostEndTween?.Kill();
+		maxBoostEndTween = DOVirtual.DelayedCall(maxBoostDuration, EndMaxBoost);
+	}
+
+	private void EndMaxBoost()
+	{
+		isMaxBoosting = false;
+		StopFlashing();
+		if (isGameStarted)
+		{
+			StartBouncing();
+		}
+		else
+		{
+			base.transform.DOKill();
+			base.transform.DOScale(GetTargetPlayerScale(), scaleTransitionDuration).SetEase(Ease.OutBack);
+		}
+		if (maxPowerPar != null && maxPowerPar.gameObject.activeSelf)
+		{
+			maxPowerPar.transform.DOKill();
+			maxPowerPar.transform.DOScale(Vector3.zero, maxPowerParHideDuration).SetEase(Ease.InBack).OnComplete(delegate
+			{
+				maxPowerPar.gameObject.SetActive(false);
+			});
+		}
+	}
+
+	private void CancelMaxBoost()
+	{
+		maxBoostEndTween?.Kill();
+		isMaxBoosting = false;
+		StopFlashing();
+		if (maxPowerPar != null)
+		{
+			maxPowerPar.transform.DOKill();
+			maxPowerPar.gameObject.SetActive(false);
+		}
+	}
+
+	private void StartFlashing()
+	{
+		if (!(playerSpriteRenderer == null))
+		{
+			flashTween?.Kill();
+			playerSpriteRenderer.color = defaultColor;
+			flashTween = playerSpriteRenderer.DOColor(maxBoostFlashColor, maxBoostFlashInterval).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+		}
+	}
+
+	private void StopFlashing()
+	{
+		flashTween?.Kill();
+		flashTween = null;
+		if (playerSpriteRenderer != null)
+		{
+			playerSpriteRenderer.color = defaultColor;
 		}
 	}
 
 	private void StartBouncing()
 	{
 		InitScale();
-		bool isMaxLevel = currentLevelInternal >= 4;
-		float playerScaleMult = GetScaleMultiplierForLevel(currentLevelInternal);
-		Vector3 targetPlayerScale = defaultScale * playerScaleMult;
-		Vector3 targetParScale = (isMaxLevel ? (maxPowerParDefaultScale * maxPowerParScaleMultiplier) : maxPowerParDefaultScale);
+		Vector3 targetPlayerScale = GetTargetPlayerScale();
+		Vector3 targetParScale = maxPowerParDefaultScale * maxPowerParScaleMultiplier;
 		base.transform.DOKill();
-		if (maxPowerPar != null)
-		{
-			maxPowerPar.transform.DOKill();
-		}
 		base.transform.DOScale(targetPlayerScale, scaleTransitionDuration).SetEase(Ease.OutBack).OnComplete(delegate
 		{
 			base.transform.DOScaleY(targetPlayerScale.y * bounceYMultiplier, bounceDuration).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
 		});
-		if (maxPowerPar != null && isMaxLevel)
+		if (maxPowerPar != null && isMaxBoosting)
 		{
+			maxPowerPar.transform.DOKill();
 			maxPowerPar.transform.DOScale(targetParScale, scaleTransitionDuration).SetEase(Ease.OutBack).OnComplete(delegate
 			{
 				maxPowerPar.transform.DOScaleY(targetParScale.y * bounceYMultiplier, bounceDuration).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
@@ -244,7 +352,7 @@ public class PlayerVisual : MonoBehaviour
 		}
 		if (maxPowerPar != null)
 		{
-			maxPowerPar.gameObject.SetActive(enableState);
+			maxPowerPar.gameObject.SetActive(enableState && isMaxBoosting);
 		}
 	}
 }

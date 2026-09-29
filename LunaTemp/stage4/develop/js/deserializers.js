@@ -1245,7 +1245,8 @@ Deserializers["PlayerController"] = function (request, data, root) {
   request.r(i845[12], i845[13], 0, i844, 'winPar')
   i844.currentLevel = i845[14]
   i844.dragSmoothSpeed = i845[15]
-  i844.moveCurve = new pc.AnimationCurve( { keys_flow: i845[16] } )
+  i844.dragScreenRatioForFullTrack = i845[16]
+  i844.moveCurve = new pc.AnimationCurve( { keys_flow: i845[17] } )
   return i844
 }
 
@@ -1268,7 +1269,12 @@ Deserializers["PlayerVisual"] = function (request, data, root) {
   request.r(i847[10], i847[11], 0, i846, 'visualAnimator')
   i846.level4TriggerName = i847[12]
   i846.level4SpriteDelay = i847[13]
-  request.r(i847[14], i847[15], 0, i846, 'maxPowerPar')
+  i846.maxBoostScaleMultiplier = i847[14]
+  i846.maxBoostDuration = i847[15]
+  i846.maxBoostFlashColor = new pc.Color(i847[16], i847[17], i847[18], i847[19])
+  i846.maxBoostFlashInterval = i847[20]
+  i846.maxPowerParHideDuration = i847[21]
+  request.r(i847[22], i847[23], 0, i846, 'maxPowerPar')
   return i846
 }
 
@@ -2473,7 +2479,7 @@ Deserializers.productName = "PLY_MiniSoccer3D";
 
 Deserializers.lunaInitializationTime = "07/29/2026 09:38:00";
 
-Deserializers.lunaDaysRunning = "60.9";
+Deserializers.lunaDaysRunning = "61.7";
 
 Deserializers.lunaVersion = "7.0.0";
 
@@ -2503,9 +2509,9 @@ Deserializers.isAntiAliasingEnabled = "True";
 
 Deserializers.isRuntimeAnalysisEnabledForCode = "False";
 
-Deserializers.runtimeAnalysisExcludedClassesCount = "1734";
+Deserializers.runtimeAnalysisExcludedClassesCount = "1728";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "5155";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "5103";
 
 Deserializers.runtimeAnalysisExcludedModules = "physics2d";
 
@@ -2529,7 +2535,7 @@ Deserializers.graphicsConstraint = 24;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "7e73b0fb-f598-43c0-9d96-4a8e46a5854c";
+Deserializers.buildID = "b657fa33-6b81-4adf-881e-98d1016385d4";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Unity","Services","Core","Internal","UnityServicesInitializer","EnableServicesInitializationAsync"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["DG","Tweening","DOTween","RuntimeOnLoad"],["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"],["Unity","Services","Core","Registration","CorePackageInitializer","InitializeOnLoad"],["Unity","Services","Core","Internal","TaskAsyncOperation","SetScheduler"],["Unity","Services","Core","Environments","Client","Scheduler","EngineStateHelper","Init"],["Unity","Services","Core","Environments","Client","Scheduler","ThreadHelper","Init"],["Ua2CoreInitializeCallback","Register"],["UnityEngine","InputSystem","InputSystem","RunInitialUpdate"],["Unity","AI","Navigation","NavMeshLink","ClearTrackedList"],["Unity","AI","Navigation","NavMeshSurface","ClearNavMeshSurfaces"],["Unity","AI","Navigation","NavMeshModifierVolume","ClearNavMeshModifiers"],["Unity","AI","Navigation","NavMeshModifier","ClearNavMeshModifiers"],["UnityEngine","AI","NavMesh","ClearPreUpdateListeners"]],[["Unity","Services","Core","Internal","UnityServicesInitializer","CreateStaticInstance"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"]],[["Unity","Services","Core","Environments","Client","Http","JsonHelpers","RegisterTypesForAOT"]],[["Unity","Services","Core","UnityThreadUtils","CaptureUnityThreadInfo"],["UnityEngine","InputSystem","Plugins","InputForUI","InputSystemProvider","Bootstrap"],["UnityEngine","InputSystem","InputSystem","RunInitializeInPlayer"]]];
 

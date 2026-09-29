@@ -49,6 +49,10 @@ public class PlayerController : MonoBehaviour
 	[SerializeField]
 	private float dragSmoothSpeed = 20f;
 
+	[Tooltip("Tỉ lệ cạnh ngắn màn hình cần vuốt để đi hết bề ngang đường chạy (0.5 = vuốt nửa cạnh ngắn)")]
+	[SerializeField]
+	private float dragScreenRatioForFullTrack = 0.5f;
+
 	[Tooltip("Đường cong gia tốc di chuyển của nhân vật")]
 	[SerializeField]
 	private AnimationCurve moveCurve;
@@ -56,6 +60,12 @@ public class PlayerController : MonoBehaviour
 	private Vector3 currentLocalPos;
 
 	private bool OnRight;
+
+	private bool isDragActive;
+
+	private float dragStartScreenX;
+
+	private float dragStartLocalX;
 
 	private Sequence moveSeq;
 
@@ -175,22 +185,34 @@ public class PlayerController : MonoBehaviour
 		gameStart = true;
 	}
 
+	private void Update()
+	{
+		if (gameStart && !(playerTransform == null))
+		{
+			playerTransform.localPosition = Vector3.Lerp(playerTransform.localPosition, currentLocalPos, Time.deltaTime * dragSmoothSpeed);
+		}
+	}
+
 	private void OnDrag(Vector2 screenPosition)
 	{
-		if (!(playerTransform == null) && !(mainCam == null))
+		if (!(playerTransform == null))
 		{
-			float screenZ = mainCam.WorldToScreenPoint(playerTransform.position).z;
-			Vector3 screenPoint = new Vector3(screenPosition.x, screenPosition.y, screenZ);
-			Vector3 worldPoint = mainCam.ScreenToWorldPoint(screenPoint);
-			Transform parent = playerTransform.parent;
-			Vector3 localPoint = ((parent != null) ? parent.InverseTransformPoint(worldPoint) : playerTransform.localPosition);
 			float leftX = ((trackLeftTransform != null) ? trackLeftTransform.localPosition.x : (-2f));
 			float rightX = ((trackRightTransform != null) ? trackRightTransform.localPosition.x : 2f);
 			float minX = Mathf.Min(leftX, rightX);
 			float maxX = Mathf.Max(leftX, rightX);
-			float targetX = Mathf.Clamp(localPoint.x, minX, maxX);
+			if (!isDragActive)
+			{
+				isDragActive = true;
+				dragStartScreenX = screenPosition.x;
+				dragStartLocalX = playerTransform.localPosition.x;
+				playerTransform.DOKill();
+			}
+			float screenShortSide = Mathf.Min(Screen.width, Screen.height);
+			float screenWidthForFullTrack = Mathf.Max(1f, screenShortSide * dragScreenRatioForFullTrack);
+			float deltaX = (screenPosition.x - dragStartScreenX) / screenWidthForFullTrack * (maxX - minX);
+			float targetX = Mathf.Clamp(dragStartLocalX + deltaX, minX, maxX);
 			currentLocalPos = new Vector3(targetX, playerTransform.localPosition.y, playerTransform.localPosition.z);
-			playerTransform.localPosition = Vector3.Lerp(playerTransform.localPosition, currentLocalPos, Time.deltaTime * dragSmoothSpeed);
 			if (!gameStart)
 			{
 				GameManager.OnGameStart?.Invoke();
@@ -201,10 +223,7 @@ public class PlayerController : MonoBehaviour
 
 	private void OnDragEnd()
 	{
-		if (playerTransform != null)
-		{
-			currentLocalPos = playerTransform.localPosition;
-		}
+		isDragActive = false;
 	}
 
 	private void SwitchTrack(bool rightTrack)

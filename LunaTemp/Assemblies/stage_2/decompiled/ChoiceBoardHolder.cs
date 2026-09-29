@@ -64,6 +64,7 @@ public class ChoiceBoardHolder : MonoBehaviour
 		}
 		if (IsLastBoard)
 		{
+			Ply_SoundManager.Instance?.StopBGM();
 			OnLastBoardPassed?.Invoke(player);
 		}
 		DOVirtual.DelayedCall(0.6f, delegate

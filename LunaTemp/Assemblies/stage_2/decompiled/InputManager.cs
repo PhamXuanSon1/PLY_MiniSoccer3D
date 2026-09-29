@@ -45,7 +45,7 @@ public class InputManager : MonoBehaviour
 
 	private void HandleInput()
 	{
-		HandleTouchInput();
+		HandleMouseInput();
 	}
 
 	private void HandleMouseInput()
